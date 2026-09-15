@@ -1,0 +1,61 @@
+name: Experiment
+description: Plan or document a reproducible experiment.
+title: "[Experiment] "
+body:
+  - type: markdown
+    attributes:
+      value:
+        "Use public information only. Planned work is not completed evidence."
+  - type: dropdown
+    id: status
+    attributes:
+      label: Work status
+      options:
+        - Planned
+        - Not started
+        - In progress
+        - To be validated
+        - Completed with linked evidence
+    validations:
+      required: true
+  - type: textarea
+    id: hypothesis
+    attributes:
+      label: Hypothesis and prediction
+      description: "Record the prediction before execution."
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment and configuration
+      description:
+        "Hardware, software versions, model revision, tokenizer and settings."
+    validations:
+      required: true
+  - type: textarea
+    id: method
+    attributes:
+      label: Method and controlled conditions
+      description:
+        "Procedure, workload, controls, repetitions and verification."
+    validations:
+      required: true
+  - type: textarea
+    id: results
+    attributes:
+      label: Measurements and evidence
+      description:
+        "Link actual evidence, failures and limitations, or write Not started."
+    validations:
+      required: true
+  - type: checkboxes
+    id: privacy
+    attributes:
+      label: Privacy and accuracy
+      options:
+        - label:
+            "I have excluded confidential, client, patient and private
+            repository data, credentials, and internal hostnames or IP
+            addresses. Claims and completion status are accurate."
+          required: true

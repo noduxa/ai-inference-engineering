@@ -1,0 +1,51 @@
+name: Learning task
+description: Plan a focused learning objective and its evidence.
+title: "[Learning task] "
+body:
+  - type: markdown
+    attributes:
+      value:
+        "Use public information only. Planned work is not completed evidence."
+  - type: dropdown
+    id: status
+    attributes:
+      label: Work status
+      options:
+        - Planned
+        - Not started
+        - In progress
+        - To be validated
+        - Completed with linked evidence
+    validations:
+      required: true
+  - type: textarea
+    id: objective
+    attributes:
+      label: Learning objective
+      description: "What do you want to understand?"
+    validations:
+      required: true
+  - type: textarea
+    id: plan
+    attributes:
+      label: Study plan and sources
+      description: "List topics and technical source links."
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Acceptance evidence
+      description: "What reproducible artifact will demonstrate understanding?"
+    validations:
+      required: true
+  - type: checkboxes
+    id: privacy
+    attributes:
+      label: Privacy and accuracy
+      options:
+        - label:
+            "I have excluded confidential, client, patient and private
+            repository data, credentials, and internal hostnames or IP
+            addresses. Claims and completion status are accurate."
+          required: true
