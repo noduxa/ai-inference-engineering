@@ -74,6 +74,16 @@ employment.
 | 31 December 2027 | Public technical authority beginning to emerge                | Planned   |
 | 2028 onward      | Recognized specialist through sustained technical ownership   | Long-term |
 
+## Phase 1 learning harness
+
+**Status: Not started.** The [Phase 1 harness](phase-1/README.md) provides an
+ordered foundation in Python, NumPy, mathematics, PyTorch, neural networks,
+transformers and GPU concepts. It includes a
+[six-week schedule](phase-1/SCHEDULE.md),
+[NotebookLM source packs](phase-1/notebooklm/README.md) for manual import, and
+an [evidence-based assessment system](phase-1/ASSESSMENT.md). The 90-hour plan
+targets 31 October 2026; it does not claim completed learning or experiments.
+
 ## Repository guide
 
 - [Roadmap](ROADMAP.md): phases, targets and evidence expectations

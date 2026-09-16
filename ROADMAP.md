@@ -7,6 +7,12 @@ others; record evidence and adjust scope honestly in
 
 ## Phase 1: Foundations — September to October 2026
 
+The [Phase 1 curriculum](phase-1/CURRICULUM.md) turns this phase into a 90-hour
+learning harness with a [six-week schedule](phase-1/SCHEDULE.md), scoped source
+packs, exercises and assessments. Learning status: Not started. In this phase,
+distributed-system fundamentals are limited to concurrency and host/device
+boundaries; distributed inference and multi-node work remain later-phase topics.
+
 Learning order:
 
 1. Advanced Python
