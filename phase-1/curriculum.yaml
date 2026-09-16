@@ -1,0 +1,724 @@
+schema_version: 1
+status: Not started
+target_date: "2026-10-31"
+total_hours: 90
+module_hours: 88
+final_assessment_hours: 2
+modules:
+  - id: M01
+    number: 1
+    title: Advanced Python for AI systems
+    guide: modules/01-advanced-python.md
+    source_pack: notebooklm/source-packs/01-advanced-python.md
+    objectives:
+      - Predict aliasing, lifetime and lazy-evaluation behaviour in short Python
+        programs.
+      - Build a tested package with typed boundaries and reliable cleanup.
+      - Choose a concurrency mechanism from a workload description and measure
+        its overhead.
+      - Locate an allocation or CPU hotspot and trace a public repository call
+        path.
+    required_concepts:
+      - Python’s object and memory model
+      - References, identity, mutability and copying
+      - Functions and closures
+      - Decorators
+      - Context managers
+      - Iterators and generators
+      - Type hints and protocols
+      - Dataclasses
+      - Error handling
+      - Modules and packages
+      - Virtual environments
+      - Modern project packaging with pyproject.toml
+      - Testing with pytest
+      - Logging
+      - AsyncIO
+      - Threads
+      - Multiprocessing
+      - concurrent.futures
+      - The Global Interpreter Lock (GIL), including version/build differences
+      - CPU-bound versus I/O-bound workloads
+      - Performance profiling
+      - Memory profiling
+      - Reading and navigating a large Python repository
+    prerequisites: []
+    source_ids:
+      - py-runtime
+      - py-tutorial
+      - py-pytest
+      - py-packaging
+    exercises:
+      - id: PY-01
+        title: Generator versus list memory
+        path: exercises/01-advanced-python.md
+      - id: PY-02
+        title: AsyncIO versus threads for I/O
+        path: exercises/01-advanced-python.md
+      - id: PY-03
+        title: Multiprocessing for CPU-bound work
+        path: exercises/01-advanced-python.md
+      - id: PY-04
+        title: Profile a slow function
+        path: exercises/01-advanced-python.md
+      - id: PY-05
+        title: Trace memory allocations
+        path: exercises/01-advanced-python.md
+      - id: PY-06
+        title: Package and read code
+        path: exercises/01-advanced-python.md
+    assessment_ids:
+      - weekly-review
+      - final-concept
+      - final-calculation
+      - final-code-reading
+      - final-debugging
+      - final-teach-back
+    estimated_hours: 20
+    scheduled_week:
+      - 1
+      - 2
+    exit_criteria:
+      - Complete the 6 exercise specifications or explicitly record
+        hardware-limited steps.
+      - Demonstrate application on the module exit test with evidence and
+        corrected reasoning.
+      - Resolve critical misconceptions in teach-back before claiming
+        completion.
+    status: Not started
+  - id: M02
+    number: 2
+    title: NumPy, tensors and numerical computing
+    guide: modules/02-numpy-and-tensors.md
+    source_pack: notebooklm/source-packs/02-numpy-and-tensors.md
+    objectives:
+      - Predict result shapes before executing array operations.
+      - Explain aliasing and layout using strides, views and contiguous storage.
+      - Estimate payload bytes and compare dtypes without assuming equal
+        numerical behaviour.
+      - Measure a controlled loop/vectorized comparison and discuss temporary
+        allocations.
+    required_concepts:
+      - NumPy arrays
+      - Dimensions, axes and shapes
+      - Shape transformations
+      - Data types and data-type size
+      - Indexing and slicing
+      - Copies versus views
+      - Broadcasting
+      - Vectorization
+      - Element-wise operations
+      - Dot products and matrix multiplication
+      - Reductions
+      - Strides
+      - Contiguous and non-contiguous data
+      - CPU memory consumption
+      - Numerical precision and floating-point limitations
+      - Comparing Python loops with vectorized operations
+    prerequisites:
+      - M01
+    source_ids:
+      - np-quickstart
+      - np-broadcast
+      - np-views
+      - np-types
+    exercises:
+      - id: NP-01
+        title: Loop versus vectorized operation
+        path: exercises/02-numpy-and-tensors.md
+      - id: NP-02
+        title: Broadcasting
+        path: exercises/02-numpy-and-tensors.md
+      - id: NP-03
+        title: Copy versus view
+        path: exercises/02-numpy-and-tensors.md
+      - id: NP-04
+        title: Dtype memory comparison
+        path: exercises/02-numpy-and-tensors.md
+      - id: NP-05
+        title: Matrix shapes
+        path: exercises/02-numpy-and-tensors.md
+    assessment_ids:
+      - weekly-review
+      - final-concept
+      - final-calculation
+      - final-code-reading
+      - final-debugging
+      - final-teach-back
+    estimated_hours: 10
+    scheduled_week:
+      - 2
+    exit_criteria:
+      - Complete the 5 exercise specifications or explicitly record
+        hardware-limited steps.
+      - Demonstrate application on the module exit test with evidence and
+        corrected reasoning.
+      - Resolve critical misconceptions in teach-back before claiming
+        completion.
+    status: Not started
+  - id: M03
+    number: 3
+    title: Essential mathematics
+    guide: modules/03-essential-mathematics.md
+    source_pack: notebooklm/source-packs/03-essential-mathematics.md
+    objectives:
+      - Calculate small matrix products, tensor shapes, gradients and stable
+        softmax values.
+      - Connect linear transformations and probability notation to tensor
+        programs.
+      - Recognize rank, basis, orthogonality, eigenvectors and SVD without
+        proof-heavy derivations.
+      - Explain numerical failure modes using finite-precision reasoning.
+    required_concepts:
+      - Scalars, vectors, matrices and tensors
+      - Dimensions and shapes
+      - Dot products and matrix multiplication
+      - Transposes and linear transformations
+      - Vector norms
+      - Rank, basis and orthogonality
+      - "Eigenvalues and eigenvectors: introductory recognition"
+      - "Singular value decomposition (SVD): introductory recognition"
+      - Functions, exponentials and logarithms
+      - Derivatives, partial derivatives and gradients
+      - Chain rule
+      - Softmax
+      - Basic probability, random variables and probability distributions
+      - Expected value and variance
+      - Basic numerical stability
+    prerequisites:
+      - M02
+    source_ids:
+      - math-prelim
+      - math-mit
+      - math-softmax
+      - math-float
+    exercises:
+      - id: MA-01
+        title: Matrix multiplication
+        path: exercises/03-essential-mathematics.md
+      - id: MA-02
+        title: Tensor shapes
+        path: exercises/03-essential-mathematics.md
+      - id: MA-03
+        title: Softmax
+        path: exercises/03-essential-mathematics.md
+      - id: MA-04
+        title: Gradient and chain rule
+        path: exercises/03-essential-mathematics.md
+      - id: MA-05
+        title: Numerical stability and probability
+        path: exercises/03-essential-mathematics.md
+    assessment_ids:
+      - weekly-review
+      - final-concept
+      - final-calculation
+      - final-code-reading
+      - final-debugging
+      - final-teach-back
+    estimated_hours: 15
+    scheduled_week:
+      - 3
+    exit_criteria:
+      - Complete the 5 exercise specifications or explicitly record
+        hardware-limited steps.
+      - Demonstrate application on the module exit test with evidence and
+        corrected reasoning.
+      - Resolve critical misconceptions in teach-back before claiming
+        completion.
+    status: Not started
+  - id: M04
+    number: 4
+    title: PyTorch fundamentals
+    guide: modules/04-pytorch-fundamentals.md
+    source_pack: notebooklm/source-packs/04-pytorch-fundamentals.md
+    objectives:
+      - Build and inspect a small module with named parameters and a
+        reproducible forward pass.
+      - Perform one training step and distinguish parameter updates from
+        forward-only inference.
+      - Save/reload a state dictionary and verify equivalent outputs.
+      - Measure timing and memory using correct device-specific boundaries.
+    required_concepts:
+      - Installing and verifying PyTorch
+      - Tensors, shapes and strides
+      - Data types
+      - CPU and CUDA devices
+      - Moving tensors between devices
+      - nn.Module and parameters
+      - Forward passes
+      - Computational graphs
+      - Automatic differentiation and gradients
+      - Loss functions and optimization loops
+      - Dataset and DataLoader basics
+      - Training mode versus evaluation mode
+      - torch.no_grad() and torch.inference_mode()
+      - Saving and loading state dictionaries
+      - Mixed precision
+      - Basic torch.compile
+      - PyTorch profiler
+      - Measuring CPU time and CUDA time
+      - Measuring allocated and reserved GPU memory
+    prerequisites:
+      - M03
+    source_ids:
+      - pt-basics
+      - pt-autograd
+      - pt-performance
+      - pt-cuda
+    exercises:
+      - id: PT-01
+        title: Tensor device and dtype
+        path: exercises/04-pytorch-fundamentals.md
+      - id: PT-02
+        title: Small module and one training step
+        path: exercises/04-pytorch-fundamentals.md
+      - id: PT-03
+        title: Inference and state round-trip
+        path: exercises/04-pytorch-fundamentals.md
+      - id: PT-04
+        title: Profiler, compile and mixed precision
+        path: exercises/04-pytorch-fundamentals.md
+      - id: PT-05
+        title: CPU versus GPU timing and memory
+        path: exercises/04-pytorch-fundamentals.md
+    assessment_ids:
+      - weekly-review
+      - final-concept
+      - final-calculation
+      - final-code-reading
+      - final-debugging
+      - final-teach-back
+    estimated_hours: 15
+    scheduled_week:
+      - 4
+    exit_criteria:
+      - Complete the 5 exercise specifications or explicitly record
+        hardware-limited steps.
+      - Demonstrate application on the module exit test with evidence and
+        corrected reasoning.
+      - Resolve critical misconceptions in teach-back before claiming
+        completion.
+    status: Not started
+  - id: M05
+    number: 5
+    title: Neural-network fundamentals
+    guide: modules/05-neural-networks.md
+    source_pack: notebooklm/source-packs/05-neural-networks.md
+    objectives:
+      - Explain what parameters learn in regression, classification and an MLP.
+      - Trace forward propagation, loss, backward propagation and an update.
+      - Investigate one learning-rate or regularization change under controlled
+        conditions.
+      - Explain generalization and the work omitted during inference.
+    required_concepts:
+      - Linear regression and classification
+      - Perceptrons and multilayer perceptrons
+      - Weights and biases
+      - Activation functions
+      - Forward propagation
+      - Loss and backpropagation
+      - Gradient descent and learning rate
+      - Batch size and epochs
+      - Overfitting and generalization
+      - Regularization
+      - Numerical stability
+      - Parameter initialization
+      - Training versus inference
+      - Why inference does not require backpropagation
+    prerequisites:
+      - M04
+    source_ids:
+      - nn-linear
+      - nn-classification
+      - nn-mlp
+      - nn-loop
+    exercises:
+      - id: NN-01
+        title: Regression and classification
+        path: exercises/05-neural-networks.md
+      - id: NN-02
+        title: Generalization and learning settings
+        path: exercises/05-neural-networks.md
+      - id: NN-03
+        title: Training versus inference teach-back
+        path: exercises/05-neural-networks.md
+    assessment_ids:
+      - weekly-review
+      - final-concept
+      - final-calculation
+      - final-code-reading
+      - final-debugging
+      - final-teach-back
+    estimated_hours: 15
+    scheduled_week:
+      - 5
+    exit_criteria:
+      - Complete the 3 exercise specifications or explicitly record
+        hardware-limited steps.
+      - Demonstrate application on the module exit test with evidence and
+        corrected reasoning.
+      - Resolve critical misconceptions in teach-back before claiming
+        completion.
+    status: Not started
+  - id: M06
+    number: 6
+    title: Transformer architecture
+    guide: modules/06-transformers.md
+    source_pack: notebooklm/source-packs/06-transformers.md
+    objectives:
+      - Trace text through tokens, embeddings, transformer blocks and output
+        logits.
+      - Calculate tiny masked attention and annotate every intermediate shape.
+      - Distinguish encoder, decoder, encoder-decoder and decoder-only models.
+      - Explain and inspect one-token-at-a-time generation and sampling
+        controls.
+    required_concepts:
+      - Tokenization and vocabulary
+      - Embeddings and sequence representation
+      - Queries, keys and values
+      - Scaled dot-product attention
+      - Attention masks and self-attention
+      - Multi-head attention
+      - Positional information
+      - Feed-forward layers
+      - Residual connections and normalization
+      - Encoder architecture
+      - Decoder architecture
+      - Encoder-decoder architecture
+      - Decoder-only transformers
+      - Autoregressive generation
+      - Logits and softmax
+      - Sampling, temperature, top-k and top-p
+      - Padding, truncation and batching
+      - Model parameters
+      - "Inference one token at a time: conceptual request walkthrough"
+    prerequisites:
+      - M05
+    source_ids:
+      - tr-d2l
+      - tr-hf
+      - tr-generation
+      - tr-paper
+    exercises:
+      - id: TR-01
+        title: Manual scaled dot-product attention
+        path: exercises/06-transformers.md
+      - id: TR-02
+        title: Tokenizer and mask inspection
+        path: exercises/06-transformers.md
+      - id: TR-03
+        title: Decoder-only generation walkthrough
+        path: exercises/06-transformers.md
+      - id: TR-04
+        title: Sampling parameters
+        path: exercises/06-transformers.md
+    assessment_ids:
+      - weekly-review
+      - final-concept
+      - final-calculation
+      - final-code-reading
+      - final-debugging
+      - final-teach-back
+    estimated_hours: 8
+    scheduled_week:
+      - 6
+    exit_criteria:
+      - Complete the 4 exercise specifications or explicitly record
+        hardware-limited steps.
+      - Demonstrate application on the module exit test with evidence and
+        corrected reasoning.
+      - Resolve critical misconceptions in teach-back before claiming
+        completion.
+    status: Not started
+  - id: M07
+    number: 7
+    title: GPU architecture, precision and memory
+    guide: modules/07-gpu-architecture-and-memory.md
+    source_pack: notebooklm/source-packs/07-gpu-architecture-and-memory.md
+    objectives:
+      - Draw a conceptual execution and memory map for a CPU/GPU system.
+      - Estimate tensor payload memory across precision formats and state
+        overhead limits.
+      - Interpret utilization, allocated memory and reserved memory without
+        conflating them.
+      - Design a bounded resource experiment and diagnose likely memory or
+        compute limits.
+    required_concepts:
+      - CPU versus GPU and parallel computation
+      - GPU cores and streaming multiprocessors
+      - "Warps and thread blocks: conceptual"
+      - "CUDA’s role and kernels: conceptual"
+      - Tensor cores
+      - Host memory, device memory and VRAM
+      - Registers, shared memory and global memory
+      - Memory hierarchy and memory bandwidth
+      - Compute throughput and host-to-device transfers
+      - "Data types: FP32, FP16, BF16, INT8 and INT4"
+      - "Quantization: conceptual"
+      - Compute-bound versus memory-bound workloads
+      - GPU utilization
+      - Out-of-memory errors
+      - PyTorch allocated and reserved CUDA memory
+      - Estimating tensor memory from shape and data type
+    prerequisites:
+      - M06
+    source_ids:
+      - gpu-architecture
+      - gpu-performance
+      - gpu-precision
+      - gpu-memory
+    exercises:
+      - id: GPU-01
+        title: Inspect and monitor the available GPU
+        path: exercises/07-gpu-architecture-and-memory.md
+      - id: GPU-02
+        title: Estimate and compare tensor memory
+        path: exercises/07-gpu-architecture-and-memory.md
+      - id: GPU-03
+        title: Approach a bounded resource limit
+        path: exercises/07-gpu-architecture-and-memory.md
+      - id: GPU-04
+        title: Explain an out-of-memory condition safely
+        path: exercises/07-gpu-architecture-and-memory.md
+    assessment_ids:
+      - weekly-review
+      - final-concept
+      - final-calculation
+      - final-code-reading
+      - final-debugging
+      - final-teach-back
+    estimated_hours: 5
+    scheduled_week:
+      - 6
+    exit_criteria:
+      - Complete the 4 exercise specifications or explicitly record
+        hardware-limited steps.
+      - Demonstrate application on the module exit test with evidence and
+        corrected reasoning.
+      - Resolve critical misconceptions in teach-back before claiming
+        completion.
+    status: Not started
+assessments:
+  - id: weekly-review
+    path: assessments/weekly-review-template.md
+  - id: final-concept
+    path: assessments/final-concept-assessment.md
+  - id: final-calculation
+    path: assessments/final-calculation-assessment.md
+  - id: final-code-reading
+    path: assessments/final-code-reading-assessment.md
+  - id: final-debugging
+    path: assessments/final-debugging-assessment.md
+  - id: final-teach-back
+    path: assessments/final-teach-back-assessment.md
+weeks:
+  - week: 1
+    start: "2026-09-20"
+    end: "2026-09-26"
+    hours: 15
+    sessions:
+      - session: 1
+        hours: 3.0
+        objective: Object identity, mutability and copying
+        sources: "py-runtime: data model/copy"
+        practice: PY-01 prediction and ownership sketches
+        evidence: Object graph and initial memory prediction
+      - session: 2
+        hours: 3.0
+        objective: Functions, closures, decorators, context managers
+        sources: "py-tutorial; py-runtime: function definitions/contextlib"
+        practice: PY-06 cleanup and decorator tests
+        evidence: Small implementation with failed-path test
+      - session: 3
+        hours: 3.0
+        objective: Types, protocols, dataclasses, errors and logging
+        sources: "py-runtime: typing/dataclasses/logging; py-tutorial: errors"
+        practice: PY-06 typed boundary and fixture
+        evidence: Typed package interface and exception record
+      - session: 4
+        hours: 3.0
+        objective: Modules, virtual environments, packaging and pytest
+        sources: "py-packaging; py-pytest; py-tutorial: modules/venv"
+        practice: PY-06 package and repository trace
+        evidence: Reproduction instructions and source call path
+      - session: 5
+        hours: 3.0
+        objective: Iterators, generators; catch-up and review
+        sources: "py-tutorial: classes; py-runtime: data model"
+        practice: Finish PY-01; 1 h catch-up + 1 h weekly review
+        evidence: Observed memory record and corrected teach-back
+  - week: 2
+    start: "2026-09-27"
+    end: "2026-10-03"
+    hours: 15
+    sessions:
+      - session: 1
+        hours: 3.0
+        objective: AsyncIO, threads, GIL and process pools
+        sources: "py-runtime: asyncio/threading/multiprocessing/futures"
+        practice: PY-02 and PY-03 bounded comparisons
+        evidence: Workload-choice table with real observations
+      - session: 2
+        hours: 2.0
+        objective: CPU and allocation profiling
+        sources: "py-runtime: profile/tracemalloc"
+        practice: PY-04 and PY-05
+        evidence: Hotspot and allocation trace with limitations
+      - session: 3
+        hours: 3.0
+        objective: Arrays, shapes, dtype and storage
+        sources: np-quickstart; np-types
+        practice: NP-04 and NP-05
+        evidence: Shape calculations and payload estimate
+      - session: 4
+        hours: 4.0
+        objective: Broadcasting, vectorization and aliasing
+        sources: np-broadcast; np-views; np-quickstart
+        practice: NP-01, NP-02 and NP-03
+        evidence: Correctness checks and controlled timing
+      - session: 5
+        hours: 3.0
+        objective: Strides and precision; catch-up and review
+        sources: "np-quickstart: ndarray layout; np-types"
+        practice: Array exit check; 1 h catch-up + 1 h review
+        evidence: Memory-layout explanation and weekly review
+  - week: 3
+    start: "2026-10-04"
+    end: "2026-10-10"
+    hours: 15
+    sessions:
+      - session: 1
+        hours: 3.0
+        objective: Vectors, matrices and tensor products
+        sources: "math-prelim: linear algebra"
+        practice: MA-01 and MA-02
+        evidence: Hand calculations before NumPy checks
+      - session: 2
+        hours: 3.0
+        objective: Linear transformations, norms and geometric vocabulary
+        sources: "math-mit: selected transcript segments"
+        practice: Rank/basis/orthogonality sketches
+        evidence: Eigenvector/SVD recognition note
+      - session: 3
+        hours: 3.0
+        objective: Functions, derivatives and chain rule
+        sources: "math-prelim: calculus"
+        practice: MA-04
+        evidence: Local derivatives and finite-difference check
+      - session: 4
+        hours: 3.0
+        objective: Probability, logits, softmax and stability
+        sources: "math-prelim: probability; math-softmax; math-float"
+        practice: MA-03 and MA-05
+        evidence: Stable calculation and discrete expectation/variance
+      - session: 5
+        hours: 3.0
+        objective: Calculation retry; catch-up and review
+        sources: Revisit only sections supporting identified gaps
+        practice: 1 h fresh calculation + 1 h catch-up + 1 h review
+        evidence: Corrected reasoning and weekly review
+  - week: 4
+    start: "2026-10-11"
+    end: "2026-10-17"
+    hours: 15
+    sessions:
+      - session: 1
+        hours: 3.0
+        objective: Install, tensors, dtype and device checks
+        sources: "pt-basics: installation/tensors"
+        practice: PT-01
+        evidence: Environment manifest and device limitations
+      - session: 2
+        hours: 3.0
+        objective: Module, parameters, datasets and autograd
+        sources: "pt-basics: build/data/autograd"
+        practice: PT-02
+        evidence: One training-step trace
+      - session: 3
+        hours: 3.0
+        objective: Evaluation, gradient modes and state dictionaries
+        sources: "pt-autograd; pt-basics: save/load"
+        practice: PT-03
+        evidence: Output equivalence and graph inspection
+      - session: 4
+        hours: 3.0
+        objective: Profiler, timing, memory, compile and autocast
+        sources: pt-performance; pt-cuda
+        practice: "PT-04 and PT-05: smallest supported cases"
+        evidence: Profiler record; CUDA work or explicit limitation
+      - session: 5
+        hours: 3.0
+        objective: Fresh forward-pass check; catch-up and review
+        sources: Targeted pt-basics/pt-autograd sections
+        practice: 1 h exit check + 1 h catch-up + 1 h review
+        evidence: Mode comparison and weekly review
+  - week: 5
+    start: "2026-10-18"
+    end: "2026-10-24"
+    hours: 15
+    sessions:
+      - session: 1
+        hours: 3.0
+        objective: Regression, classification and perceptrons
+        sources: nn-linear; nn-classification
+        practice: NN-01 small regression
+        evidence: Annotated model and loss
+      - session: 2
+        hours: 3.0
+        objective: MLP, activation, graph and backward pass
+        sources: "nn-mlp: MLP/backprop; nn-loop"
+        practice: NN-01 small classifier
+        evidence: Shape and parameter-update trace
+      - session: 3
+        hours: 3.0
+        objective: Learning rate, batch size, epochs and generalization
+        sources: "nn-mlp: generalization; nn-loop"
+        practice: NN-02 controlled change
+        evidence: Train/validation record, no assumed outcome
+      - session: 4
+        hours: 3.0
+        objective: Initialization, regularization and inference
+        sources: "nn-mlp: weight decay/stability"
+        practice: NN-03
+        evidence: Forward-only explanation and finite outputs
+      - session: 5
+        hours: 3.0
+        objective: Network exit check; catch-up and review
+        sources: Revisit the specific misconception sources
+        practice: 1 h exit check + 1 h catch-up + 1 h review
+        evidence: Generalization teach-back and weekly review
+  - week: 6
+    start: "2026-10-25"
+    end: "2026-10-31"
+    hours: 15
+    sessions:
+      - session: 1
+        hours: 3.0
+        objective: Tokens, embeddings, sequence shapes and attention
+        sources: "tr-hf; tr-d2l: attention"
+        practice: TR-01 and TR-02
+        evidence: Tiny attention calculation and mask inspection
+      - session: 2
+        hours: 3.0
+        objective: Blocks, model families and generation
+        sources: "tr-d2l: transformer; tr-paper: §3; tr-generation"
+        practice: TR-03 and TR-04
+        evidence: Two-step generation trace and synthetic sampling
+      - session: 3
+        hours: 2.0
+        objective: Transformer consolidation and catch-up
+        sources: Targeted tr-hf/tr-d2l pages
+        practice: 1 h exit test + 1 h catch-up
+        evidence: Corrected architecture map
+      - session: 4
+        hours: 3.0
+        objective: GPU execution, precision and memory
+        sources: gpu-architecture; gpu-performance; gpu-precision; gpu-memory
+        practice: GPU-01 and GPU-02
+        evidence: Device map, monitoring plan and byte estimates
+      - session: 5
+        hours: 4.0
+        objective: Bounded resource study and synthesis
+        sources: gpu-memory; assessment files
+        practice: GPU-03/GPU-04 and GPU review (2 h); final assessment (2 h)
+        evidence: Safe limit/OOM analysis and final assessment record
