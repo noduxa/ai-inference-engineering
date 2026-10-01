@@ -5,7 +5,7 @@ not certify completion. Upstream acceptance and external recognition depend on
 others; record evidence and adjust scope honestly in
 [weekly logs](weekly-logs/README.md).
 
-## Phase 1: Foundations — September to October 2026
+## Phase 1: AI foundations — September to October 2026
 
 The [Phase 1 curriculum](phase-1/CURRICULUM.md) turns this phase into a 90-hour
 learning harness with a [six-week schedule](phase-1/SCHEDULE.md), scoped source
@@ -104,7 +104,7 @@ with raw measurements, failures and limitations by 30 November. Validate the
 [runbook templates](runbooks/README.md) before calling any deployment
 successful.
 
-## Phase 3: Join open source — December 2026
+## Phase 3: vLLM open-source entry — December 2026
 
 Initial community: **vLLM**. December is for community entry and preparation,
 not a claim of major contributions.
@@ -133,7 +133,7 @@ reproducible issue investigation, a useful public interaction and a focused
 contribution proposal. Follow the
 [community entry plan](open-source/community-entry-plan.md).
 
-## Phase 4: Begin contributions — January to March 2027
+## Phase 4: First contributions — January to March 2027
 
 - First contribution submitted by 15 January 2027.
 - Three to five accepted contributions targeted by 31 March 2027.
@@ -215,3 +215,18 @@ contributions.
 Use the [weekly template](weekly-logs/TEMPLATE.md) to compare intentions with
 actual evidence. Review phase scope monthly. Keep missed targets visible and
 explain rescheduling without rewriting planned work as achievement.
+
+## Learning-system evidence gates
+
+Use the [Phase 1 curriculum](phase-1/CURRICULUM.md) and
+[Phase 2 curriculum](phase-2/CURRICULUM.md). Phase 1 establishes AI foundations;
+Phase 2 develops inference fundamentals; Phase 3 is vLLM open-source entry;
+Phase 4 targets first contributions. Existing milestone dates remain targets. No
+Phase 1/2 completion or Phase 3 readiness is certified without evidence.
+
+The [Phase 1 schedule](phase-1/SCHEDULE.md) explains the calendar conflict and
+preserves six weeks/90 hours. The [Phase 2 schedule](phase-2/SCHEDULE.md)
+preserves four weeks/60 hours with a prerequisite-dependent November target and
+a forward fallback. The
+[Phase 3 readiness gate](phase-2/assessments/phase-3-readiness-review.md)
+connects assessed work to the next code-reading and development plan.

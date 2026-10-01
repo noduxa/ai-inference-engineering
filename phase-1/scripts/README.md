@@ -63,3 +63,8 @@ The tests are offline and mock network responses. They cover missing fields,
 duplicate IDs/keys, invalid types/dates/URLs, redirect handling, challenge
 pages, HTTP errors, timeouts and non-public destinations. Use these tools only
 with reviewed registry URLs; they are not a general-purpose crawling service.
+
+## Both phases
+
+Use the [shared entry point](../../scripts/README.md) for both-phase checks, new
+metadata fields and cross-phase reference validation.

@@ -26,6 +26,29 @@ as a hypothesis until measured.
 Evidence: prediction, exact method, actual output or limitation, interpretation
 and a link to the relevant selected source section.
 
+### NP-01 evidence and execution fields
+
+- **Purpose:** test the specific mechanism in the procedure above; connect it to
+  a request-processing, tensor or memory failure in the linked module.
+- **Prerequisites:** finish the module's preceding study steps; use synthetic
+  inputs and record installed versions before running.
+- **Prediction:** write a direction/shape/value prediction and one condition
+  under which it could fail, before seeing output.
+- **Required measurements:** conversion and operation times separately, dtype,
+  shape, equality.
+- **Expected conceptual pattern:** use the module's worked example as a
+  hypothesis, not a supplied observation. Explain departures from it.
+- **Interpretation questions:** did correctness hold? What changed besides the
+  intended variable? What does this measurement fail to measure?
+- **Common mistakes:** timing setup in only one arm, omitting units or shapes,
+  selecting only a favorable run, or interpreting a simulation as hardware data.
+- **Required evidence:** original code/calculation, raw output, prediction,
+  environment, interpretation and a source section; use EVIDENCE_TEMPLATE.md.
+- **Cleanup:** close executors/files, release temporary arrays/models, terminate
+  only processes started by this exercise, and retain reviewed raw measurements.
+- **Hardware-independent fallback:** do calculations and use bounded CPU arrays
+  or simulated waits; explicitly mark accelerator-only observations Not started.
+
 ## NP-02: Broadcasting
 
 Status: Not started.
@@ -37,6 +60,29 @@ invalid pair fails.
 Evidence: prediction, exact method, actual output or limitation, interpretation
 and a link to the relevant selected source section.
 
+### NP-02 evidence and execution fields
+
+- **Purpose:** test the specific mechanism in the procedure above; connect it to
+  a request-processing, tensor or memory failure in the linked module.
+- **Prerequisites:** finish the module's preceding study steps; use synthetic
+  inputs and record installed versions before running.
+- **Prediction:** write a direction/shape/value prediction and one condition
+  under which it could fail, before seeing output.
+- **Required measurements:** predicted/actual shapes and captured ValueError for
+  invalid case.
+- **Expected conceptual pattern:** use the module's worked example as a
+  hypothesis, not a supplied observation. Explain departures from it.
+- **Interpretation questions:** did correctness hold? What changed besides the
+  intended variable? What does this measurement fail to measure?
+- **Common mistakes:** timing setup in only one arm, omitting units or shapes,
+  selecting only a favorable run, or interpreting a simulation as hardware data.
+- **Required evidence:** original code/calculation, raw output, prediction,
+  environment, interpretation and a source section; use EVIDENCE_TEMPLATE.md.
+- **Cleanup:** close executors/files, release temporary arrays/models, terminate
+  only processes started by this exercise, and retain reviewed raw measurements.
+- **Hardware-independent fallback:** do calculations and use bounded CPU arrays
+  or simulated waits; explicitly mark accelerator-only observations Not started.
+
 ## NP-03: Copy versus view
 
 Status: Not started.
@@ -47,6 +93,29 @@ checks and the difference between shared bytes and equal values.
 
 Evidence: prediction, exact method, actual output or limitation, interpretation
 and a link to the relevant selected source section.
+
+### NP-03 evidence and execution fields
+
+- **Purpose:** test the specific mechanism in the procedure above; connect it to
+  a request-processing, tensor or memory failure in the linked module.
+- **Prerequisites:** finish the module's preceding study steps; use synthetic
+  inputs and record installed versions before running.
+- **Prediction:** write a direction/shape/value prediction and one condition
+  under which it could fail, before seeing output.
+- **Required measurements:** strides, contiguity, memory-sharing, mutation
+  results and copy cost.
+- **Expected conceptual pattern:** use the module's worked example as a
+  hypothesis, not a supplied observation. Explain departures from it.
+- **Interpretation questions:** did correctness hold? What changed besides the
+  intended variable? What does this measurement fail to measure?
+- **Common mistakes:** timing setup in only one arm, omitting units or shapes,
+  selecting only a favorable run, or interpreting a simulation as hardware data.
+- **Required evidence:** original code/calculation, raw output, prediction,
+  environment, interpretation and a source section; use EVIDENCE_TEMPLATE.md.
+- **Cleanup:** close executors/files, release temporary arrays/models, terminate
+  only processes started by this exercise, and retain reviewed raw measurements.
+- **Hardware-independent fallback:** do calculations and use bounded CPU arrays
+  or simulated waits; explicitly mark accelerator-only observations Not started.
 
 ## NP-04: Dtype memory comparison
 
@@ -60,6 +129,28 @@ prove numerical suitability.
 Evidence: prediction, exact method, actual output or limitation, interpretation
 and a link to the relevant selected source section.
 
+### NP-04 evidence and execution fields
+
+- **Purpose:** test the specific mechanism in the procedure above; connect it to
+  a request-processing, tensor or memory failure in the linked module.
+- **Prerequisites:** finish the module's preceding study steps; use synthetic
+  inputs and record installed versions before running.
+- **Prediction:** write a direction/shape/value prediction and one condition
+  under which it could fail, before seeing output.
+- **Required measurements:** shape, itemsize, nbytes and representability error.
+- **Expected conceptual pattern:** use the module's worked example as a
+  hypothesis, not a supplied observation. Explain departures from it.
+- **Interpretation questions:** did correctness hold? What changed besides the
+  intended variable? What does this measurement fail to measure?
+- **Common mistakes:** timing setup in only one arm, omitting units or shapes,
+  selecting only a favorable run, or interpreting a simulation as hardware data.
+- **Required evidence:** original code/calculation, raw output, prediction,
+  environment, interpretation and a source section; use EVIDENCE_TEMPLATE.md.
+- **Cleanup:** close executors/files, release temporary arrays/models, terminate
+  only processes started by this exercise, and retain reviewed raw measurements.
+- **Hardware-independent fallback:** do calculations and use bounded CPU arrays
+  or simulated waits; explicitly mark accelerator-only observations Not started.
+
 ## NP-05: Matrix shapes
 
 Status: Not started.
@@ -70,3 +161,26 @@ without keepdims.
 
 Evidence: prediction, exact method, actual output or limitation, interpretation
 and a link to the relevant selected source section.
+
+### NP-05 evidence and execution fields
+
+- **Purpose:** test the specific mechanism in the procedure above; connect it to
+  a request-processing, tensor or memory failure in the linked module.
+- **Prerequisites:** finish the module's preceding study steps; use synthetic
+  inputs and record installed versions before running.
+- **Prediction:** write a direction/shape/value prediction and one condition
+  under which it could fail, before seeing output.
+- **Required measurements:** input/output shapes, axis reductions and
+  correctness.
+- **Expected conceptual pattern:** use the module's worked example as a
+  hypothesis, not a supplied observation. Explain departures from it.
+- **Interpretation questions:** did correctness hold? What changed besides the
+  intended variable? What does this measurement fail to measure?
+- **Common mistakes:** timing setup in only one arm, omitting units or shapes,
+  selecting only a favorable run, or interpreting a simulation as hardware data.
+- **Required evidence:** original code/calculation, raw output, prediction,
+  environment, interpretation and a source section; use EVIDENCE_TEMPLATE.md.
+- **Cleanup:** close executors/files, release temporary arrays/models, terminate
+  only processes started by this exercise, and retain reviewed raw measurements.
+- **Hardware-independent fallback:** do calculations and use bounded CPU arrays
+  or simulated waits; explicitly mark accelerator-only observations Not started.

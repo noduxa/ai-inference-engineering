@@ -1,5 +1,5 @@
 schema_version: 1
-last_verified: "2026-09-16"
+last_verified: "2026-09-30"
 sources:
   - id: py-runtime
     module: 1
@@ -20,7 +20,7 @@ sources:
           context managers
         skip: Metaclasses, descriptors in depth and C internals
         verified_title: 3. Data model &#8212; Python 3.14.7 documentation
-        published_or_updated: Page states last updated Sep 15, 2026 (23:57 UTC)
+        published_or_updated: Page states last updated Sep 30, 2026 (17:37 UTC)
       - title: copy
         url: https://docs.python.org/3/library/copy.html
         study: Shallow and deep copy
@@ -28,21 +28,21 @@ sources:
         verified_title:
           copy — Shallow and deep copy operations &#8212; Python 3.14.7
           documentation
-        published_or_updated: Page states last updated Sep 15, 2026 (23:57 UTC)
+        published_or_updated: Page states last updated Sep 30, 2026 (17:37 UTC)
       - title: typing
         url: https://docs.python.org/3/library/typing.html
         study: Type aliases, callable annotations and Protocol
         skip: Unrelated APIs and advanced implementation details
         verified_title:
           typing — Support for type hints &#8212; Python 3.14.7 documentation
-        published_or_updated: Page states last updated Sep 15, 2026 (23:57 UTC)
+        published_or_updated: Page states last updated Sep 30, 2026 (17:37 UTC)
       - title: dataclasses
         url: https://docs.python.org/3/library/dataclasses.html
         study: dataclass and default_factory
         skip: Unrelated APIs and advanced implementation details
         verified_title:
           dataclasses — Data Classes &#8212; Python 3.14.7 documentation
-        published_or_updated: Page states last updated Sep 15, 2026 (23:57 UTC)
+        published_or_updated: Page states last updated Sep 30, 2026 (17:37 UTC)
       - title: contextlib
         url: https://docs.python.org/3/library/contextlib.html
         study: contextmanager and cleanup
@@ -50,13 +50,13 @@ sources:
         verified_title:
           contextlib — Utilities for with-statement contexts &#8212; Python
           3.14.7 documentation
-        published_or_updated: Page states last updated Sep 15, 2026 (23:57 UTC)
+        published_or_updated: Page states last updated Sep 30, 2026 (17:37 UTC)
       - title: asyncio tasks
         url: https://docs.python.org/3/library/asyncio-task.html
         study: Coroutines, tasks, TaskGroup, cancellation and blocking calls
         skip: Unrelated APIs and advanced implementation details
         verified_title: Coroutines and tasks &#8212; Python 3.14.7 documentation
-        published_or_updated: Page states last updated Sep 15, 2026 (23:57 UTC)
+        published_or_updated: Page states last updated Sep 30, 2026 (17:37 UTC)
       - title: threading
         url: https://docs.python.org/3/library/threading.html
         study: Thread objects, locks and GIL/free-threaded notes
@@ -64,7 +64,7 @@ sources:
         verified_title:
           threading — Thread-based parallelism &#8212; Python 3.14.7
           documentation
-        published_or_updated: Page states last updated Sep 15, 2026 (23:57 UTC)
+        published_or_updated: Page states last updated Sep 30, 2026 (17:37 UTC)
       - title: multiprocessing
         url: https://docs.python.org/3/library/multiprocessing.html
         study: Process, Pool, start methods and programming guidelines
@@ -72,7 +72,7 @@ sources:
         verified_title:
           multiprocessing — Process-based parallelism &#8212; Python 3.14.7
           documentation
-        published_or_updated: Page states last updated Sep 15, 2026 (23:57 UTC)
+        published_or_updated: Page states last updated Sep 30, 2026 (17:37 UTC)
       - title: concurrent.futures
         url: https://docs.python.org/3/library/concurrent.futures.html
         study: ThreadPoolExecutor, ProcessPoolExecutor, exceptions and deadlocks
@@ -80,13 +80,13 @@ sources:
         verified_title:
           concurrent.futures — Launching parallel tasks &#8212; Python 3.14.7
           documentation
-        published_or_updated: Page states last updated Sep 15, 2026 (23:57 UTC)
+        published_or_updated: Page states last updated Sep 30, 2026 (17:37 UTC)
       - title: Profilers
         url: https://docs.python.org/3/library/profile.html
         study: cProfile and interpreting statistics
         skip: Unrelated APIs and advanced implementation details
         verified_title: The Python Profilers &#8212; Python 3.14.7 documentation
-        published_or_updated: Page states last updated Sep 15, 2026 (23:57 UTC)
+        published_or_updated: Page states last updated Sep 30, 2026 (17:37 UTC)
       - title: tracemalloc
         url: https://docs.python.org/3/library/tracemalloc.html
         study: Snapshots, statistics and traceback comparison
@@ -94,7 +94,7 @@ sources:
         verified_title:
           tracemalloc — Trace memory allocations &#8212; Python 3.14.7
           documentation
-        published_or_updated: Page states last updated Sep 15, 2026 (23:57 UTC)
+        published_or_updated: Page states last updated Sep 30, 2026 (17:37 UTC)
       - title: logging
         url: https://docs.python.org/3/library/logging.html
         study: Logger, levels and handlers
@@ -102,14 +102,14 @@ sources:
         verified_title:
           logging — Logging facility for Python &#8212; Python 3.14.7
           documentation
-        published_or_updated: Page states last updated Sep 15, 2026 (23:57 UTC)
+        published_or_updated: Page states last updated Sep 30, 2026 (17:37 UTC)
       - title: Function definitions
         url: https://docs.python.org/3/reference/compound_stmts.html
         study: "Function definitions: decorators and closure behaviour"
         skip: Other compound statements already covered by the tutorial
         verified_title:
           8. Compound statements &#8212; Python 3.14.7 documentation
-        published_or_updated: Page states last updated Sep 15, 2026 (23:57 UTC)
+        published_or_updated: Page states last updated Sep 30, 2026 (17:37 UTC)
       - title: Timing clocks
         url: https://docs.python.org/3/library/time.html
         study: perf_counter, process_time and clock measurement boundaries
@@ -119,7 +119,7 @@ sources:
     access: free
     format: documentation
     published_or_updated:
-      Primary linked page last updated Sep 15, 2026 (23:57 UTC); see
+      Primary linked page last updated Sep 30, 2026 (17:37 UTC); see
       section-level dates in the registry where available
     license_or_terms:
       Publisher terms apply; link only, no redistribution assumed
@@ -129,7 +129,7 @@ sources:
     reason_selected:
       Defines language semantics and runtime APIs directly; selected lookups
       connect memory, concurrency and profiling to small systems experiments.
-    last_verified: "2026-09-16"
+    last_verified: "2026-09-30"
     status: Verified
     verification_note:
       Opened and inspected selected page content and section headings; HTTP 200.
@@ -137,6 +137,13 @@ sources:
     expected_knowledge:
       Predict ownership and memory behaviour; choose and inspect runtime
       concurrency and profiling APIs.
+
+    skip_sections: Metaclasses, descriptors in depth and C internals; Unrelated APIs and
+      advanced implementation details; Other compound statements already covered by the
+      tutorial; Calendar and timezone APIs
+    expected_learning: Predict ownership and memory behaviour; choose and inspect runtime
+      concurrency and profiling APIs.
+    verification_status: Selected content re-inspected 2026-09-30
   - id: py-tutorial
     module: 1
     title: "Python tutorial: functions, modules, classes and environments"
@@ -157,27 +164,27 @@ sources:
         skip: Beginner syntax already demonstrated; unrelated examples
         verified_title:
           4. More Control Flow Tools &#8212; Python 3.14.7 documentation
-        published_or_updated: Page states last updated Sep 15, 2026 (23:57 UTC)
+        published_or_updated: Page states last updated Sep 30, 2026 (17:37 UTC)
       - title: Modules
         url: https://docs.python.org/3/tutorial/modules.html
         study: Modules, packages and import paths
         skip: Beginner syntax already demonstrated; unrelated examples
         verified_title: 6. Modules &#8212; Python 3.14.7 documentation
-        published_or_updated: Page states last updated Sep 15, 2026 (23:57 UTC)
+        published_or_updated: Page states last updated Sep 30, 2026 (17:37 UTC)
       - title: Errors and exceptions
         url: https://docs.python.org/3/tutorial/errors.html
         study: Handling exceptions, raising and cleanup
         skip: Beginner syntax already demonstrated; unrelated examples
         verified_title:
           8. Errors and Exceptions &#8212; Python 3.14.7 documentation
-        published_or_updated: Page states last updated Sep 15, 2026 (23:57 UTC)
+        published_or_updated: Page states last updated Sep 30, 2026 (17:37 UTC)
       - title: Classes
         url: https://docs.python.org/3/tutorial/classes.html
         study:
           Scopes and namespaces; iterators; generators; generator expressions
         skip: Beginner syntax already demonstrated; unrelated examples
         verified_title: 9. Classes &#8212; Python 3.14.7 documentation
-        published_or_updated: Page states last updated Sep 15, 2026 (23:57 UTC)
+        published_or_updated: Page states last updated Sep 30, 2026 (17:37 UTC)
       - title: Virtual environments
         url: https://docs.python.org/3/tutorial/venv.html
         study: Creating virtual environments and managing packages
@@ -185,12 +192,12 @@ sources:
         verified_title:
           12. Virtual Environments and Packages &#8212; Python 3.14.7
           documentation
-        published_or_updated: Page states last updated Sep 15, 2026 (23:57 UTC)
+        published_or_updated: Page states last updated Sep 30, 2026 (17:37 UTC)
     estimated_hours: 1.5
     access: free
     format: documentation
     published_or_updated:
-      Primary linked page last updated Sep 15, 2026 (23:57 UTC); see
+      Primary linked page last updated Sep 30, 2026 (17:37 UTC); see
       section-level dates in the registry where available
     license_or_terms:
       Publisher terms apply; link only, no redistribution assumed
@@ -200,7 +207,7 @@ sources:
     reason_selected:
       A concise bridge from existing Java/Python experience to Python-specific
       control flow and packaging boundaries.
-    last_verified: "2026-09-16"
+    last_verified: "2026-09-30"
     status: Verified
     verification_note:
       Opened and inspected selected page content and section headings; HTTP 200.
@@ -208,6 +215,11 @@ sources:
     expected_knowledge:
       Write scoped functions and lazy iterators; understand imports, exceptions
       and isolated environments.
+
+    skip_sections: Beginner syntax already demonstrated; unrelated examples
+    expected_learning: Write scoped functions and lazy iterators; understand imports, exceptions
+      and isolated environments.
+    verification_status: Selected content re-inspected 2026-09-30
   - id: py-pytest
     module: 1
     title: "pytest: getting started and fixtures"
@@ -242,7 +254,7 @@ sources:
     reason_selected:
       The testing tool’s own instructions establish collection, assertions and
       isolated fixtures.
-    last_verified: "2026-09-16"
+    last_verified: "2026-09-30"
     status: Verified
     verification_note:
       Opened and inspected selected page content and section headings; HTTP 200.
@@ -250,6 +262,11 @@ sources:
     expected_knowledge:
       Write discoverable assertions and fixtures that clean up resources even
       after failure.
+
+    skip_sections: Installation alternatives; Advanced fixture factories
+    expected_learning: Write discoverable assertions and fixtures that clean up resources
+      even after failure.
+    verification_status: Selected content re-inspected 2026-09-30
   - id: py-packaging
     module: 1
     title: Writing your pyproject.toml
@@ -283,7 +300,7 @@ sources:
     reason_selected:
       Current packaging guidance avoids legacy setup-only tutorials; the
       exercise stops before publication.
-    last_verified: "2026-09-16"
+    last_verified: "2026-09-30"
     status: Verified
     verification_note:
       Opened and inspected selected page content and section headings; HTTP 200.
@@ -291,6 +308,11 @@ sources:
     expected_knowledge:
       Describe the build-system and project tables and package a small local
       project.
+
+    skip_sections: Publishing and optional metadata not used by the exercise
+    expected_learning: Describe the build-system and project tables and package a small
+      local project.
+    verification_status: Selected content re-inspected 2026-09-30
   - id: np-quickstart
     module: 2
     title: NumPy quickstart and ndarray storage
@@ -329,7 +351,7 @@ sources:
     reason_selected:
       Official array operations plus storage reference connect shapes to actual
       bytes.
-    last_verified: "2026-09-16"
+    last_verified: "2026-09-30"
     status: Verified
     verification_note:
       Opened and inspected selected page content and section headings; HTTP 200.
@@ -337,6 +359,11 @@ sources:
     expected_knowledge:
       Predict shapes and storage layout and use reductions, products and
       transformations deliberately.
+
+    skip_sections: Stacking helpers beyond the exercises; C API and subclassing
+    expected_learning: Predict shapes and storage layout and use reductions, products and
+      transformations deliberately.
+    verification_status: Selected content re-inspected 2026-09-30
   - id: np-broadcast
     module: 2
     title: Broadcasting
@@ -366,7 +393,7 @@ sources:
     reason_selected:
       Authoritative broadcasting rules and memory cautions support shape
       prediction.
-    last_verified: "2026-09-16"
+    last_verified: "2026-09-30"
     status: Verified
     verification_note:
       Opened and inspected selected page content and section headings; HTTP 200.
@@ -374,6 +401,11 @@ sources:
     expected_knowledge:
       Align trailing axes, detect incompatible shapes and anticipate large
       intermediates.
+
+    skip_sections: Large domain-specific examples
+    expected_learning: Align trailing axes, detect incompatible shapes and anticipate large
+      intermediates.
+    verification_status: Selected content re-inspected 2026-09-30
   - id: np-views
     module: 2
     title: Copies and views
@@ -403,7 +435,7 @@ sources:
     reason_selected:
       Explains aliasing and reshape behaviour needed to diagnose accidental
       mutation.
-    last_verified: "2026-09-16"
+    last_verified: "2026-09-30"
     status: Verified
     verification_note:
       Opened and inspected selected page content and section headings; HTTP 200.
@@ -411,6 +443,11 @@ sources:
     expected_knowledge:
       Distinguish shared storage from copied storage and diagnose mutation
       through aliases.
+
+    skip_sections: None in this short page
+    expected_learning: Distinguish shared storage from copied storage and diagnose mutation
+      through aliases.
+    verification_status: Selected content re-inspected 2026-09-30
   - id: np-types
     module: 2
     title: Data types
@@ -440,7 +477,7 @@ sources:
     reason_selected:
       Explains fixed-width numeric storage and overflow rather than treating
       Python numbers and arrays as interchangeable.
-    last_verified: "2026-09-16"
+    last_verified: "2026-09-30"
     status: Verified
     verification_note:
       Opened and inspected selected page content and section headings; HTTP 200.
@@ -448,6 +485,11 @@ sources:
     expected_knowledge:
       Calculate payload bytes and explain overflow and precision limits of
       fixed-width types.
+
+    skip_sections: String and structured data details
+    expected_learning: Calculate payload bytes and explain overflow and precision limits
+      of fixed-width types.
+    verification_status: Selected content re-inspected 2026-09-30
   - id: math-prelim
     module: 3
     title: "Dive into Deep Learning: mathematical preliminaries"
@@ -494,7 +536,7 @@ sources:
     reason_selected:
       Researcher-authored open textbook ties notation directly to tensors
       without requiring a proof-heavy course.
-    last_verified: "2026-09-16"
+    last_verified: "2026-09-30"
     status: Verified
     verification_note:
       Opened and inspected selected page content and section headings; HTTP 200.
@@ -502,6 +544,11 @@ sources:
     expected_knowledge:
       Calculate small tensor operations, local derivatives, expectations and
       variances.
+
+    skip_sections: Library setup and optional exercises outside the selected scope
+    expected_learning: Calculate small tensor operations, local derivatives, expectations
+      and variances.
+    verification_status: Selected content re-inspected 2026-09-30
   - id: math-mit
     module: 3
     title: MIT 18.06 selected linear algebra lectures
@@ -554,7 +601,7 @@ sources:
     reason_selected:
       University explanations give geometric recognition of basis, rank,
       orthogonality and decompositions; a full course is not assigned.
-    last_verified: "2026-09-16"
+    last_verified: "2026-09-30"
     status: Verified
     verification_note:
       Lecture pages and all four official transcript PDFs opened and inspected
@@ -563,6 +610,12 @@ sources:
     expected_knowledge:
       Recognize basis, rank, orthogonality, eigenvectors and the purpose of SVD
       geometrically.
+
+    skip_sections: Full lectures and proofs; use first explanatory segment or transcript
+      only
+    expected_learning: Recognize basis, rank, orthogonality, eigenvectors and the purpose
+      of SVD geometrically.
+    verification_status: Selected content re-inspected 2026-09-30
   - id: math-softmax
     module: 3
     title: "Softmax regression: mathematical setup and stability"
@@ -603,7 +656,7 @@ sources:
     reason_selected:
       Connects exponentials, logarithms and normalized class scores to later
       attention and generation.
-    last_verified: "2026-09-16"
+    last_verified: "2026-09-30"
     status: Verified
     verification_note:
       Opened and inspected selected page content and section headings; HTTP 200.
@@ -611,6 +664,11 @@ sources:
     expected_knowledge:
       Connect logits, exponentials and log-likelihood and explain stable softmax
       evaluation.
+
+    skip_sections: Dataset and training implementation; Framework training exercise
+    expected_learning: Connect logits, exponentials and log-likelihood and explain stable
+      softmax evaluation.
+    verification_status: Selected content re-inspected 2026-09-30
   - id: math-float
     module: 3
     title: "Floating-point arithmetic: issues and limitations"
@@ -630,12 +688,12 @@ sources:
         verified_title:
           "15. Floating-Point Arithmetic: Issues and Limitations &#8212; Python
           3.14.7 documentation"
-        published_or_updated: Page states last updated Sep 15, 2026 (23:57 UTC)
+        published_or_updated: Page states last updated Sep 30, 2026 (17:37 UTC)
     estimated_hours: 0.5
     access: free
     format: documentation
     published_or_updated:
-      Primary linked page last updated Sep 15, 2026 (23:57 UTC); see
+      Primary linked page last updated Sep 30, 2026 (17:37 UTC); see
       section-level dates in the registry where available
     license_or_terms:
       Publisher terms apply; link only, no redistribution assumed
@@ -645,7 +703,7 @@ sources:
     reason_selected:
       Provides practical numerical limits and comparison tools without
       additional mathematical machinery.
-    last_verified: "2026-09-16"
+    last_verified: "2026-09-30"
     status: Verified
     verification_note:
       Opened and inspected selected page content and section headings; HTTP 200.
@@ -653,6 +711,10 @@ sources:
     expected_knowledge:
       Explain representation error and use tolerance-based numerical
       comparisons.
+
+    skip_sections: Detailed binary derivation after the practical examples
+    expected_learning: Explain representation error and use tolerance-based numerical comparisons.
+    verification_status: Selected content re-inspected 2026-09-30
   - id: pt-basics
     module: 4
     title: PyTorch Learn the Basics and installation
@@ -740,7 +802,7 @@ sources:
     reason_selected:
       Official workflow teaches modules, autograd and state dictionaries;
       substitute synthetic tabular data for image-course expansion.
-    last_verified: "2026-09-16"
+    last_verified: "2026-09-30"
     status: Verified
     verification_note:
       Opened and inspected selected page content and section headings; HTTP 200.
@@ -748,6 +810,12 @@ sources:
     expected_knowledge:
       Construct a tensor/module workflow, perform an update and preserve model
       state.
+
+    skip_sections: Building from source; FashionMNIST download and computer-vision expansion;
+      None in this short API page
+    expected_learning: Construct a tensor/module workflow, perform an update and preserve
+      model state.
+    verification_status: Selected content re-inspected 2026-09-30
   - id: pt-autograd
     module: 4
     title: Autograd mechanics and inference mode
@@ -787,7 +855,7 @@ sources:
     reason_selected:
       Distinguishes evaluation mode from gradient modes, preventing a common
       inference correctness error.
-    last_verified: "2026-09-16"
+    last_verified: "2026-09-30"
     status: Verified
     verification_note:
       Opened and inspected selected page content and section headings; HTTP 200.
@@ -795,6 +863,11 @@ sources:
     expected_knowledge:
       Select evaluation and gradient modes correctly and explain their different
       restrictions.
+
+    skip_sections: Multithreaded autograd and custom saved tensor hooks; Internal implementation
+    expected_learning: Select evaluation and gradient modes correctly and explain their
+      different restrictions.
+    verification_status: Selected content re-inspected 2026-09-30
   - id: pt-performance
     module: 4
     title: PyTorch profiling, compilation and mixed precision
@@ -842,7 +915,7 @@ sources:
     reason_selected:
       Provides first-party measurement and compilation APIs; no acceleration is
       assumed.
-    last_verified: "2026-09-16"
+    last_verified: "2026-09-30"
     status: Verified
     verification_note:
       Opened and inspected selected page content and section headings; HTTP 200.
@@ -850,6 +923,12 @@ sources:
     expected_knowledge:
       Collect a minimal profile and distinguish compilation/autocast setup from
       measured execution.
+
+    skip_sections: Distributed traces and long-running schedules; Custom backends and compiler
+      internals; Operator lists beyond the exercise
+    expected_learning: Collect a minimal profile and distinguish compilation/autocast setup
+      from measured execution.
+    verification_status: Selected content re-inspected 2026-09-30
   - id: pt-cuda
     module: 4
     title: "CUDA semantics: timing and memory"
@@ -870,6 +949,14 @@ sources:
         skip: Multi-device operations, CUDA graphs and distributed topics
         verified_title: CUDA semantics &#8212; PyTorch 2.14 documentation
         published_or_updated: Page states last updated Jul 17, 2026
+      - title: MPS backend
+        url: https://docs.pytorch.org/docs/2.14/notes/mps.html
+        study: Availability and moving tensors/modules to MPS
+        skip: Shader compilation, distributed execution and unrelated APIs
+      - title: MPS APIs
+        url: https://docs.pytorch.org/docs/2.14/mps.html
+        study: synchronize; current_allocated_memory; driver_allocated_memory
+        skip: Shader compilation, distributed execution and unrelated APIs
     estimated_hours: 0.75
     access: free
     format: documentation
@@ -884,7 +971,7 @@ sources:
     reason_selected:
       Framework semantics explain asynchronous timing and the caching allocator
       before GPU comparisons.
-    last_verified: "2026-09-16"
+    last_verified: "2026-09-30"
     status: Verified
     verification_note:
       Opened and inspected selected page content and section headings; HTTP 200.
@@ -892,6 +979,11 @@ sources:
     expected_knowledge:
       Use completed-work timing boundaries and distinguish live versus reserved
       device memory.
+
+    skip_sections: Multi-device operations, CUDA graphs and distributed topics
+    expected_learning: Use completed-work timing boundaries and distinguish live versus
+      reserved device memory.
+    verification_status: Selected content re-inspected 2026-09-30
   - id: nn-linear
     module: 5
     title: Linear regression
@@ -926,7 +1018,7 @@ sources:
     reason_selected:
       A small model makes the relationship between parameters, loss and gradient
       updates explicit.
-    last_verified: "2026-09-16"
+    last_verified: "2026-09-30"
     status: Verified
     verification_note:
       Opened and inspected selected page content and section headings; HTTP 200.
@@ -934,6 +1026,11 @@ sources:
     expected_knowledge:
       Explain regression parameters, squared loss and a minibatch parameter
       update.
+
+    skip_sections: Historical notes and full framework implementations
+    expected_learning: Explain regression parameters, squared loss and a minibatch parameter
+      update.
+    verification_status: Selected content re-inspected 2026-09-30
   - id: nn-classification
     module: 5
     title: Softmax classification
@@ -967,13 +1064,17 @@ sources:
     reason_selected:
       Reuses the mathematical source for the new purpose of classification and
       cross-entropy; prior reading is not repeated.
-    last_verified: "2026-09-16"
+    last_verified: "2026-09-30"
     status: Verified
     verification_note:
       Opened and inspected selected page content and section headings; HTTP 200.
       NotebookLM ingestion and learner execution are not verified.
     expected_knowledge:
       Explain classification scores, probabilities and cross-entropy loss.
+
+    skip_sections: Repeat derivation already studied in Module 3
+    expected_learning: Explain classification scores, probabilities and cross-entropy loss.
+    verification_status: Selected content re-inspected 2026-09-30
   - id: nn-mlp
     module: 5
     title: MLPs, generalization and stable training
@@ -1034,7 +1135,7 @@ sources:
     reason_selected:
       Explains the minimum network concepts needed to understand inference
       inputs and learned parameters.
-    last_verified: "2026-09-16"
+    last_verified: "2026-09-30"
     status: Verified
     verification_note:
       Opened and inspected selected page content and section headings; HTTP 200.
@@ -1042,6 +1143,11 @@ sources:
     expected_knowledge:
       Trace an MLP graph and explain activation, generalization, regularization
       and initialization.
+
+    skip_sections: Proofs, broad architecture surveys and lengthy training runs
+    expected_learning: Trace an MLP graph and explain activation, generalization, regularization
+      and initialization.
+    verification_status: Selected content re-inspected 2026-09-30
   - id: nn-loop
     module: 5
     title: PyTorch optimization loop
@@ -1076,7 +1182,7 @@ sources:
     reason_selected:
       Connects the textbook training concepts to a short inspectable loop; only
       the loop is revisited.
-    last_verified: "2026-09-16"
+    last_verified: "2026-09-30"
     status: Verified
     verification_note:
       Opened and inspected selected page content and section headings; HTTP 200.
@@ -1084,6 +1190,11 @@ sources:
     expected_knowledge:
       Identify each training-loop operation and distinguish it from forward-only
       evaluation.
+
+    skip_sections: FashionMNIST and computer-vision expansion
+    expected_learning: Identify each training-loop operation and distinguish it from forward-only
+      evaluation.
+    verification_status: Selected content re-inspected 2026-09-30
   - id: tr-d2l
     module: 6
     title: Attention and transformer architecture
@@ -1140,7 +1251,7 @@ sources:
     reason_selected:
       Accessible diagrams and tensor-level explanations accompany the original
       paper.
-    last_verified: "2026-09-16"
+    last_verified: "2026-09-30"
     status: Verified
     verification_note:
       Opened and inspected selected page content and section headings; HTTP 200.
@@ -1148,6 +1259,11 @@ sources:
     expected_knowledge:
       Draw transformer blocks and calculate tiny attention with explicit shapes
       and masks.
+
+    skip_sections: Full training loops and machine-translation experiments
+    expected_learning: Draw transformer blocks and calculate tiny attention with explicit
+      shapes and masks.
+    verification_status: Selected content re-inspected 2026-09-30
   - id: tr-hf
     module: 6
     title: "Hugging Face LLM course: models and tokenization"
@@ -1192,7 +1308,7 @@ sources:
     reason_selected:
       Official course connects architecture to tokenizers and decoder-only use
       without assigning fine-tuning.
-    last_verified: "2026-09-16"
+    last_verified: "2026-09-30"
     status: Verified
     verification_note:
       Opened and inspected selected page content and section headings; HTTP 200.
@@ -1200,6 +1316,11 @@ sources:
     expected_knowledge:
       Trace tokens and batching inputs and distinguish practical transformer
       model families.
+
+    skip_sections: Hosted demos, model training and optional exercises
+    expected_learning: Trace tokens and batching inputs and distinguish practical transformer
+      model families.
+    verification_status: Selected content re-inspected 2026-09-30
   - id: tr-generation
     module: 6
     title: Transformers generation strategies
@@ -1234,7 +1355,7 @@ sources:
     reason_selected:
       Current framework reference grounds sampling vocabulary and avoids
       unsupported decoding folklore.
-    last_verified: "2026-09-16"
+    last_verified: "2026-09-30"
     status: Verified
     verification_note:
       Opened and inspected selected page content and section headings; HTTP 200.
@@ -1242,6 +1363,12 @@ sources:
     expected_knowledge:
       Explain the effects and assumptions of greedy decoding, temperature, top-k
       and top-p.
+
+    skip_sections: Beam search, assisted decoding and advanced generation; Cache implementations
+      and advanced generation controls
+    expected_learning: Explain the effects and assumptions of greedy decoding, temperature,
+      top-k and top-p.
+    verification_status: Selected content re-inspected 2026-09-30
   - id: tr-paper
     module: 6
     title: Attention Is All You Need
@@ -1284,7 +1411,7 @@ sources:
     reason_selected:
       Original transformer architecture paper establishes provenance; read only
       after the accessible explanation.
-    last_verified: "2026-09-16"
+    last_verified: "2026-09-30"
     status: Verified
     verification_note:
       Opened and inspected selected page content and section headings; HTTP 200.
@@ -1292,6 +1419,12 @@ sources:
     expected_knowledge:
       Identify the original encoder-decoder design and relate its attention
       equation to a toy calculation.
+
+    skip_sections: Training settings, benchmark tables and performance comparisons; Training
+      and benchmark results
+    expected_learning: Identify the original encoder-decoder design and relate its attention
+      equation to a toy calculation.
+    verification_status: Selected content re-inspected 2026-09-30
   - id: gpu-architecture
     module: 7
     title: "CUDA programming guide: architecture concepts"
@@ -1339,7 +1472,7 @@ sources:
     reason_selected:
       Vendor architecture explanation identifies execution and memory concepts;
       kernel programming is explicitly excluded.
-    last_verified: "2026-09-16"
+    last_verified: "2026-09-30"
     status: Verified
     verification_note:
       Opened and inspected selected page content and section headings; HTTP 200.
@@ -1347,6 +1480,11 @@ sources:
     expected_knowledge:
       Distinguish execution hierarchy, physical memories and CUDA’s role without
       writing kernels.
+
+    skip_sections: All kernel implementation and advanced programming sections
+    expected_learning: Distinguish execution hierarchy, physical memories and CUDA’s role
+      without writing kernels.
+    verification_status: Selected content re-inspected 2026-09-30
   - id: gpu-performance
     module: 7
     title: GPU performance background
@@ -1381,7 +1519,7 @@ sources:
     reason_selected:
       Introduces bandwidth, throughput and math-versus-memory limits;
       hardware-specific numbers are not transferred to Joshua’s machine.
-    last_verified: "2026-09-16"
+    last_verified: "2026-09-30"
     status: Verified
     verification_note:
       Opened and inspected selected page content and section headings; HTTP 200.
@@ -1389,6 +1527,11 @@ sources:
     expected_knowledge:
       Explain compute throughput versus memory bandwidth and avoid diagnosing
       from utilization alone.
+
+    skip_sections: Product performance comparisons
+    expected_learning: Explain compute throughput versus memory bandwidth and avoid diagnosing
+      from utilization alone.
+    verification_status: Selected content re-inspected 2026-09-30
   - id: gpu-precision
     module: 7
     title: Numerical formats and quantization concepts
@@ -1428,7 +1571,7 @@ sources:
     reason_selected:
       Distinguishes numeric formats from hardware support and conceptual low-bit
       compression; no quantization toolchain is required.
-    last_verified: "2026-09-16"
+    last_verified: "2026-09-30"
     status: Verified
     verification_note:
       Opened and inspected selected page content and section headings; HTTP 200.
@@ -1436,6 +1579,12 @@ sources:
     expected_knowledge:
       Distinguish floating-point range/precision from integer quantization and
       storage assumptions.
+
+    skip_sections: Intrinsics and kernel code; All optimization commands, serving integrations
+      and model conversion
+    expected_learning: Distinguish floating-point range/precision from integer quantization
+      and storage assumptions.
+    verification_status: Selected content re-inspected 2026-09-30
   - id: gpu-memory
     module: 7
     title: PyTorch CUDA memory and NVIDIA monitoring
@@ -1476,7 +1625,7 @@ sources:
     reason_selected:
       Pairs framework allocation accounting with device monitoring; the two
       measurements need not match.
-    last_verified: "2026-09-16"
+    last_verified: "2026-09-30"
     status: Verified
     verification_note:
       Opened and inspected selected page content and section headings; HTTP 200.
@@ -1484,3 +1633,9 @@ sources:
     expected_knowledge:
       Interpret allocator accounting and device-monitoring measurements without
       equating them.
+
+    skip_sections: Distributed and graph sections; Device resets, administrative controls
+      and process identifiers in published logs
+    expected_learning: Interpret allocator accounting and device-monitoring measurements
+      without equating them.
+    verification_status: Selected content re-inspected 2026-09-30

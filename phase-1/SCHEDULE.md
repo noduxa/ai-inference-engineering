@@ -5,12 +5,25 @@ Status: Planned. Target: 31 October 2026. Last verified: 2026-09-16.
 [Curriculum](CURRICULUM.md) · [Source packs](notebooklm/README.md) ·
 [Weekly review](assessments/weekly-review-template.md)
 
-Start Sunday 20 September and finish Saturday 31 October: six full weeks at 15
-hours/week, 90 hours total. Sessions may be moved within a week; their order
-preserves prerequisites. The opening days before 20 September are unscheduled.
-All hours include the named reading and exercise work. Optional full videos are
-not extra required homework. Week 6 is a compact architecture survey, not
-mastery.
+The original September 20–October 31 calendar below is a **proposed target**,
+not a record of completed study. As of September 30, no learner completion is
+recorded. A forward alternative is October 4–November 14 at the same 15 hours
+per week. Keep the existing session order and use the date mapping below; do not
+compress missed weeks. This makes the November Phase 2 target conditional.
+
+| Week | Original proposed dates | Forward proposed dates |
+| ---- | ----------------------- | ---------------------- |
+| 1    | Sep 20–26               | Oct 4–10               |
+| 2    | Sep 27–Oct 3            | Oct 11–17              |
+| 3    | Oct 4–10                | Oct 18–24              |
+| 4    | Oct 11–17               | Oct 25–31              |
+| 5    | Oct 18–24               | Nov 1–7                |
+| 6    | Oct 25–31               | Nov 8–14               |
+
+Each session includes reading and practice. At its end answer: which assumption
+mattered, what differed from the prediction, and what evidence remains missing?
+The existing catch-up and weekly-review slots remain inside the 90-hour budget.
+Week 6 is a compact foundation, not advanced architecture mastery.
 
 Source IDs resolve to exact links and sections in each module’s source pack and
 [sources.yaml](sources.yaml). Exercise IDs resolve in

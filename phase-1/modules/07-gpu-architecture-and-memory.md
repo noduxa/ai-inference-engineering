@@ -1,7 +1,7 @@
 # Module 7: GPU architecture, precision and memory
 
 Status: Not started. Estimated time: **5 hours**, including practice, review and
-catch-up. Last verified: 2026-09-16.
+catch-up. Last verified: 2026-09-30.
 
 [Curriculum](../CURRICULUM.md) · [Schedule](../SCHEDULE.md) ·
 [Source pack](../notebooklm/source-packs/07-gpu-architecture-and-memory.md)
@@ -64,6 +64,55 @@ Exact page links, selected sections, exclusions, access terms and import order
 are in the source pack. Reading times are selective budgets, not estimates for
 completing entire documentation collections.
 
+## Detailed explanation and worked example
+
+A CPU emphasizes flexible low-latency execution; a GPU can execute large amounts
+of similar work in parallel. CUDA provides NVIDIA's programming/runtime model. A
+kernel is a device operation launched by host software. Blocks group threads;
+warps are execution groups scheduled on streaming multiprocessors (SMs).
+Registers are thread-local fast storage; shared memory is scoped to cooperating
+threads in a block; global device memory holds larger data. Tensor cores provide
+specialized matrix arithmetic on supported hardware and formats. Knowing these
+roles does not require writing a kernel. See NVIDIA's selected programming-model
+and performance guides in the source pack.
+
+Host memory and device memory are distinct in a conventional discrete GPU
+system; transfers consume time and bandwidth. Unified-memory systems differ. Do
+not label all Apple unified memory as dedicated VRAM or use NVIDIA tooling for
+an MPS device. A memory hierarchy trades capacity for access cost.
+
+For a contiguous `(8,128,256)` tensor there are 262,144 elements: FP32 payload
+is 1 MiB and FP16 payload is 0.5 MiB. BF16 also uses 2 bytes but has different
+range and precision from FP16. Ideal packed INT8 and INT4 payloads use 1 and 0.5
+bytes per element; quantization adds scales, metadata, padding and sometimes
+workspace. A lower storage bit width does not prove faster supported execution.
+
+A useful lower-bound model is
+`t >= max(operations / effective_compute_rate, bytes_moved / effective_bandwidth)`
+. It ignores overlap limits, launch overhead and other work. Arithmetic
+intensity is operations per byte moved. A matrix-vector decode-like workload may
+reuse weights less than a larger matrix-matrix batch, but classify a real run
+using measurements, not its name. GPU utilization is a sampled activity
+indicator; it is not a measurement of achieved FLOPs or proof that compute is
+the limit.
+
+Allocated versus reserved CUDA memory separates live allocator allocations from
+its pool. Device monitoring can include contexts and other processes. An OOM can
+reflect live tensors, cache growth, temporary workspace or allocation layout;
+emptying an unused cache cannot free live tensors. Bound GPU-03 before
+allocating and label GPU-04's software-budget refusal as simulated, never as a
+physical OOM.
+
+## Code-reading task and implementation mistakes
+
+Annotate `numel()*element_size()` and compare it with allocated/reserved metrics
+around creation and deletion of one bounded tensor. Inspect the selected CUDA
+semantics memory section. Watch for confusing GB with GiB, overlooking shared
+storage, reading a peak counter without resetting it, and leaking tensors
+through Python references. The Phase 1 exit gate precedes Phase 2's full model
+and KV-cache accounting; hardware-limited evidence must remain explicitly
+pending.
+
 ## Study order
 
 1. Draw the CPU/GPU execution and memory hierarchy from NVIDIA’s conceptual
@@ -79,7 +128,8 @@ completing entire documentation collections.
 
 ## Exercises and deliverables
 
-[Open the exercise specifications](../exercises/07-gpu-architecture-and-memory.md).
+[Open the exercise specifications](../exercises/07-gpu-architecture-and-memory.md)
+.
 
 - `GPU-01` — Inspect and monitor the available GPU.
 - `GPU-02` — Estimate and compare tensor memory.
@@ -131,3 +181,8 @@ assistance, corrections and evidence using the
 - [ ] Exit test and teach-back reviewed; critical misconceptions corrected.
 - [ ] Hardware-dependent work still pending is explicitly identified.
 - [ ] Weekly review links the evidence; status changes have supporting records.
+
+## Connection to the next module
+
+Complete the [Phase 1 evidence gate](../EVIDENCE.md) before
+[Phase 2](../../phase-2/README.md).

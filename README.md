@@ -74,15 +74,21 @@ employment.
 | 31 December 2027 | Public technical authority beginning to emerge                | Planned   |
 | 2028 onward      | Recognized specialist through sustained technical ownership   | Long-term |
 
-## Phase 1 learning harness
+## Two-phase learning system
 
-**Status: Not started.** The [Phase 1 harness](phase-1/README.md) provides an
-ordered foundation in Python, NumPy, mathematics, PyTorch, neural networks,
-transformers and GPU concepts. It includes a
-[six-week schedule](phase-1/SCHEDULE.md),
-[NotebookLM source packs](phase-1/notebooklm/README.md) for manual import, and
-an [evidence-based assessment system](phase-1/ASSESSMENT.md). The 90-hour plan
-targets 31 October 2026; it does not claim completed learning or experiments.
+Both phases are **Not started** as learner work. Documentation and tool
+verification do not certify completed study. The schedules preserve the original
+targets and provide proposed forward dates when prerequisite evidence is absent.
+
+| Path                                                 | Curriculum                          | Schedule                                 | NotebookLM                                   | Assessment                               |
+| ---------------------------------------------------- | ----------------------------------- | ---------------------------------------- | -------------------------------------------- | ---------------------------------------- |
+| [Phase 1: AI foundations](phase-1/README.md)         | [Curriculum](phase-1/CURRICULUM.md) | [Six weeks / 90 h](phase-1/SCHEDULE.md)  | [Source packs](phase-1/notebooklm/README.md) | [Exit assessment](phase-1/ASSESSMENT.md) |
+| [Phase 2: Inference fundamentals](phase-2/README.md) | [Curriculum](phase-2/CURRICULUM.md) | [Four weeks / 60 h](phase-2/SCHEDULE.md) | [Source packs](phase-2/notebooklm/README.md) | [Exit assessment](phase-2/ASSESSMENT.md) |
+
+Continue to
+[Phase 3 readiness review](phase-2/assessments/phase-3-readiness-review.md) only
+after assessed evidence. See the [audit](LEARNING_SYSTEM_AUDIT.md) and
+[shared validation](scripts/README.md) for maintenance.
 
 ## Repository guide
 

@@ -1,7 +1,7 @@
 # Module 2: NumPy, tensors and numerical computing
 
 Status: Not started. Estimated time: **10 hours**, including practice, review
-and catch-up. Last verified: 2026-09-16.
+and catch-up. Last verified: 2026-09-30.
 
 [Curriculum](../CURRICULUM.md) · [Schedule](../SCHEDULE.md) ·
 [Source pack](../notebooklm/source-packs/02-numpy-and-tensors.md)
@@ -61,6 +61,63 @@ revisit any unresolved prerequisite before continuing.
 Exact page links, selected sections, exclusions, access terms and import order
 are in the source pack. Reading times are selective budgets, not estimates for
 completing entire documentation collections.
+
+## Detailed explanation and worked example
+
+An ndarray combines storage with metadata: dtype, shape, byte strides and an
+offset. Shape describes logical axes; strides tell how far to move in storage.
+For a contiguous float32 array shaped `(2, 3)`, ordinary C-order strides are
+`(12, 4)` bytes. Its transpose has shape `(3, 2)` and strides `(4, 12)` without
+necessarily copying storage. A downstream operation may still need a contiguous
+copy. See [ndarray](https://numpy.org/doc/stable/reference/arrays.ndarray.html).
+
+```python
+import numpy as np
+x = np.arange(6, dtype=np.float32).reshape(2, 3)
+y = x.T
+assert np.shares_memory(x, y)
+z = y.copy()
+assert not np.shares_memory(x, z)
+```
+
+This is a worked prediction to verify. Basic slicing usually produces views;
+advanced indexing produces copies. Reshape may copy if the layout cannot express
+the requested view. `nbytes` counts logical element payload, not process RSS or
+unique ownership. A tiny slice can keep a large backing allocation alive.
+
+Broadcasting aligns axes from the right. Two dimensions are compatible when
+equal or one is 1. Thus `(3,1)+(1,4)` yields `(3,4)`, but `(2,3)+(2,)` fails.
+Broadcasting avoids physically tiling the inputs; the output and intermediates
+can still be large. See the
+[broadcasting rules](https://numpy.org/doc/stable/user/basics.broadcasting.html)
+.
+
+Matrix multiplication contracts the inner dimension: `(m,k)@(k,n)` yields
+`(m,n)`. Batched leading dimensions broadcast. Element-wise multiplication does
+not contract an axis. A reduction removes an axis unless `keepdims=True`, which
+can make the intended subsequent broadcast explicit.
+
+For `(1024,1024)` float32, payload is `1024*1024*4 = 4 MiB`; float64 doubles it.
+This calculation excludes container metadata and temporary results. Smaller
+dtypes change range and precision. Integer overflow and floating-point rounding
+are different failure modes. Use tolerances justified by dtype and scale, not
+exact equality for every floating-point computation.
+
+Vectorization moves repeated operations from Python dispatch into array kernels.
+It is not a guarantee of lower latency: small arrays, temporary allocations,
+layout conversion and native-library thread startup can dominate. In NP-01,
+compare an identical formula and report conversion separately. In NP-03, time a
+transpose-consuming operation with and without an explicit contiguous copy;
+include the copy in an end-to-end comparison and verify equal results.
+
+## Code-reading task and implementation mistakes
+
+Trace `x.mean(axis=1, keepdims=True)` into its shape contract, then explain
+`x - x.mean(axis=1, keepdims=True)` before execution. Inspect the installed
+NumPy wrapper source when available and identify where native execution begins;
+do not infer Python-level loop counts from a native call. Watch for wrong axes,
+accidental float64 promotion, hidden copies and measuring allocation in only one
+comparison arm. Connect these errors to the tensor layouts in Module 3.
 
 ## Study order
 
@@ -128,3 +185,8 @@ assistance, corrections and evidence using the
 - [ ] Exit test and teach-back reviewed; critical misconceptions corrected.
 - [ ] Hardware-dependent work still pending is explicitly identified.
 - [ ] Weekly review links the evidence; status changes have supporting records.
+
+## Connection to the next module
+
+Continue to [essential mathematics](03-essential-mathematics.md) after the exit
+test.

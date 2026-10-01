@@ -1,0 +1,1447 @@
+{
+  "reviewed_on": "2026-10-01",
+  "method": "Web search followed by opening exact publisher HTML/PDF/raw documentation; selective content inspection. Text/PDF extraction stayed outside the repository. HTTP checks are separate.",
+  "pages": [
+    {
+      "url": "https://docs.python.org/3/reference/datamodel.html",
+      "resolved_url": "https://docs.python.org/3/reference/datamodel.html",
+      "last_verified": "2026-09-30",
+      "verification_status": "Selected content inspected",
+      "source_ids": [
+        "py-runtime"
+      ],
+      "selected_sections": [
+        "Collection overview and linked section mapping",
+        "Objects, values and types; standard type hierarchy; callable types; context managers"
+      ],
+      "content_sha256": "8025063e127e24f0588d12d33333d436b3ff870c2b07df692774fc0a0ca9c418",
+      "review_scope": "Selective assigned content and its exclusions; not all linked chapters or executable examples."
+    },
+    {
+      "url": "https://docs.python.org/3/library/copy.html",
+      "resolved_url": "https://docs.python.org/3/library/copy.html",
+      "last_verified": "2026-09-30",
+      "verification_status": "Selected content inspected",
+      "source_ids": [
+        "py-runtime"
+      ],
+      "selected_sections": [
+        "Shallow and deep copy"
+      ],
+      "content_sha256": "3da84a7baac1b199111069b397211036806349ccb8e02176a8fe8f2587f55edc",
+      "review_scope": "Selective assigned content and its exclusions; not all linked chapters or executable examples."
+    },
+    {
+      "url": "https://docs.python.org/3/library/typing.html",
+      "resolved_url": "https://docs.python.org/3/library/typing.html",
+      "last_verified": "2026-09-30",
+      "verification_status": "Selected content inspected",
+      "source_ids": [
+        "py-runtime"
+      ],
+      "selected_sections": [
+        "Type aliases, callable annotations and Protocol"
+      ],
+      "content_sha256": "822804894c92adb982ce4025311fddb5d13f2dea7ae0708ee8fa33ba956fa06a",
+      "review_scope": "Selective assigned content and its exclusions; not all linked chapters or executable examples."
+    },
+    {
+      "url": "https://docs.python.org/3/library/dataclasses.html",
+      "resolved_url": "https://docs.python.org/3/library/dataclasses.html",
+      "last_verified": "2026-09-30",
+      "verification_status": "Selected content inspected",
+      "source_ids": [
+        "py-runtime"
+      ],
+      "selected_sections": [
+        "dataclass and default_factory"
+      ],
+      "content_sha256": "97567a6eeb2cb1e288a4caf058c801cdc767b0db1ebff4577381a04f3687e68e",
+      "review_scope": "Selective assigned content and its exclusions; not all linked chapters or executable examples."
+    },
+    {
+      "url": "https://docs.python.org/3/library/contextlib.html",
+      "resolved_url": "https://docs.python.org/3/library/contextlib.html",
+      "last_verified": "2026-09-30",
+      "verification_status": "Selected content inspected",
+      "source_ids": [
+        "py-runtime"
+      ],
+      "selected_sections": [
+        "contextmanager and cleanup"
+      ],
+      "content_sha256": "279214cd34f35dbc6f01b38c7c751fac5a9a4dd7499e89ab32572ceb912df7d3",
+      "review_scope": "Selective assigned content and its exclusions; not all linked chapters or executable examples."
+    },
+    {
+      "url": "https://docs.python.org/3/library/asyncio-task.html",
+      "resolved_url": "https://docs.python.org/3/library/asyncio-task.html",
+      "last_verified": "2026-09-30",
+      "verification_status": "Selected content inspected",
+      "source_ids": [
+        "py-runtime"
+      ],
+      "selected_sections": [
+        "Coroutines, tasks, TaskGroup, cancellation and blocking calls"
+      ],
+      "content_sha256": "41ffa585e08bbd29082d3eade14cb8bc09e0d782e81a3e9888231bf73baa7a99",
+      "review_scope": "Selective assigned content and its exclusions; not all linked chapters or executable examples."
+    },
+    {
+      "url": "https://docs.python.org/3/library/threading.html",
+      "resolved_url": "https://docs.python.org/3/library/threading.html",
+      "last_verified": "2026-09-30",
+      "verification_status": "Selected content inspected",
+      "source_ids": [
+        "py-runtime"
+      ],
+      "selected_sections": [
+        "Thread objects, locks and GIL/free-threaded notes"
+      ],
+      "content_sha256": "747d0a56b9d5172b4bdc3be028b9922bba8a01a4053ff4e75eb51cbd61fa5d7a",
+      "review_scope": "Selective assigned content and its exclusions; not all linked chapters or executable examples."
+    },
+    {
+      "url": "https://docs.python.org/3/library/multiprocessing.html",
+      "resolved_url": "https://docs.python.org/3/library/multiprocessing.html",
+      "last_verified": "2026-09-30",
+      "verification_status": "Selected content inspected",
+      "source_ids": [
+        "py-runtime"
+      ],
+      "selected_sections": [
+        "Process, Pool, start methods and programming guidelines"
+      ],
+      "content_sha256": "0a17b290409a9de28f95bf95a95cf4f5502e8173f8db28f9e01e49d6a99a3165",
+      "review_scope": "Selective assigned content and its exclusions; not all linked chapters or executable examples."
+    },
+    {
+      "url": "https://docs.python.org/3/library/concurrent.futures.html",
+      "resolved_url": "https://docs.python.org/3/library/concurrent.futures.html",
+      "last_verified": "2026-09-30",
+      "verification_status": "Selected content inspected",
+      "source_ids": [
+        "py-runtime"
+      ],
+      "selected_sections": [
+        "ThreadPoolExecutor, ProcessPoolExecutor, exceptions and deadlocks"
+      ],
+      "content_sha256": "5a161eda18dd3306439e95a667b62e2b88f6a61480d156b9a074f4f678be5cf8",
+      "review_scope": "Selective assigned content and its exclusions; not all linked chapters or executable examples."
+    },
+    {
+      "url": "https://docs.python.org/3/library/profile.html",
+      "resolved_url": "https://docs.python.org/3/library/profile.html",
+      "last_verified": "2026-09-30",
+      "verification_status": "Selected content inspected",
+      "source_ids": [
+        "py-runtime",
+        "p2-m6-python"
+      ],
+      "selected_sections": [
+        "cProfile and interpreting statistics",
+        "Collection overview and linked section mapping",
+        "Introduction; cProfile; pstats cumulative and internal time"
+      ],
+      "content_sha256": "d73e588cd558661aa248157cac0be8597fed037c5d6f3c75ef2f1d237710ddda",
+      "review_scope": "Selective assigned content and its exclusions; not all linked chapters or executable examples."
+    },
+    {
+      "url": "https://docs.python.org/3/library/tracemalloc.html",
+      "resolved_url": "https://docs.python.org/3/library/tracemalloc.html",
+      "last_verified": "2026-09-30",
+      "verification_status": "Selected content inspected",
+      "source_ids": [
+        "py-runtime"
+      ],
+      "selected_sections": [
+        "Snapshots, statistics and traceback comparison"
+      ],
+      "content_sha256": "a0c6ffd0e8655bf0dbbda944bc1dc967d31d00ae106ee3416eb37391dd7eaeca",
+      "review_scope": "Selective assigned content and its exclusions; not all linked chapters or executable examples."
+    },
+    {
+      "url": "https://docs.python.org/3/library/logging.html",
+      "resolved_url": "https://docs.python.org/3/library/logging.html",
+      "last_verified": "2026-09-30",
+      "verification_status": "Selected content inspected",
+      "source_ids": [
+        "py-runtime"
+      ],
+      "selected_sections": [
+        "Logger, levels and handlers"
+      ],
+      "content_sha256": "ba28475c6502a5fd7d0c2217a173904ca35d43f128a366cd9bb01f4e2caad16a",
+      "review_scope": "Selective assigned content and its exclusions; not all linked chapters or executable examples."
+    },
+    {
+      "url": "https://docs.python.org/3/reference/compound_stmts.html",
+      "resolved_url": "https://docs.python.org/3/reference/compound_stmts.html",
+      "last_verified": "2026-09-30",
+      "verification_status": "Selected content inspected",
+      "source_ids": [
+        "py-runtime"
+      ],
+      "selected_sections": [
+        "Function definitions: decorators and closure behaviour"
+      ],
+      "content_sha256": "78e298530844ec09016ace57e1dcb8a15d6d55789924278a87fb0e21f5b4efab",
+      "review_scope": "Selective assigned content and its exclusions; not all linked chapters or executable examples."
+    },
+    {
+      "url": "https://docs.python.org/3/library/time.html",
+      "resolved_url": "https://docs.python.org/3/library/time.html",
+      "last_verified": "2026-09-30",
+      "verification_status": "Selected content inspected",
+      "source_ids": [
+        "py-runtime"
+      ],
+      "selected_sections": [
+        "perf_counter, process_time and clock measurement boundaries"
+      ],
+      "content_sha256": "9f6cba4d6cd887d8a44e49bc5ba299e2eeee08541b33a0a05a63ad8c24f30acb",
+      "review_scope": "Selective assigned content and its exclusions; not all linked chapters or executable examples."
+    },
+    {
+      "url": "https://docs.python.org/3/tutorial/index.html",
+      "resolved_url": "https://docs.python.org/3/tutorial/index.html",
+      "last_verified": "2026-09-30",
+      "verification_status": "Selected content inspected",
+      "source_ids": [
+        "py-tutorial"
+      ],
+      "selected_sections": [
+        "Collection overview and linked section mapping"
+      ],
+      "content_sha256": "bbbfa30c07aafd9f9904a895a018876dbcb6faa68eaa29b7f48e8f19d0799419",
+      "review_scope": "Selective assigned content and its exclusions; not all linked chapters or executable examples."
+    },
+    {
+      "url": "https://docs.python.org/3/tutorial/controlflow.html",
+      "resolved_url": "https://docs.python.org/3/tutorial/controlflow.html",
+      "last_verified": "2026-09-30",
+      "verification_status": "Selected content inspected",
+      "source_ids": [
+        "py-tutorial"
+      ],
+      "selected_sections": [
+        "Defining functions; default arguments; lambda expressions; function annotations"
+      ],
+      "content_sha256": "a7dcdfc7664f81dbd678c6fd6bca537424db8ebc8da1c9dc2315ac74c2532b9e",
+      "review_scope": "Selective assigned content and its exclusions; not all linked chapters or executable examples."
+    },
+    {
+      "url": "https://docs.python.org/3/tutorial/modules.html",
+      "resolved_url": "https://docs.python.org/3/tutorial/modules.html",
+      "last_verified": "2026-09-30",
+      "verification_status": "Selected content inspected",
+      "source_ids": [
+        "py-tutorial"
+      ],
+      "selected_sections": [
+        "Modules, packages and import paths"
+      ],
+      "content_sha256": "23006c584e3023d13f30927f19ef0e3dfa2120851ed84b01e6cb6cc79c0b0a18",
+      "review_scope": "Selective assigned content and its exclusions; not all linked chapters or executable examples."
+    },
+    {
+      "url": "https://docs.python.org/3/tutorial/errors.html",
+      "resolved_url": "https://docs.python.org/3/tutorial/errors.html",
+      "last_verified": "2026-09-30",
+      "verification_status": "Selected content inspected",
+      "source_ids": [
+        "py-tutorial"
+      ],
+      "selected_sections": [
+        "Handling exceptions, raising and cleanup"
+      ],
+      "content_sha256": "12883a50682775cd85e8fe1a287ea25cf7adcfadbdffa3703947af68886c91d7",
+      "review_scope": "Selective assigned content and its exclusions; not all linked chapters or executable examples."
+    },
+    {
+      "url": "https://docs.python.org/3/tutorial/classes.html",
+      "resolved_url": "https://docs.python.org/3/tutorial/classes.html",
+      "last_verified": "2026-09-30",
+      "verification_status": "Selected content inspected",
+      "source_ids": [
+        "py-tutorial"
+      ],
+      "selected_sections": [
+        "Scopes and namespaces; iterators; generators; generator expressions"
+      ],
+      "content_sha256": "2ba659b975c09ccbae3bbbcd8b88fb96feca262c82de7a82c863017c5fcef3f9",
+      "review_scope": "Selective assigned content and its exclusions; not all linked chapters or executable examples."
+    },
+    {
+      "url": "https://docs.python.org/3/tutorial/venv.html",
+      "resolved_url": "https://docs.python.org/3/tutorial/venv.html",
+      "last_verified": "2026-09-30",
+      "verification_status": "Selected content inspected",
+      "source_ids": [
+        "py-tutorial"
+      ],
+      "selected_sections": [
+        "Creating virtual environments and managing packages"
+      ],
+      "content_sha256": "a9f98e3dbdbc381f980a84db708b05e24c8eeb5a1632e53ec8cd09437fceae0e",
+      "review_scope": "Selective assigned content and its exclusions; not all linked chapters or executable examples."
+    },
+    {
+      "url": "https://docs.pytest.org/en/stable/getting-started.html",
+      "resolved_url": "https://docs.pytest.org/en/stable/getting-started.html",
+      "last_verified": "2026-09-30",
+      "verification_status": "Selected content inspected",
+      "source_ids": [
+        "py-pytest"
+      ],
+      "selected_sections": [
+        "Collection overview and linked section mapping",
+        "First test, assertions and test discovery"
+      ],
+      "content_sha256": "ba1185485588dd91b3befc28c7f1e1a0459c8bab93e061b3dcaf87a019b31d54",
+      "review_scope": "Selective assigned content and its exclusions; not all linked chapters or executable examples."
+    },
+    {
+      "url": "https://docs.pytest.org/en/stable/how-to/fixtures.html",
+      "resolved_url": "https://docs.pytest.org/en/stable/how-to/fixtures.html",
+      "last_verified": "2026-09-30",
+      "verification_status": "Selected content inspected",
+      "source_ids": [
+        "py-pytest"
+      ],
+      "selected_sections": [
+        "Requesting fixtures; scope; yield teardown"
+      ],
+      "content_sha256": "039d25a7280934f7ebf90374ef74282c7515cd3f7d1b30a260fcdc3312e6bc9b",
+      "review_scope": "Selective assigned content and its exclusions; not all linked chapters or executable examples."
+    },
+    {
+      "url": "https://packaging.python.org/en/latest/guides/writing-pyproject-toml/",
+      "resolved_url": "https://packaging.python.org/en/latest/guides/writing-pyproject-toml/",
+      "last_verified": "2026-09-30",
+      "verification_status": "Selected content inspected",
+      "source_ids": [
+        "py-packaging"
+      ],
+      "selected_sections": [
+        "Collection overview and linked section mapping",
+        "Build backend, project metadata, dependencies and scripts"
+      ],
+      "content_sha256": "54f37c05e12880259433299031cad78b259b237600e75bd55e0ac03b3d3e15f3",
+      "review_scope": "Selective assigned content and its exclusions; not all linked chapters or executable examples."
+    },
+    {
+      "url": "https://numpy.org/doc/stable/user/quickstart.html",
+      "resolved_url": "https://numpy.org/doc/stable/user/quickstart.html",
+      "last_verified": "2026-09-30",
+      "verification_status": "Selected content inspected",
+      "source_ids": [
+        "np-quickstart"
+      ],
+      "selected_sections": [
+        "Collection overview and linked section mapping",
+        "Basics; basic operations; universal functions; indexing; shape manipulation"
+      ],
+      "content_sha256": "04b5b9a91d547b9075f2ca745763d3cbcaf36abeda905c4b36611263e9e48a04",
+      "review_scope": "Selective assigned content and its exclusions; not all linked chapters or executable examples."
+    },
+    {
+      "url": "https://numpy.org/doc/stable/reference/arrays.ndarray.html",
+      "resolved_url": "https://numpy.org/doc/stable/reference/arrays.ndarray.html",
+      "last_verified": "2026-09-30",
+      "verification_status": "Selected content inspected",
+      "source_ids": [
+        "np-quickstart"
+      ],
+      "selected_sections": [
+        "Constructing arrays; internal memory layout; attributes; array methods"
+      ],
+      "content_sha256": "66aaf1c752d17f483360a6955af1202f699aaf3fe8dbe5bf1b7e24e8216b6ae3",
+      "review_scope": "Selective assigned content and its exclusions; not all linked chapters or executable examples."
+    },
+    {
+      "url": "https://numpy.org/doc/stable/user/basics.broadcasting.html",
+      "resolved_url": "https://numpy.org/doc/stable/user/basics.broadcasting.html",
+      "last_verified": "2026-09-30",
+      "verification_status": "Selected content inspected",
+      "source_ids": [
+        "np-broadcast"
+      ],
+      "selected_sections": [
+        "Collection overview and linked section mapping",
+        "General broadcasting rules and memory-inefficient cases"
+      ],
+      "content_sha256": "127e09d886ec1360109e633adeb38931f73ff39e1dd958fc69d2cfeecb4b564d",
+      "review_scope": "Selective assigned content and its exclusions; not all linked chapters or executable examples."
+    },
+    {
+      "url": "https://numpy.org/doc/stable/user/basics.copies.html",
+      "resolved_url": "https://numpy.org/doc/stable/user/basics.copies.html",
+      "last_verified": "2026-09-30",
+      "verification_status": "Selected content inspected",
+      "source_ids": [
+        "np-views"
+      ],
+      "selected_sections": [
+        "Collection overview and linked section mapping",
+        "View, copy, indexing and other operations"
+      ],
+      "content_sha256": "2b4b28bf09e3c8964953e1e1535d815f8fec1d3b078d78d7491bc1f9ef0e28e4",
+      "review_scope": "Selective assigned content and its exclusions; not all linked chapters or executable examples."
+    },
+    {
+      "url": "https://numpy.org/doc/stable/user/basics.types.html",
+      "resolved_url": "https://numpy.org/doc/stable/user/basics.types.html",
+      "last_verified": "2026-09-30",
+      "verification_status": "Selected content inspected",
+      "source_ids": [
+        "np-types"
+      ],
+      "selected_sections": [
+        "Collection overview and linked section mapping",
+        "Array types; fixed-size types; overflow; extended precision"
+      ],
+      "content_sha256": "d9002188e41a338e2751163da35c4d2e788d6de81a80e5cc24db46f5acd10e7b",
+      "review_scope": "Selective assigned content and its exclusions; not all linked chapters or executable examples."
+    },
+    {
+      "url": "https://d2l.ai/chapter_preliminaries/linear-algebra.html",
+      "resolved_url": "https://d2l.ai/chapter_preliminaries/linear-algebra.html",
+      "last_verified": "2026-09-30",
+      "verification_status": "Selected content inspected",
+      "source_ids": [
+        "math-prelim"
+      ],
+      "selected_sections": [
+        "Collection overview and linked section mapping",
+        "Scalars through norms; matrix products and transposes"
+      ],
+      "content_sha256": "0a136bf710d26744e0f0357b6e1afe5db9b29a088c898ea703a3a3566c1dbc35",
+      "review_scope": "Selective assigned content and its exclusions; not all linked chapters or executable examples."
+    },
+    {
+      "url": "https://d2l.ai/chapter_preliminaries/calculus.html",
+      "resolved_url": "https://d2l.ai/chapter_preliminaries/calculus.html",
+      "last_verified": "2026-09-30",
+      "verification_status": "Selected content inspected",
+      "source_ids": [
+        "math-prelim"
+      ],
+      "selected_sections": [
+        "Derivatives; partial derivatives; gradients; chain rule"
+      ],
+      "content_sha256": "2b09df392e225edc8b96b6aa4f4f67383a2f09a7d711b93900cd2c953d7c04d1",
+      "review_scope": "Selective assigned content and its exclusions; not all linked chapters or executable examples."
+    },
+    {
+      "url": "https://d2l.ai/chapter_preliminaries/probability.html",
+      "resolved_url": "https://d2l.ai/chapter_preliminaries/probability.html",
+      "last_verified": "2026-09-30",
+      "verification_status": "Selected content inspected",
+      "source_ids": [
+        "math-prelim"
+      ],
+      "selected_sections": [
+        "Random variables; distributions; expectations and variance"
+      ],
+      "content_sha256": "2c3fa604a4538f10d4a10de53611b4deb415b85819c02b6fafb3095c932f11f4",
+      "review_scope": "Selective assigned content and its exclusions; not all linked chapters or executable examples."
+    },
+    {
+      "url": "https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/resources/lecture-9-independence-basis-and-dimension/",
+      "resolved_url": "https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/resources/lecture-9-independence-basis-and-dimension/",
+      "last_verified": "2026-09-30",
+      "verification_status": "Selected content inspected",
+      "source_ids": [
+        "math-mit"
+      ],
+      "selected_sections": [
+        "Collection overview and linked section mapping"
+      ],
+      "content_sha256": "73c998dc3ae8c126eb638caf43e47f2be5aceed910bb0a2cb0a47e375fb43828",
+      "review_scope": "Selective assigned content and its exclusions; not all linked chapters or executable examples."
+    },
+    {
+      "url": "https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/36ad03fa0fce88a4b97f846156c11b8b_yjBerM5jWsc.pdf",
+      "resolved_url": "https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/36ad03fa0fce88a4b97f846156c11b8b_yjBerM5jWsc.pdf",
+      "last_verified": "2026-09-30",
+      "verification_status": "Selected content inspected",
+      "source_ids": [
+        "math-mit"
+      ],
+      "selected_sections": [
+        "PDF pp. 1\u20138: independence, basis, dimension and rank"
+      ],
+      "content_sha256": "b1d8abefaa2830242c2ad73b623227ab9f09b253f87cdbe99477ae94371c4c75",
+      "review_scope": "Selective assigned content and its exclusions; not all linked chapters or executable examples."
+    },
+    {
+      "url": "https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/96a31504ec5d489d84113320b593eb0d_Y_Ac6KiQ1t0.pdf",
+      "resolved_url": "https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/96a31504ec5d489d84113320b593eb0d_Y_Ac6KiQ1t0.pdf",
+      "last_verified": "2026-09-30",
+      "verification_status": "Selected content inspected",
+      "source_ids": [
+        "math-mit"
+      ],
+      "selected_sections": [
+        "PDF pp. 1\u20133: orthogonality and projection geometry"
+      ],
+      "content_sha256": "e0b6901d142b23f75f2d29936bfbfe86c87d1e0462e56cf0b01a668441c242f1",
+      "review_scope": "Selective assigned content and its exclusions; not all linked chapters or executable examples."
+    },
+    {
+      "url": "https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/8d0f7baefcedee6596eaab43c55122fe_cdZnhQjJu4I.pdf",
+      "resolved_url": "https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/8d0f7baefcedee6596eaab43c55122fe_cdZnhQjJu4I.pdf",
+      "last_verified": "2026-09-30",
+      "verification_status": "Selected content inspected",
+      "source_ids": [
+        "math-mit"
+      ],
+      "selected_sections": [
+        "PDF pp. 1\u20133: eigenvector direction and eigenvalue scale"
+      ],
+      "content_sha256": "ff7c417148a78a33d3f11e157267b7dc9de8a17b94473d8dd206f22a0226ed6d",
+      "review_scope": "Selective assigned content and its exclusions; not all linked chapters or executable examples."
+    },
+    {
+      "url": "https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/0f4d618b79d74403afcbaef310117f03_TX_vooSnhm8.pdf",
+      "resolved_url": "https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/0f4d618b79d74403afcbaef310117f03_TX_vooSnhm8.pdf",
+      "last_verified": "2026-09-30",
+      "verification_status": "Selected content inspected",
+      "source_ids": [
+        "math-mit"
+      ],
+      "selected_sections": [
+        "PDF pp. 1\u20133: SVD factors and geometric interpretation"
+      ],
+      "content_sha256": "b206a7dcbc1f832f0ce5ae16f886dc97331bf3482d21c55d3398b8ae854ae8e9",
+      "review_scope": "Selective assigned content and its exclusions; not all linked chapters or executable examples."
+    },
+    {
+      "url": "https://d2l.ai/chapter_linear-classification/softmax-regression.html",
+      "resolved_url": "https://d2l.ai/chapter_linear-classification/softmax-regression.html",
+      "last_verified": "2026-09-30",
+      "verification_status": "Selected content inspected",
+      "source_ids": [
+        "math-softmax",
+        "nn-classification"
+      ],
+      "selected_sections": [
+        "Collection overview and linked section mapping",
+        "Classification, softmax and log-likelihood",
+        "Classification and cross-entropy connection"
+      ],
+      "content_sha256": "3f1ee9250eab8c8bdd2b421d3c209a48b2ae982d144efab34d0a5e10922926a2",
+      "review_scope": "Selective assigned content and its exclusions; not all linked chapters or executable examples."
+    },
+    {
+      "url": "https://d2l.ai/chapter_linear-classification/softmax-regression-concise.html",
+      "resolved_url": "https://d2l.ai/chapter_linear-classification/softmax-regression-concise.html",
+      "last_verified": "2026-09-30",
+      "verification_status": "Selected content inspected",
+      "source_ids": [
+        "math-softmax"
+      ],
+      "selected_sections": [
+        "Softmax numerical stability"
+      ],
+      "content_sha256": "0de3a93e7b683bc8a52aaa052fad9de35d8c25baef9b020c5e95204bb9e53595",
+      "review_scope": "Selective assigned content and its exclusions; not all linked chapters or executable examples."
+    },
+    {
+      "url": "https://docs.python.org/3/tutorial/floatingpoint.html",
+      "resolved_url": "https://docs.python.org/3/tutorial/floatingpoint.html",
+      "last_verified": "2026-09-30",
+      "verification_status": "Selected content inspected",
+      "source_ids": [
+        "math-float"
+      ],
+      "selected_sections": [
+        "Collection overview and linked section mapping",
+        "Representation error; comparisons; accurate summation"
+      ],
+      "content_sha256": "a6f561d1c2e15f5e3bc4d9b450f3ea2b15981b102fba26280eed6540e2f07369",
+      "review_scope": "Selective assigned content and its exclusions; not all linked chapters or executable examples."
+    },
+    {
+      "url": "https://docs.pytorch.org/tutorials/beginner/basics/intro.html",
+      "resolved_url": "https://docs.pytorch.org/tutorials/beginner/basics/intro.html",
+      "last_verified": "2026-09-30",
+      "verification_status": "Selected content inspected",
+      "source_ids": [
+        "pt-basics"
+      ],
+      "selected_sections": [
+        "Collection overview and linked section mapping"
+      ],
+      "content_sha256": "b2057a5a9ed7b7d874a480d2f474382a8867be4df9d67dfc07b7c474b8d9e12a",
+      "review_scope": "Selective assigned content and its exclusions; not all linked chapters or executable examples."
+    },
+    {
+      "url": "https://pytorch.org/get-started/locally/",
+      "resolved_url": "https://pytorch.org/get-started/locally/",
+      "last_verified": "2026-09-30",
+      "verification_status": "Selected content inspected",
+      "source_ids": [
+        "pt-basics"
+      ],
+      "selected_sections": [
+        "Choose supported build and verify installation"
+      ],
+      "content_sha256": "1a2b2017768ff6569b4118c252dfe7280437e99a7cf59daa668c72ec118cd5e0",
+      "review_scope": "Selective assigned content and its exclusions; not all linked chapters or executable examples."
+    },
+    {
+      "url": "https://docs.pytorch.org/tutorials/beginner/basics/tensorqs_tutorial.html",
+      "resolved_url": "https://docs.pytorch.org/tutorials/beginner/basics/tensorqs_tutorial.html",
+      "last_verified": "2026-09-30",
+      "verification_status": "Selected content inspected",
+      "source_ids": [
+        "pt-basics"
+      ],
+      "selected_sections": [
+        "Tensor attributes, operations, device moves and NumPy sharing"
+      ],
+      "content_sha256": "38b6d770bea3874b70cdc5e61e1d0a11ac82c8fd7a9f8c4d7255721714ae4973",
+      "review_scope": "Selective assigned content and its exclusions; not all linked chapters or executable examples."
+    },
+    {
+      "url": "https://docs.pytorch.org/tutorials/beginner/basics/data_tutorial.html",
+      "resolved_url": "https://docs.pytorch.org/tutorials/beginner/basics/data_tutorial.html",
+      "last_verified": "2026-09-30",
+      "verification_status": "Selected content inspected",
+      "source_ids": [
+        "pt-basics"
+      ],
+      "selected_sections": [
+        "Dataset and DataLoader basics"
+      ],
+      "content_sha256": "618d1e01a4ff4f9e75a993b34f4555cb4d22be8ba6d8b047007d6567dcda06d7",
+      "review_scope": "Selective assigned content and its exclusions; not all linked chapters or executable examples."
+    },
+    {
+      "url": "https://docs.pytorch.org/tutorials/beginner/basics/buildmodel_tutorial.html",
+      "resolved_url": "https://docs.pytorch.org/tutorials/beginner/basics/buildmodel_tutorial.html",
+      "last_verified": "2026-09-30",
+      "verification_status": "Selected content inspected",
+      "source_ids": [
+        "pt-basics"
+      ],
+      "selected_sections": [
+        "nn.Module, layers and parameters"
+      ],
+      "content_sha256": "465a57ce096c5ae03740e5bc1078da9a9f62d0442c6a797d28a49fdd26cb3a18",
+      "review_scope": "Selective assigned content and its exclusions; not all linked chapters or executable examples."
+    },
+    {
+      "url": "https://docs.pytorch.org/tutorials/beginner/basics/autogradqs_tutorial.html",
+      "resolved_url": "https://docs.pytorch.org/tutorials/beginner/basics/autogradqs_tutorial.html",
+      "last_verified": "2026-09-30",
+      "verification_status": "Selected content inspected",
+      "source_ids": [
+        "pt-basics"
+      ],
+      "selected_sections": [
+        "Computational graph, gradients and disabling tracking"
+      ],
+      "content_sha256": "b42d9bea74474cfb58be5e8366c5f6ddf5f8d37332d0efff41fe26452cae3e8a",
+      "review_scope": "Selective assigned content and its exclusions; not all linked chapters or executable examples."
+    },
+    {
+      "url": "https://docs.pytorch.org/tutorials/beginner/basics/optimization_tutorial.html",
+      "resolved_url": "https://docs.pytorch.org/tutorials/beginner/basics/optimization_tutorial.html",
+      "last_verified": "2026-09-30",
+      "verification_status": "Selected content inspected",
+      "source_ids": [
+        "pt-basics",
+        "nn-loop"
+      ],
+      "selected_sections": [
+        "Loss, learning rate, zero_grad, backward and step",
+        "Collection overview and linked section mapping",
+        "Hyperparameters; loss; optimizer; train and test loops"
+      ],
+      "content_sha256": "2b30ccd29dae2c2e30c94e7b4ee51cd43bfbe2cd437c4c56897f118b2431760f",
+      "review_scope": "Selective assigned content and its exclusions; not all linked chapters or executable examples."
+    },
+    {
+      "url": "https://docs.pytorch.org/tutorials/beginner/basics/saveloadrun_tutorial.html",
+      "resolved_url": "https://docs.pytorch.org/tutorials/beginner/basics/saveloadrun_tutorial.html",
+      "last_verified": "2026-09-30",
+      "verification_status": "Selected content inspected",
+      "source_ids": [
+        "pt-basics"
+      ],
+      "selected_sections": [
+        "state_dict saving, loading and model.eval"
+      ],
+      "content_sha256": "d339c258aef7abfde9eb11fd5ca9ab913d9c59d84616a8482bc47e5a15101f96",
+      "review_scope": "Selective assigned content and its exclusions; not all linked chapters or executable examples."
+    },
+    {
+      "url": "https://docs.pytorch.org/docs/2.14/generated/torch.Tensor.stride.html",
+      "resolved_url": "https://docs.pytorch.org/docs/2.14/generated/torch.Tensor.stride.html",
+      "last_verified": "2026-09-30",
+      "verification_status": "Selected content inspected",
+      "source_ids": [
+        "pt-basics"
+      ],
+      "selected_sections": [
+        "Tensor.stride definition and example; compare element strides with NumPy byte strides"
+      ],
+      "content_sha256": "ed649596e8a6c3ab17c08367eea9e3c6c416377f072e122cbbc9f66c9d502d7f",
+      "review_scope": "Selective assigned content and its exclusions; not all linked chapters or executable examples."
+    },
+    {
+      "url": "https://docs.pytorch.org/docs/2.14/notes/autograd.html",
+      "resolved_url": "https://docs.pytorch.org/docs/2.14/notes/autograd.html",
+      "last_verified": "2026-09-30",
+      "verification_status": "Selected content inspected",
+      "source_ids": [
+        "pt-autograd"
+      ],
+      "selected_sections": [
+        "Collection overview and linked section mapping",
+        "Locally disabling gradient computation; no-grad; inference mode; evaluation mode"
+      ],
+      "content_sha256": "b6be53d442d8469eb9b34cc94a1a9ddf324545fc8653717519868b302fea637a",
+      "review_scope": "Selective assigned content and its exclusions; not all linked chapters or executable examples."
+    },
+    {
+      "url": "https://docs.pytorch.org/docs/2.14/generated/torch.autograd.grad_mode.inference_mode.html",
+      "resolved_url": "https://docs.pytorch.org/docs/2.14/generated/torch.autograd.grad_mode.inference_mode.html",
+      "last_verified": "2026-09-30",
+      "verification_status": "Selected content inspected",
+      "source_ids": [
+        "pt-autograd"
+      ],
+      "selected_sections": [
+        "Restrictions and example"
+      ],
+      "content_sha256": "4404976f7b68fe1aa30f4a82c59507052acfc9d3beef049c6383e6c9ccf41584",
+      "review_scope": "Selective assigned content and its exclusions; not all linked chapters or executable examples."
+    },
+    {
+      "url": "https://docs.pytorch.org/tutorials/recipes/recipes/profiler_recipe.html",
+      "resolved_url": "https://docs.pytorch.org/tutorials/recipes/recipes/profiler_recipe.html",
+      "last_verified": "2026-09-30",
+      "verification_status": "Selected content inspected",
+      "source_ids": [
+        "pt-performance",
+        "p2-m6-profiler"
+      ],
+      "selected_sections": [
+        "Collection overview and linked section mapping",
+        "CPU activity, CUDA activity and memory profiling",
+        "Execution time; memory consumption; tracing; profiler schedules"
+      ],
+      "content_sha256": "decf6230d24bdf49d7da1855130ece04efc31093480d48f3f965b9d86c1ad710",
+      "review_scope": "Selective assigned content and its exclusions; not all linked chapters or executable examples."
+    },
+    {
+      "url": "https://docs.pytorch.org/docs/2.14/generated/torch.compile.html",
+      "resolved_url": "https://docs.pytorch.org/docs/2.14/generated/torch.compile.html",
+      "last_verified": "2026-09-30",
+      "verification_status": "Selected content inspected",
+      "source_ids": [
+        "pt-performance"
+      ],
+      "selected_sections": [
+        "Basic callable wrapping; compilation overhead and modes"
+      ],
+      "content_sha256": "59c3f28f0b854ae2c38e63be51cd517facbbb12539aaa47050dd18547be20dc5",
+      "review_scope": "Selective assigned content and its exclusions; not all linked chapters or executable examples."
+    },
+    {
+      "url": "https://docs.pytorch.org/docs/2.14/amp.html",
+      "resolved_url": "https://docs.pytorch.org/docs/2.14/amp.html",
+      "last_verified": "2026-09-30",
+      "verification_status": "Selected content inspected",
+      "source_ids": [
+        "pt-performance"
+      ],
+      "selected_sections": [
+        "autocast; gradient scaling purpose; supported device/dtype caveats"
+      ],
+      "content_sha256": "db70e81f5766601f2ef34cccb9dcb917047c613a098917f6c76b1dd997f70aad",
+      "review_scope": "Selective assigned content and its exclusions; not all linked chapters or executable examples."
+    },
+    {
+      "url": "https://docs.pytorch.org/docs/2.14/notes/cuda.html",
+      "resolved_url": "https://docs.pytorch.org/docs/2.14/notes/cuda.html",
+      "last_verified": "2026-09-30",
+      "verification_status": "Selected content inspected",
+      "source_ids": [
+        "pt-cuda",
+        "gpu-memory",
+        "p2-m3-cuda",
+        "p2-m5-cuda",
+        "p2-m6-cuda"
+      ],
+      "selected_sections": [
+        "Collection overview and linked section mapping",
+        "Asynchronous execution; CUDA events; memory management; allocated and reserved memory",
+        "Memory management; memory_allocated; memory_reserved; empty_cache",
+        "Asynchronous execution; memory management; memory statistics"
+      ],
+      "content_sha256": "6c2d669a84c5e9827f6ef518e97b722227aa1d1509707688b8052da0eada2828",
+      "review_scope": "Selective assigned content and its exclusions; not all linked chapters or executable examples."
+    },
+    {
+      "url": "https://docs.pytorch.org/docs/2.14/notes/mps.html",
+      "resolved_url": "https://docs.pytorch.org/docs/2.14/notes/mps.html",
+      "last_verified": "2026-09-30",
+      "verification_status": "Selected content inspected",
+      "source_ids": [
+        "pt-cuda"
+      ],
+      "selected_sections": [
+        "Availability and moving tensors/modules to MPS"
+      ],
+      "content_sha256": "f708486dec382599e51eab6898559d31cac5657ace94dda6580885de7bf68ddf",
+      "review_scope": "Selective assigned content and its exclusions; not all linked chapters or executable examples."
+    },
+    {
+      "url": "https://docs.pytorch.org/docs/2.14/mps.html",
+      "resolved_url": "https://docs.pytorch.org/docs/2.14/mps.html",
+      "last_verified": "2026-09-30",
+      "verification_status": "Selected content inspected",
+      "source_ids": [
+        "pt-cuda"
+      ],
+      "selected_sections": [
+        "synchronize; current_allocated_memory; driver_allocated_memory"
+      ],
+      "content_sha256": "b64c0e7b3a517aed1cc7f7453bdd70b4415fd9b7c2ab88879819ff58ed886c44",
+      "review_scope": "Selective assigned content and its exclusions; not all linked chapters or executable examples."
+    },
+    {
+      "url": "https://d2l.ai/chapter_linear-regression/linear-regression.html",
+      "resolved_url": "https://d2l.ai/chapter_linear-regression/linear-regression.html",
+      "last_verified": "2026-09-30",
+      "verification_status": "Selected content inspected",
+      "source_ids": [
+        "nn-linear"
+      ],
+      "selected_sections": [
+        "Collection overview and linked section mapping",
+        "Model, loss, minibatch stochastic gradient descent and predictions"
+      ],
+      "content_sha256": "8a32c21603b64a931e2f72da3872fb4c8ecde1df116487ae9c68e61660a11e22",
+      "review_scope": "Selective assigned content and its exclusions; not all linked chapters or executable examples."
+    },
+    {
+      "url": "https://d2l.ai/chapter_multilayer-perceptrons/mlp.html",
+      "resolved_url": "https://d2l.ai/chapter_multilayer-perceptrons/mlp.html",
+      "last_verified": "2026-09-30",
+      "verification_status": "Selected content inspected",
+      "source_ids": [
+        "nn-mlp"
+      ],
+      "selected_sections": [
+        "Collection overview and linked section mapping",
+        "Hidden layers; activation functions; linear and nonlinear models"
+      ],
+      "content_sha256": "8464b640564f85bdc9aaabb1f2a2a397c6643e1e1063fb30bd5ebe86b7730e54",
+      "review_scope": "Selective assigned content and its exclusions; not all linked chapters or executable examples."
+    },
+    {
+      "url": "https://d2l.ai/chapter_linear-regression/generalization.html",
+      "resolved_url": "https://d2l.ai/chapter_linear-regression/generalization.html",
+      "last_verified": "2026-09-30",
+      "verification_status": "Selected content inspected",
+      "source_ids": [
+        "nn-mlp"
+      ],
+      "selected_sections": [
+        "Overfitting; model complexity; train/validation separation"
+      ],
+      "content_sha256": "a62ae045288326993a2be79b46ce03a65be8a2fa13806873289309cb9ce62bfc",
+      "review_scope": "Selective assigned content and its exclusions; not all linked chapters or executable examples."
+    },
+    {
+      "url": "https://d2l.ai/chapter_linear-regression/weight-decay.html",
+      "resolved_url": "https://d2l.ai/chapter_linear-regression/weight-decay.html",
+      "last_verified": "2026-09-30",
+      "verification_status": "Selected content inspected",
+      "source_ids": [
+        "nn-mlp"
+      ],
+      "selected_sections": [
+        "L2 regularization concept"
+      ],
+      "content_sha256": "e93d68bddeda237aa746aa1b95d8fd03a462b69cd93975dca8a9f8d8b1004aa6",
+      "review_scope": "Selective assigned content and its exclusions; not all linked chapters or executable examples."
+    },
+    {
+      "url": "https://d2l.ai/chapter_multilayer-perceptrons/backprop.html",
+      "resolved_url": "https://d2l.ai/chapter_multilayer-perceptrons/backprop.html",
+      "last_verified": "2026-09-30",
+      "verification_status": "Selected content inspected",
+      "source_ids": [
+        "nn-mlp"
+      ],
+      "selected_sections": [
+        "Forward graph; backward chain rule; intermediate storage"
+      ],
+      "content_sha256": "91d3907098370edf24e62442765060914cc2bbf4617af523eff1e4334d54ff95",
+      "review_scope": "Selective assigned content and its exclusions; not all linked chapters or executable examples."
+    },
+    {
+      "url": "https://d2l.ai/chapter_multilayer-perceptrons/numerical-stability-and-init.html",
+      "resolved_url": "https://d2l.ai/chapter_multilayer-perceptrons/numerical-stability-and-init.html",
+      "last_verified": "2026-09-30",
+      "verification_status": "Selected content inspected",
+      "source_ids": [
+        "nn-mlp"
+      ],
+      "selected_sections": [
+        "Vanishing/exploding gradients and initialization"
+      ],
+      "content_sha256": "a476be40432eb7f85a22b2a855e41f9d328f71bf7425f2dde2cdf68a60e4cfa3",
+      "review_scope": "Selective assigned content and its exclusions; not all linked chapters or executable examples."
+    },
+    {
+      "url": "https://d2l.ai/chapter_attention-mechanisms-and-transformers/transformer.html",
+      "resolved_url": "https://d2l.ai/chapter_attention-mechanisms-and-transformers/transformer.html",
+      "last_verified": "2026-09-30",
+      "verification_status": "Selected content inspected",
+      "source_ids": [
+        "tr-d2l"
+      ],
+      "selected_sections": [
+        "Collection overview and linked section mapping",
+        "Architecture; feed-forward network; residual connections; layer normalization; encoder and decoder"
+      ],
+      "content_sha256": "8f725ba1d274505b77a04b6dc85a3860f84188d7d4b104b9cd5da7b37bdfb9c3",
+      "review_scope": "Selective assigned content and its exclusions; not all linked chapters or executable examples."
+    },
+    {
+      "url": "https://d2l.ai/chapter_attention-mechanisms-and-transformers/attention-scoring-functions.html",
+      "resolved_url": "https://d2l.ai/chapter_attention-mechanisms-and-transformers/attention-scoring-functions.html",
+      "last_verified": "2026-09-30",
+      "verification_status": "Selected content inspected",
+      "source_ids": [
+        "tr-d2l"
+      ],
+      "selected_sections": [
+        "Scaled dot-product attention and masked softmax"
+      ],
+      "content_sha256": "23f41bcbbfa884456c3b9ad8ab925cdae6895a682db0d438bac48735163f7d1b",
+      "review_scope": "Selective assigned content and its exclusions; not all linked chapters or executable examples."
+    },
+    {
+      "url": "https://d2l.ai/chapter_attention-mechanisms-and-transformers/multihead-attention.html",
+      "resolved_url": "https://d2l.ai/chapter_attention-mechanisms-and-transformers/multihead-attention.html",
+      "last_verified": "2026-09-30",
+      "verification_status": "Selected content inspected",
+      "source_ids": [
+        "tr-d2l"
+      ],
+      "selected_sections": [
+        "Parallel heads and shape transformations"
+      ],
+      "content_sha256": "ab5e88c3ef94fbaed7946fed5d16c13d30dfcced9b45c39a36dbdcf8197b08ef",
+      "review_scope": "Selective assigned content and its exclusions; not all linked chapters or executable examples."
+    },
+    {
+      "url": "https://d2l.ai/chapter_attention-mechanisms-and-transformers/self-attention-and-positional-encoding.html",
+      "resolved_url": "https://d2l.ai/chapter_attention-mechanisms-and-transformers/self-attention-and-positional-encoding.html",
+      "last_verified": "2026-09-30",
+      "verification_status": "Selected content inspected",
+      "source_ids": [
+        "tr-d2l"
+      ],
+      "selected_sections": [
+        "Self-attention; positional information"
+      ],
+      "content_sha256": "798fdf67a8d8510d548c09f728d67184299f03783f267dc6e638256908128188",
+      "review_scope": "Selective assigned content and its exclusions; not all linked chapters or executable examples."
+    },
+    {
+      "url": "https://huggingface.co/learn/llm-course/chapter1/4",
+      "resolved_url": "https://huggingface.co/learn/llm-course/chapter1/4",
+      "last_verified": "2026-09-30",
+      "verification_status": "Selected content inspected",
+      "source_ids": [
+        "tr-hf"
+      ],
+      "selected_sections": [
+        "Collection overview and linked section mapping",
+        "Encoder, decoder and encoder-decoder overview"
+      ],
+      "content_sha256": "2179b3ff68c4126e47467fabdcb2ab6a897f3e539213aa1c4ca03fc60af0f070",
+      "review_scope": "Selective assigned content and its exclusions; not all linked chapters or executable examples."
+    },
+    {
+      "url": "https://huggingface.co/learn/llm-course/chapter1/6",
+      "resolved_url": "https://huggingface.co/learn/llm-course/chapter1/6",
+      "last_verified": "2026-09-30",
+      "verification_status": "Selected content inspected",
+      "source_ids": [
+        "tr-hf"
+      ],
+      "selected_sections": [
+        "Causal next-token prediction"
+      ],
+      "content_sha256": "0075fc1f957762ce12bfc9e7e8580791c421c8f7a76314ffa3e516c86071f65f",
+      "review_scope": "Selective assigned content and its exclusions; not all linked chapters or executable examples."
+    },
+    {
+      "url": "https://huggingface.co/learn/llm-course/chapter2/4",
+      "resolved_url": "https://huggingface.co/learn/llm-course/chapter2/4",
+      "last_verified": "2026-09-30",
+      "verification_status": "Selected content inspected",
+      "source_ids": [
+        "tr-hf"
+      ],
+      "selected_sections": [
+        "Vocabulary; tokenization; encoding and decoding"
+      ],
+      "content_sha256": "04e61dcdc6ee92034d59e15509e6d9c8c2be958f6b52ec7c2d9c00b235a4fcc4",
+      "review_scope": "Selective assigned content and its exclusions; not all linked chapters or executable examples."
+    },
+    {
+      "url": "https://huggingface.co/learn/llm-course/chapter2/5",
+      "resolved_url": "https://huggingface.co/learn/llm-course/chapter2/5",
+      "last_verified": "2026-09-30",
+      "verification_status": "Selected content inspected",
+      "source_ids": [
+        "tr-hf"
+      ],
+      "selected_sections": [
+        "Batching, padding, attention masks and truncation"
+      ],
+      "content_sha256": "e2abd06ac64f8482f15a46e89dfde7eef93a44051b5a46c307804d0fa2c086d0",
+      "review_scope": "Selective assigned content and its exclusions; not all linked chapters or executable examples."
+    },
+    {
+      "url": "https://huggingface.co/docs/transformers/generation_strategies",
+      "resolved_url": "https://huggingface.co/docs/transformers/generation_strategies",
+      "last_verified": "2026-09-30",
+      "verification_status": "Selected content inspected",
+      "source_ids": [
+        "tr-generation"
+      ],
+      "selected_sections": [
+        "Collection overview and linked section mapping",
+        "Greedy decoding and multinomial sampling"
+      ],
+      "content_sha256": "cd7ae740d451fe39e84669ca8f18f0e0b47f6a6b0795685760968dc5979ee399",
+      "review_scope": "Selective assigned content and its exclusions; not all linked chapters or executable examples."
+    },
+    {
+      "url": "https://huggingface.co/docs/transformers/main_classes/text_generation",
+      "resolved_url": "https://huggingface.co/docs/transformers/main_classes/text_generation",
+      "last_verified": "2026-09-30",
+      "verification_status": "Selected content inspected",
+      "source_ids": [
+        "tr-generation",
+        "p2-m1-api"
+      ],
+      "selected_sections": [
+        "do_sample, temperature, top_k, top_p and max_new_tokens",
+        "Collection overview and linked section mapping",
+        "GenerationConfig: length, sampling, cache, output and streamer parameters"
+      ],
+      "content_sha256": "964ac928abb6a19f15440a8ba7d537de189bdd86c23e65caea23958c646d6d44",
+      "review_scope": "Selective assigned content and its exclusions; not all linked chapters or executable examples."
+    },
+    {
+      "url": "https://arxiv.org/abs/1706.03762",
+      "resolved_url": "https://arxiv.org/abs/1706.03762",
+      "last_verified": "2026-09-30",
+      "verification_status": "Selected content inspected",
+      "source_ids": [
+        "tr-paper"
+      ],
+      "selected_sections": [
+        "Collection overview and linked section mapping",
+        "Figure 1; Sections 3.1\u20133.5; equation (1); use the PDF linked by the abstract"
+      ],
+      "content_sha256": "275ac93f758930adb0ebe85d488a6126062a8ab349c2e987770e7f42907e5007",
+      "review_scope": "Selective assigned content and its exclusions; not all linked chapters or executable examples."
+    },
+    {
+      "url": "https://arxiv.org/html/1706.03762v7",
+      "resolved_url": "https://arxiv.org/html/1706.03762v7",
+      "last_verified": "2026-09-30",
+      "verification_status": "Selected content inspected",
+      "source_ids": [
+        "tr-paper"
+      ],
+      "selected_sections": [
+        "Figure 1; Sections 3.1\u20133.5 and equation (1)"
+      ],
+      "content_sha256": "855af16c12cbc77c7401cb4197e9d243bb483065291c4e0a8daaa6044866f709",
+      "review_scope": "Selective assigned content and its exclusions; not all linked chapters or executable examples."
+    },
+    {
+      "url": "https://docs.nvidia.com/cuda/cuda-programming-guide/01-introduction/programming-model.html",
+      "resolved_url": "https://docs.nvidia.com/cuda/cuda-programming-guide/01-introduction/programming-model.html",
+      "last_verified": "2026-09-30",
+      "verification_status": "Selected content inspected",
+      "source_ids": [
+        "gpu-architecture"
+      ],
+      "selected_sections": [
+        "Collection overview and linked section mapping",
+        "CPU/GPU, kernels, thread hierarchy, warps, blocks and memory hierarchy"
+      ],
+      "content_sha256": "8c1d08cb228c638baaea6eaa3c4fe09f6a4491a8ff29b2b9122675613e2f36b4",
+      "review_scope": "Selective assigned content and its exclusions; not all linked chapters or executable examples."
+    },
+    {
+      "url": "https://docs.nvidia.com/cuda/cuda-programming-guide/01-introduction/cuda-platform.html",
+      "resolved_url": "https://docs.nvidia.com/cuda/cuda-programming-guide/01-introduction/cuda-platform.html",
+      "last_verified": "2026-09-30",
+      "verification_status": "Selected content inspected",
+      "source_ids": [
+        "gpu-architecture"
+      ],
+      "selected_sections": [
+        "Toolkit and driver relationship"
+      ],
+      "content_sha256": "5a98ad8ee742b55b66dd619f443ea356d0a668d3f998c2a679893b1811b58230",
+      "review_scope": "Selective assigned content and its exclusions; not all linked chapters or executable examples."
+    },
+    {
+      "url": "https://docs.nvidia.com/cuda/cuda-programming-guide/02-basics/understanding-memory.html",
+      "resolved_url": "https://docs.nvidia.com/cuda/cuda-programming-guide/02-basics/understanding-memory.html",
+      "last_verified": "2026-09-30",
+      "verification_status": "Selected content inspected",
+      "source_ids": [
+        "gpu-architecture"
+      ],
+      "selected_sections": [
+        "Opening explanation of host/device physical memory and placement only"
+      ],
+      "content_sha256": "027f97121a45d0af9ef1847f64f3ff772a5aee5a2c58263d47010f1f7d24aa30",
+      "review_scope": "Selective assigned content and its exclusions; not all linked chapters or executable examples."
+    },
+    {
+      "url": "https://docs.nvidia.com/deeplearning/performance/dl-performance-gpu-background/index.html",
+      "resolved_url": "https://docs.nvidia.com/deeplearning/performance/dl-performance-gpu-background/index.html",
+      "last_verified": "2026-09-30",
+      "verification_status": "Selected content inspected",
+      "source_ids": [
+        "gpu-performance",
+        "p2-m5-gpu"
+      ],
+      "selected_sections": [
+        "Collection overview and linked section mapping",
+        "GPU architecture; performance; math and memory bounds; Tensor Cores",
+        "Sections 2\u20135: architecture, execution, arithmetic intensity and operation categories"
+      ],
+      "content_sha256": "75b998ba60fa33d749a7da0f7bb77c3269202d7ce642f3c9d2206fdec7ee4cd6",
+      "review_scope": "Selective assigned content and its exclusions; not all linked chapters or executable examples."
+    },
+    {
+      "url": "https://docs.nvidia.com/cuda/cuda-programming-guide/05-appendices/mathematical-functions.html",
+      "resolved_url": "https://docs.nvidia.com/cuda/cuda-programming-guide/05-appendices/mathematical-functions.html",
+      "last_verified": "2026-09-30",
+      "verification_status": "Selected content inspected",
+      "source_ids": [
+        "gpu-precision"
+      ],
+      "selected_sections": [
+        "Collection overview and linked section mapping",
+        "Floating-point types and accuracy caveats"
+      ],
+      "content_sha256": "066b79d4a2b146a0cad7452328d2cdfcb8f8bd9c9fa140db1507a397514aba3c",
+      "review_scope": "Selective assigned content and its exclusions; not all linked chapters or executable examples."
+    },
+    {
+      "url": "https://raw.githubusercontent.com/NVIDIA/Model-Optimizer/main/docs/source/guides/_pytorch_quantization.rst",
+      "resolved_url": "https://raw.githubusercontent.com/NVIDIA/Model-Optimizer/main/docs/source/guides/_pytorch_quantization.rst",
+      "last_verified": "2026-09-30",
+      "verification_status": "Selected content inspected",
+      "source_ids": [
+        "gpu-precision"
+      ],
+      "selected_sections": [
+        "INT8 and INT4 concept and formats only"
+      ],
+      "content_sha256": "0049405547677193149a858925c5ae0a7d100748a60e8d22f51a4c31bda76181",
+      "review_scope": "Selective assigned content and its exclusions; not all linked chapters or executable examples."
+    },
+    {
+      "url": "https://docs.nvidia.com/deploy/nvidia-smi/index.html",
+      "resolved_url": "https://docs.nvidia.com/deploy/nvidia-smi/index.html",
+      "last_verified": "2026-09-30",
+      "verification_status": "Selected content inspected",
+      "source_ids": [
+        "gpu-memory",
+        "p2-m6-smi"
+      ],
+      "selected_sections": [
+        "GPU name, memory usage and utilization reporting",
+        "Collection overview and linked section mapping",
+        "Query options; utilization; memory; sampling limitations"
+      ],
+      "content_sha256": "ec01956df0124d76a5a9e15fb6974a5d0d513b47f7c202131980a3b7d7706ca7",
+      "review_scope": "Selective assigned content and its exclusions; not all linked chapters or executable examples."
+    },
+    {
+      "url": "https://huggingface.co/docs/transformers/llm_tutorial",
+      "resolved_url": "https://huggingface.co/docs/transformers/llm_tutorial",
+      "last_verified": "2026-09-30",
+      "verification_status": "Selected content inspected",
+      "source_ids": [
+        "p2-m1-generate"
+      ],
+      "selected_sections": [
+        "Collection overview and linked section mapping",
+        "Load a model; generate text; common pitfalls"
+      ],
+      "content_sha256": "7f81a252598c870e403d820db7ce423359aab08868052279ef56f881d302d431",
+      "review_scope": "Selective assigned content and its exclusions; not all linked chapters or executable examples."
+    },
+    {
+      "url": "https://huggingface.co/docs/safetensors/index",
+      "resolved_url": "https://huggingface.co/docs/safetensors/index",
+      "last_verified": "2026-09-30",
+      "verification_status": "Selected content inspected",
+      "source_ids": [
+        "p2-m1-format"
+      ],
+      "selected_sections": [
+        "Collection overview and linked section mapping",
+        "Introduction; loading tensors; format overview"
+      ],
+      "content_sha256": "28123b13bb93716ae70ace430f60a23d7e54e2401848adc7e97e6c39b9e09ee4",
+      "review_scope": "Selective assigned content and its exclusions; not all linked chapters or executable examples."
+    },
+    {
+      "url": "https://huggingface.co/docs/transformers/main/en/pad_truncation",
+      "resolved_url": "https://huggingface.co/docs/transformers/main/en/pad_truncation",
+      "last_verified": "2026-10-01",
+      "verification_status": "Selected content inspected",
+      "source_ids": [
+        "p2-m1-padding",
+        "p2-m4-padding"
+      ],
+      "selected_sections": [
+        "Collection overview and linked section mapping",
+        "Padding; truncation; max_length combinations"
+      ],
+      "content_sha256": "54ee29af8b48b435506da3347af5c48bcdd9eb70ce634baa85167c7062c09253",
+      "review_scope": "Selective assigned content and its exclusions; not all linked chapters or executable examples.",
+      "review_note": "Stable path returned a version notice; opened the main-version content and selected conceptual padding/truncation sections."
+    },
+    {
+      "url": "https://huggingface.co/HuggingFaceTB/SmolLM2-135M",
+      "resolved_url": "https://huggingface.co/HuggingFaceTB/SmolLM2-135M",
+      "last_verified": "2026-09-30",
+      "verification_status": "Selected content inspected",
+      "source_ids": [
+        "p2-m1-model"
+      ],
+      "selected_sections": [
+        "Collection overview and linked section mapping",
+        "Model description; usage; limitations; license"
+      ],
+      "content_sha256": "403a9e8863cd9d739a0eec132353bee4461c8b7f52c568c571b2fe78fe4d0db0",
+      "review_scope": "Selective assigned content and its exclusions; not all linked chapters or executable examples."
+    },
+    {
+      "url": "https://huggingface.co/docs/transformers/cache_explanation",
+      "resolved_url": "https://huggingface.co/docs/transformers/cache_explanation",
+      "last_verified": "2026-09-30",
+      "verification_status": "Selected content inspected",
+      "source_ids": [
+        "p2-m2-cache"
+      ],
+      "selected_sections": [
+        "Collection overview and linked section mapping",
+        "Attention matrices; Cache class; cache storage implementation"
+      ],
+      "content_sha256": "261695f52f049d2e1324e447b0408c4aec11781b02b2578dc7b6a4c4cd3153a3",
+      "review_scope": "Selective assigned content and its exclusions; not all linked chapters or executable examples."
+    },
+    {
+      "url": "https://huggingface.co/docs/transformers/kv_cache",
+      "resolved_url": "https://huggingface.co/docs/transformers/kv_cache",
+      "last_verified": "2026-09-30",
+      "verification_status": "Selected content inspected",
+      "source_ids": [
+        "p2-m2-strategies"
+      ],
+      "selected_sections": [
+        "Collection overview and linked section mapping",
+        "Comparison table; default, fixed-size and quantized caches"
+      ],
+      "content_sha256": "0416274c8574933bd6a9ba7201313e0d970cf16c57b1471664bbc1af5eceb0b9",
+      "review_scope": "Selective assigned content and its exclusions; not all linked chapters or executable examples."
+    },
+    {
+      "url": "https://arxiv.org/html/2309.06180v1",
+      "resolved_url": "https://arxiv.org/html/2309.06180v1",
+      "last_verified": "2026-09-30",
+      "verification_status": "Selected content inspected",
+      "source_ids": [
+        "p2-m2-paged",
+        "p2-m7-paged"
+      ],
+      "selected_sections": [
+        "Collection overview and linked section mapping",
+        "Sections 2\u20134; 6.1 experiment setup; Figures 2\u20134"
+      ],
+      "content_sha256": "17eab179187ed013b430fdb6fbd72dae81b40d15a4b781ac5e411505ee252959",
+      "review_scope": "Selective assigned content and its exclusions; not all linked chapters or executable examples."
+    },
+    {
+      "url": "https://docs.vllm.ai/en/latest/features/automatic_prefix_caching/",
+      "resolved_url": "https://docs.vllm.ai/en/latest/features/automatic_prefix_caching/",
+      "last_verified": "2026-09-30",
+      "verification_status": "Selected content inspected",
+      "source_ids": [
+        "p2-m2-prefix"
+      ],
+      "selected_sections": [
+        "Collection overview and linked section mapping",
+        "Introduction; example workloads; limits"
+      ],
+      "content_sha256": "2501d754393fb9249cd86be35c66261e23a25da1d957f6ca812666852ab3f773",
+      "review_scope": "Selective assigned content and its exclusions; not all linked chapters or executable examples."
+    },
+    {
+      "url": "https://huggingface.co/docs/transformers/llm_tutorial_optimization",
+      "resolved_url": "https://huggingface.co/docs/transformers/llm_tutorial_optimization",
+      "last_verified": "2026-09-30",
+      "verification_status": "Selected content inspected",
+      "source_ids": [
+        "p2-m3-optimization"
+      ],
+      "selected_sections": [
+        "Collection overview and linked section mapping",
+        "Memory requirements; lower precision; key-value cache; MQA/GQA discussion"
+      ],
+      "content_sha256": "da2a2ebe7820bcee6f1b6c8f61f57c6ce22028447d7a509e627c0f9dd8317b01",
+      "review_scope": "Selective assigned content and its exclusions; not all linked chapters or executable examples."
+    },
+    {
+      "url": "https://huggingface.co/docs/transformers/quantization/overview",
+      "resolved_url": "https://huggingface.co/docs/transformers/quantization/overview",
+      "last_verified": "2026-09-30",
+      "verification_status": "Selected content inspected",
+      "source_ids": [
+        "p2-m3-quant"
+      ],
+      "selected_sections": [
+        "Collection overview and linked section mapping",
+        "Quantization introduction; hardware/method compatibility table"
+      ],
+      "content_sha256": "58781ffdb59969ed5dd2d5337aa48dc71a3f90c40178e6edad01a23cf4be215f",
+      "review_scope": "Selective assigned content and its exclusions; not all linked chapters or executable examples."
+    },
+    {
+      "url": "https://huggingface.co/docs/transformers/quantization/bitsandbytes",
+      "resolved_url": "https://huggingface.co/docs/transformers/quantization/bitsandbytes",
+      "last_verified": "2026-09-30",
+      "verification_status": "Selected content inspected",
+      "source_ids": [
+        "p2-m3-bnb"
+      ],
+      "selected_sections": [
+        "Collection overview and linked section mapping",
+        "Hardware compatibility; 8-bit and 4-bit loading; memory footprint"
+      ],
+      "content_sha256": "b7e80a7bebe4279b17039b8795218b745431f67e792f14f98934dc927bee7338",
+      "review_scope": "Selective assigned content and its exclusions; not all linked chapters or executable examples."
+    },
+    {
+      "url": "https://huggingface.co/docs/transformers/continuous_batching",
+      "resolved_url": "https://huggingface.co/docs/transformers/continuous_batching",
+      "last_verified": "2026-09-30",
+      "verification_status": "Selected content inspected",
+      "source_ids": [
+        "p2-m4-continuous"
+      ],
+      "selected_sections": [
+        "Collection overview and linked section mapping",
+        "Introduction; generate_batch; ContinuousBatchingManager; streaming and cancellation"
+      ],
+      "content_sha256": "86af545dcce8e8c809b4670a7b74eecac58043707744f5c9e5a4305985b38fad",
+      "review_scope": "Selective assigned content and its exclusions; not all linked chapters or executable examples."
+    },
+    {
+      "url": "https://www.usenix.org/system/files/osdi22-yu.pdf",
+      "resolved_url": "https://www.usenix.org/system/files/osdi22-yu.pdf",
+      "last_verified": "2026-09-30",
+      "verification_status": "Selected content inspected",
+      "source_ids": [
+        "p2-m4-orca"
+      ],
+      "selected_sections": [
+        "Collection overview and linked section mapping",
+        "Sections 2\u20134: generative workload, iteration scheduling and selective batching"
+      ],
+      "content_sha256": "6595572951e8c363ad6754432a105ad096fb6b95de745f8d66f7ff14a1a131d1",
+      "review_scope": "Selective assigned content and its exclusions; not all linked chapters or executable examples."
+    },
+    {
+      "url": "https://docs.vllm.ai/en/latest/design/arch_overview/",
+      "resolved_url": "https://docs.vllm.ai/en/latest/design/arch_overview/",
+      "last_verified": "2026-09-30",
+      "verification_status": "Selected content inspected",
+      "source_ids": [
+        "p2-m4-arch",
+        "p2-m7-arch"
+      ],
+      "selected_sections": [
+        "Collection overview and linked section mapping",
+        "Process architecture; API server; engine core; workers and model execution"
+      ],
+      "content_sha256": "c3b6633cf12a1f8ba2ddf8805440990f170a056100142a0313d9f9737c5f8845",
+      "review_scope": "Selective assigned content and its exclusions; not all linked chapters or executable examples."
+    },
+    {
+      "url": "https://docs.vllm.ai/en/latest/cli/bench/serve/",
+      "resolved_url": "https://docs.vllm.ai/en/latest/cli/bench/serve/",
+      "last_verified": "2026-09-30",
+      "verification_status": "Selected content inspected",
+      "source_ids": [
+        "p2-m5-bench"
+      ],
+      "selected_sections": [
+        "Collection overview and linked section mapping",
+        "Dataset, request-rate, max-concurrency, warm-up, metric and result-saving arguments"
+      ],
+      "content_sha256": "5ebc855121defa13a5375ed531f3353be30d91cfa473f2b768e8ae11e383f3cf",
+      "review_scope": "Selective assigned content and its exclusions; not all linked chapters or executable examples."
+    },
+    {
+      "url": "https://docs.vllm.ai/en/latest/usage/metrics/",
+      "resolved_url": "https://docs.vllm.ai/en/latest/usage/metrics/",
+      "last_verified": "2026-09-30",
+      "verification_status": "Selected content inspected",
+      "source_ids": [
+        "p2-m5-metrics",
+        "p2-m7-metrics"
+      ],
+      "selected_sections": [
+        "Collection overview and linked section mapping",
+        "Metrics endpoint; request latency, queue, token and cache metric examples"
+      ],
+      "content_sha256": "4d6b919659d6122b91ee4788feea8cca342d938072480e7c4152e0a6ff0faf19",
+      "review_scope": "Selective assigned content and its exclusions; not all linked chapters or executable examples."
+    },
+    {
+      "url": "https://docs.vllm.ai/en/latest/serving/online_serving/",
+      "resolved_url": "https://docs.vllm.ai/en/latest/serving/online_serving/",
+      "last_verified": "2026-09-30",
+      "verification_status": "Selected content inspected",
+      "source_ids": [
+        "p2-m7-online"
+      ],
+      "selected_sections": [
+        "Collection overview and linked section mapping",
+        "OpenAI-compatible server; supported APIs; basic and metrics APIs"
+      ],
+      "content_sha256": "0d26bf0c15eef60e7843f7a00e2699d39da30c3d46d997c8cfa9c244e1e61bc2",
+      "review_scope": "Selective assigned content and its exclusions; not all linked chapters or executable examples."
+    }
+  ],
+  "inspection_window": "2026-09-30 to 2026-10-01"
+}

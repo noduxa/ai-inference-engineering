@@ -1,7 +1,7 @@
 # Module 1 NotebookLM source pack
 
 Status: Planned. Source inspection: Verified. NotebookLM import: To be
-validated. Last verified: 2026-09-16.
+validated. Last verified: 2026-09-30.
 
 [NotebookLM workflow](../README.md) ·
 [Module](../../modules/01-advanced-python.md) ·
@@ -49,7 +49,7 @@ runtime concurrency and profiling APIs.
 - Author/institution: Python documentation contributors; Python Software
   Foundation.
 - Format: documentation. Access: free.
-- Publication/update: Primary linked page last updated Sep 15, 2026 (23:57 UTC);
+- Publication/update: Primary linked page last updated Sep 30, 2026 (17:37 UTC);
   see section-level dates in the registry where available.
 - Selected study time: 3 h; included in this module’s budget.
 - Authority and phase fit: Defines language semantics and runtime APIs directly;
@@ -84,7 +84,7 @@ imports, exceptions and isolated environments.
 - Author/institution: Python documentation contributors; Python Software
   Foundation.
 - Format: documentation. Access: free.
-- Publication/update: Primary linked page last updated Sep 15, 2026 (23:57 UTC);
+- Publication/update: Primary linked page last updated Sep 30, 2026 (17:37 UTC);
   see section-level dates in the registry where available.
 - Selected study time: 1.5 h; included in this module’s budget.
 - Authority and phase fit: A concise bridge from existing Java/Python experience
@@ -278,3 +278,30 @@ sources nor generated study artifacts establish mastery.
 
 Continue to [Module 2](../../modules/02-numpy-and-tensors.md) after the exit
 check.
+
+## Comparison prompt
+
+Using only the imported sources, compare their scope, definitions and
+assumptions. Cite the section behind each important claim, distinguish inference
+from source statements, identify real disagreements and say when coverage is
+insufficient. Do not invent a conflict between complementary sources.
+
+## Teach-back prompt
+
+Evaluate my explanation before rewriting it: correct statements, incomplete
+statements, misconceptions, unsupported claims, missing connections and
+questions I should answer next. Cite source sections and ask me to revise first.
+An Audio Overview is preparation, not evidence of understanding.
+
+## Experiment-preparation prompt
+
+Check my linked exercise plan against the supplied sources. Identify controls,
+changed variable, observations, resource bounds and missing prerequisites.
+Require my prediction before execution; never invent an observed result.
+
+## Measurement-interpretation prompt
+
+Use the [shared measurement-review prompt](../prompts/measurement-review.md).
+Check the exercise's actual shapes, units, timing/memory boundaries and
+correctness. State what the supplied observations cannot establish and ask for
+one next test.

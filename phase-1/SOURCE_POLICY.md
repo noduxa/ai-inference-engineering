@@ -1,6 +1,6 @@
 # Source policy
 
-Last verified: 2026-09-16. Policy status: Active; learning status remains Not
+Last verified: 2026-09-30. Policy status: Active; learning status remains Not
 started.
 
 [Registry](sources.yaml) · [Validator](scripts/README.md) ·
@@ -10,10 +10,10 @@ started.
 
 1. Official language, framework and vendor documentation for current API
    behaviour.
-2. Globally recognized university courses for established theory.
-3. Official researcher-authored books and open textbooks.
-4. Original peer-reviewed research or original papers on arXiv with venue
+2. Original peer-reviewed research or original papers on arXiv with venue
    context.
+3. Globally recognized university courses for established theory.
+4. Official researcher-authored books and open textbooks.
 5. Recognized technical organizations.
 6. Established practitioners only when they add exceptional explanatory value.
 
@@ -25,7 +25,7 @@ semantics.
 
 ## Compact selection and overlap
 
-Use one primary collection and up to three supporting collections per module.
+Use one primary collection and two to four supporting collections per module.
 Prefer four to eight individual pages per active NotebookLM session. Large
 collections are divided into explicit import batches; an index is never counted
 as having supplied its linked chapters. Reuse the same source across modules
@@ -83,7 +83,8 @@ Compatibility is recorded as To be validated until Joshua manually verifies
 imports. Website ingestion may omit images, embedded videos and child pages;
 mathematical symbols and code may be distorted. Use the exact text page or an
 official PDF when permitted, check its contents, and state missing coverage. See
-[Google’s source-import guidance](https://support.google.com/gemininotebook/answer/16215270?hl=en).
+[Google’s source-import guidance](https://support.google.com/gemininotebook/answer/16215270?hl=en)
+.
 
 Do not automate NotebookLM authentication or import. Do not upload private,
 employer, client or patient material. Never bypass an access restriction; record

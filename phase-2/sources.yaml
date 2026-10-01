@@ -1,0 +1,969 @@
+schema_version: 1
+last_verified: '2026-10-01'
+sources:
+- id: p2-m1-generate
+  module: 1
+  title: Generate text
+  url: https://huggingface.co/docs/transformers/llm_tutorial
+  publisher: Hugging Face
+  authors:
+  - Hugging Face contributors
+  source_type: documentation
+  authority_level: official_documentation
+  required_or_optional: required
+  role: primary
+  exact_sections:
+  - title: Generate text
+    url: https://huggingface.co/docs/transformers/llm_tutorial
+    study: Default generate; Generation configuration; Common Options; Pitfalls
+    skip: Unlisted APIs, training/fine-tuning, distributed deployment and backend installation
+      beyond the local lab.
+  skip_sections: Unlisted APIs, training/fine-tuning, distributed deployment and backend installation
+    beyond the local lab.
+  estimated_hours: 0.75
+  access: free
+  format: documentation
+  published_or_updated: Continuously maintained; page-specific date not stated; inspected
+    2026-09-30
+  license_or_terms: Link only; publisher/author terms apply; no redistribution assumed.
+  notebooklm_compatible: 'To be validated manually: import this exact text page or publisher
+    PDF; inspect equations/code extraction.'
+  reason_selected: Connect loading and tokenization to generation and stop controls. Maintainer
+    documentation defines the contract.
+  expected_learning: Connect loading and tokenization to generation and stop controls.
+  last_verified: '2026-09-30'
+  verification_status: Inspected selected content
+  status: Verified
+- id: p2-m1-api
+  module: 1
+  title: Generation API
+  url: https://huggingface.co/docs/transformers/main_classes/text_generation
+  publisher: Hugging Face
+  authors:
+  - Hugging Face contributors
+  source_type: documentation
+  authority_level: official_documentation
+  required_or_optional: required
+  role: supporting
+  exact_sections:
+  - title: Generation API
+    url: https://huggingface.co/docs/transformers/main_classes/text_generation
+    study: 'GenerationConfig: length, sampling, cache, output and streamer parameters'
+    skip: Unlisted APIs, training/fine-tuning, distributed deployment and backend installation
+      beyond the local lab.
+  skip_sections: Unlisted APIs, training/fine-tuning, distributed deployment and backend installation
+    beyond the local lab.
+  estimated_hours: 0.5
+  access: free
+  format: documentation
+  published_or_updated: Continuously maintained; page-specific date not stated; inspected
+    2026-09-30
+  license_or_terms: Link only; publisher/author terms apply; no redistribution assumed.
+  notebooklm_compatible: 'To be validated manually: import this exact text page or publisher
+    PDF; inspect equations/code extraction.'
+  reason_selected: Read precise parameter contracts instead of assuming defaults. Maintainer
+    documentation defines the contract.
+  expected_learning: Read precise parameter contracts instead of assuming defaults.
+  last_verified: '2026-09-30'
+  verification_status: Inspected selected content
+  status: Verified
+- id: p2-m1-format
+  module: 1
+  title: Safetensors
+  url: https://huggingface.co/docs/safetensors/index
+  publisher: Hugging Face
+  authors:
+  - Hugging Face contributors
+  source_type: documentation
+  authority_level: official_documentation
+  required_or_optional: required
+  role: supporting
+  exact_sections:
+  - title: Safetensors
+    url: https://huggingface.co/docs/safetensors/index
+    study: Introduction; loading tensors; format overview
+    skip: Unlisted APIs, training/fine-tuning, distributed deployment and backend installation
+      beyond the local lab.
+  skip_sections: Unlisted APIs, training/fine-tuning, distributed deployment and backend installation
+    beyond the local lab.
+  estimated_hours: 0.5
+  access: free
+  format: documentation
+  published_or_updated: Continuously maintained; page-specific date not stated; inspected
+    2026-09-30
+  license_or_terms: Link only; publisher/author terms apply; no redistribution assumed.
+  notebooklm_compatible: 'To be validated manually: import this exact text page or publisher
+    PDF; inspect equations/code extraction.'
+  reason_selected: Distinguish tensor serialization from model architecture and executable
+    code. Maintainer documentation defines the contract.
+  expected_learning: Distinguish tensor serialization from model architecture and executable
+    code.
+  last_verified: '2026-09-30'
+  verification_status: Inspected selected content
+  status: Verified
+- id: p2-m1-padding
+  module: 1
+  title: Padding and truncation
+  url: https://huggingface.co/docs/transformers/main/en/pad_truncation
+  publisher: Hugging Face
+  authors:
+  - Hugging Face contributors
+  source_type: documentation
+  authority_level: official_documentation
+  required_or_optional: required
+  role: supporting
+  exact_sections:
+  - title: Padding and truncation
+    url: https://huggingface.co/docs/transformers/main/en/pad_truncation
+    study: Padding; truncation; max_length combinations
+    skip: Unlisted APIs, training/fine-tuning, distributed deployment and backend installation
+      beyond the local lab.
+  skip_sections: Unlisted APIs, training/fine-tuning, distributed deployment and backend installation
+    beyond the local lab.
+  estimated_hours: 0.5
+  access: free
+  format: documentation
+  published_or_updated: Continuously maintained; page-specific date not stated; inspected
+    2026-09-30
+  license_or_terms: Link only; publisher/author terms apply; no redistribution assumed.
+  notebooklm_compatible: 'To be validated manually: import this exact text page or publisher
+    PDF; inspect equations/code extraction.'
+  reason_selected: Predict mask and token-count effects in variable-length batches. Maintainer
+    documentation defines the contract.
+  expected_learning: Predict mask and token-count effects in variable-length batches.
+  last_verified: '2026-10-01'
+  verification_status: Inspected selected content
+  status: Verified
+- id: p2-m1-model
+  module: 1
+  title: SmolLM2-135M model card
+  url: https://huggingface.co/HuggingFaceTB/SmolLM2-135M
+  publisher: Hugging Face
+  authors:
+  - Hugging Face contributors
+  source_type: documentation
+  authority_level: official_documentation
+  required_or_optional: required
+  role: supporting
+  exact_sections:
+  - title: SmolLM2-135M model card
+    url: https://huggingface.co/HuggingFaceTB/SmolLM2-135M
+    study: Model description; usage; limitations; license
+    skip: Unlisted APIs, training/fine-tuning, distributed deployment and backend installation
+      beyond the local lab.
+  skip_sections: Unlisted APIs, training/fine-tuning, distributed deployment and backend installation
+    beyond the local lab.
+  estimated_hours: 0.5
+  access: free
+  format: documentation
+  published_or_updated: Continuously maintained; page-specific date not stated; inspected
+    2026-09-30
+  license_or_terms: 'Link only; publisher/author terms apply. Do not redistribute full content.
+    SmolLM2 weights: Apache-2.0.'
+  notebooklm_compatible: 'To be validated manually: import this exact text page or publisher
+    PDF; inspect equations/code extraction.'
+  reason_selected: Choose a small ungated public model and record its immutable revision.
+    Maintainer documentation defines the contract.
+  expected_learning: Choose a small ungated public model and record its immutable revision.
+  last_verified: '2026-09-30'
+  verification_status: Inspected selected content
+  status: Verified
+- id: p2-m2-cache
+  module: 2
+  title: How caching works
+  url: https://huggingface.co/docs/transformers/cache_explanation
+  publisher: Hugging Face
+  authors:
+  - Hugging Face contributors
+  source_type: documentation
+  authority_level: official_documentation
+  required_or_optional: required
+  role: primary
+  exact_sections:
+  - title: How caching works
+    url: https://huggingface.co/docs/transformers/cache_explanation
+    study: Attention matrices; Cache class; cache storage implementation
+    skip: Unlisted APIs, training/fine-tuning, distributed deployment and backend installation
+      beyond the local lab.
+  skip_sections: Unlisted APIs, training/fine-tuning, distributed deployment and backend installation
+    beyond the local lab.
+  estimated_hours: 0.75
+  access: free
+  format: documentation
+  published_or_updated: Continuously maintained; page-specific date not stated; inspected
+    2026-09-30
+  license_or_terms: Link only; publisher/author terms apply; no redistribution assumed.
+  notebooklm_compatible: 'To be validated manually: import this exact text page or publisher
+    PDF; inspect equations/code extraction.'
+  reason_selected: Trace per-layer K/V reuse and growing masks in a decode loop. Maintainer
+    documentation defines the contract.
+  expected_learning: Trace per-layer K/V reuse and growing masks in a decode loop.
+  last_verified: '2026-09-30'
+  verification_status: Inspected selected content
+  status: Verified
+- id: p2-m2-strategies
+  module: 2
+  title: Cache strategies
+  url: https://huggingface.co/docs/transformers/kv_cache
+  publisher: Hugging Face
+  authors:
+  - Hugging Face contributors
+  source_type: documentation
+  authority_level: official_documentation
+  required_or_optional: required
+  role: supporting
+  exact_sections:
+  - title: Cache strategies
+    url: https://huggingface.co/docs/transformers/kv_cache
+    study: Comparison table; default, fixed-size and quantized caches
+    skip: Unlisted APIs, training/fine-tuning, distributed deployment and backend installation
+      beyond the local lab.
+  skip_sections: Unlisted APIs, training/fine-tuning, distributed deployment and backend installation
+    beyond the local lab.
+  estimated_hours: 0.5
+  access: free
+  format: documentation
+  published_or_updated: Continuously maintained; page-specific date not stated; inspected
+    2026-09-30
+  license_or_terms: Link only; publisher/author terms apply; no redistribution assumed.
+  notebooklm_compatible: 'To be validated manually: import this exact text page or publisher
+    PDF; inspect equations/code extraction.'
+  reason_selected: Distinguish allocated capacity from logical cache length. Maintainer documentation
+    defines the contract.
+  expected_learning: Distinguish allocated capacity from logical cache length.
+  last_verified: '2026-09-30'
+  verification_status: Inspected selected content
+  status: Verified
+- id: p2-m2-paged
+  module: 2
+  title: Efficient Memory Management for Large Language Model Serving with PagedAttention
+  url: https://arxiv.org/html/2309.06180v1
+  publisher: ACM SOSP / arXiv
+  authors:
+  - Woosuk Kwon et al.
+  source_type: original_paper
+  authority_level: original_research
+  required_or_optional: required
+  role: supporting
+  exact_sections:
+  - title: Efficient Memory Management for Large Language Model Serving with PagedAttention
+    url: https://arxiv.org/html/2309.06180v1
+    study: Sections 2–4; 6.1 experiment setup; Figures 2–4
+    skip: Distributed deployment, custom kernels and full evaluation reproduction; follow
+      only the listed sections.
+  skip_sections: Distributed deployment, custom kernels and full evaluation reproduction;
+    follow only the listed sections.
+  estimated_hours: 0.5
+  access: free
+  format: paper
+  published_or_updated: 2023-09-12 (v1)
+  license_or_terms: Link only; publisher/author terms apply; no redistribution assumed.
+  notebooklm_compatible: 'To be validated manually: import this exact text page or publisher
+    PDF; inspect equations/code extraction.'
+  reason_selected: Understand block-based KV allocation and inspect historical workload assumptions.
+    Original peer-reviewed systems research, with historical results kept separate from current
+    behavior.
+  expected_learning: Understand block-based KV allocation and inspect historical workload
+    assumptions.
+  last_verified: '2026-09-30'
+  verification_status: Inspected selected content
+  status: Verified
+- id: p2-m2-prefix
+  module: 2
+  title: Automatic Prefix Caching
+  url: https://docs.vllm.ai/en/latest/features/automatic_prefix_caching/
+  publisher: vLLM project
+  authors:
+  - vLLM project contributors
+  source_type: documentation
+  authority_level: official_documentation
+  required_or_optional: required
+  role: supporting
+  exact_sections:
+  - title: Automatic Prefix Caching
+    url: https://docs.vllm.ai/en/latest/features/automatic_prefix_caching/
+    study: Introduction; example workloads; limits
+    skip: Unlisted APIs, training/fine-tuning, distributed deployment and backend installation
+      beyond the local lab.
+  skip_sections: Unlisted APIs, training/fine-tuning, distributed deployment and backend installation
+    beyond the local lab.
+  estimated_hours: 0.5
+  access: free
+  format: documentation
+  published_or_updated: Continuously maintained; page-specific date not stated; inspected
+    2026-09-30
+  license_or_terms: Link only; publisher/author terms apply; no redistribution assumed.
+  notebooklm_compatible: 'To be validated manually: import this exact text page or publisher
+    PDF; inspect equations/code extraction.'
+  reason_selected: Explain when matching prefixes save prefill work and when they do not.
+    Maintainer documentation defines the contract.
+  expected_learning: Explain when matching prefixes save prefill work and when they do not.
+  last_verified: '2026-09-30'
+  verification_status: Inspected selected content
+  status: Verified
+- id: p2-m3-optimization
+  module: 3
+  title: Optimizing LLMs for Speed and Memory
+  url: https://huggingface.co/docs/transformers/llm_tutorial_optimization
+  publisher: Hugging Face
+  authors:
+  - Hugging Face contributors
+  source_type: documentation
+  authority_level: official_documentation
+  required_or_optional: required
+  role: primary
+  exact_sections:
+  - title: Optimizing LLMs for Speed and Memory
+    url: https://huggingface.co/docs/transformers/llm_tutorial_optimization
+    study: Memory requirements; lower precision; key-value cache; MQA/GQA discussion
+    skip: Unlisted APIs, training/fine-tuning, distributed deployment and backend installation
+      beyond the local lab.
+  skip_sections: Unlisted APIs, training/fine-tuning, distributed deployment and backend installation
+    beyond the local lab.
+  estimated_hours: 0.75
+  access: free
+  format: documentation
+  published_or_updated: Continuously maintained; page-specific date not stated; inspected
+    2026-09-30
+  license_or_terms: Link only; publisher/author terms apply; no redistribution assumed.
+  notebooklm_compatible: 'To be validated manually: import this exact text page or publisher
+    PDF; inspect equations/code extraction.'
+  reason_selected: Account separately for weights and cache and state architecture assumptions.
+    Maintainer documentation defines the contract.
+  expected_learning: Account separately for weights and cache and state architecture assumptions.
+  last_verified: '2026-09-30'
+  verification_status: Inspected selected content
+  status: Verified
+- id: p2-m3-quant
+  module: 3
+  title: Quantization overview
+  url: https://huggingface.co/docs/transformers/quantization/overview
+  publisher: Hugging Face
+  authors:
+  - Hugging Face contributors
+  source_type: documentation
+  authority_level: official_documentation
+  required_or_optional: required
+  role: supporting
+  exact_sections:
+  - title: Quantization overview
+    url: https://huggingface.co/docs/transformers/quantization/overview
+    study: Quantization introduction; hardware/method compatibility table
+    skip: Unlisted APIs, training/fine-tuning, distributed deployment and backend installation
+      beyond the local lab.
+  skip_sections: Unlisted APIs, training/fine-tuning, distributed deployment and backend installation
+    beyond the local lab.
+  estimated_hours: 0.5
+  access: free
+  format: documentation
+  published_or_updated: Continuously maintained; page-specific date not stated; inspected
+    2026-09-30
+  license_or_terms: Link only; publisher/author terms apply; no redistribution assumed.
+  notebooklm_compatible: 'To be validated manually: import this exact text page or publisher
+    PDF; inspect equations/code extraction.'
+  reason_selected: Choose a supported representation and distinguish calibration requirements.
+    Maintainer documentation defines the contract.
+  expected_learning: Choose a supported representation and distinguish calibration requirements.
+  last_verified: '2026-09-30'
+  verification_status: Inspected selected content
+  status: Verified
+- id: p2-m3-bnb
+  module: 3
+  title: Bitsandbytes
+  url: https://huggingface.co/docs/transformers/quantization/bitsandbytes
+  publisher: Hugging Face
+  authors:
+  - Hugging Face contributors
+  source_type: documentation
+  authority_level: official_documentation
+  required_or_optional: required
+  role: supporting
+  exact_sections:
+  - title: Bitsandbytes
+    url: https://huggingface.co/docs/transformers/quantization/bitsandbytes
+    study: Hardware compatibility; 8-bit and 4-bit loading; memory footprint
+    skip: Unlisted APIs, training/fine-tuning, distributed deployment and backend installation
+      beyond the local lab.
+  skip_sections: Unlisted APIs, training/fine-tuning, distributed deployment and backend installation
+    beyond the local lab.
+  estimated_hours: 0.5
+  access: free
+  format: documentation
+  published_or_updated: Continuously maintained; page-specific date not stated; inspected
+    2026-09-30
+  license_or_terms: Link only; publisher/author terms apply; no redistribution assumed.
+  notebooklm_compatible: 'To be validated manually: import this exact text page or publisher
+    PDF; inspect equations/code extraction.'
+  reason_selected: Check backend support and avoid assuming reduced storage guarantees acceleration.
+    Maintainer documentation defines the contract.
+  expected_learning: Check backend support and avoid assuming reduced storage guarantees acceleration.
+  last_verified: '2026-09-30'
+  verification_status: Inspected selected content
+  status: Verified
+- id: p2-m3-cuda
+  module: 3
+  title: CUDA semantics
+  url: https://docs.pytorch.org/docs/2.14/notes/cuda.html
+  publisher: PyTorch project
+  authors:
+  - PyTorch project contributors
+  source_type: documentation
+  authority_level: official_documentation
+  required_or_optional: required
+  role: supporting
+  exact_sections:
+  - title: CUDA semantics
+    url: https://docs.pytorch.org/docs/2.14/notes/cuda.html
+    study: Asynchronous execution; memory management; memory statistics
+    skip: Unlisted APIs, training/fine-tuning, distributed deployment and backend installation
+      beyond the local lab.
+  skip_sections: Unlisted APIs, training/fine-tuning, distributed deployment and backend installation
+    beyond the local lab.
+  estimated_hours: 0.5
+  access: free
+  format: documentation
+  published_or_updated: Continuously maintained; page-specific date not stated; inspected
+    2026-09-30
+  license_or_terms: Link only; publisher/author terms apply; no redistribution assumed.
+  notebooklm_compatible: 'To be validated manually: import this exact text page or publisher
+    PDF; inspect equations/code extraction.'
+  reason_selected: Measure completed work and separate live tensor memory from allocator reservation.
+    Maintainer documentation defines the contract.
+  expected_learning: Measure completed work and separate live tensor memory from allocator
+    reservation.
+  last_verified: '2026-09-30'
+  verification_status: Inspected selected content
+  status: Verified
+- id: p2-m4-continuous
+  module: 4
+  title: Continuous batching
+  url: https://huggingface.co/docs/transformers/continuous_batching
+  publisher: Hugging Face
+  authors:
+  - Hugging Face contributors
+  source_type: documentation
+  authority_level: official_documentation
+  required_or_optional: required
+  role: primary
+  exact_sections:
+  - title: Continuous batching
+    url: https://huggingface.co/docs/transformers/continuous_batching
+    study: Introduction; generate_batch; ContinuousBatchingManager; streaming and cancellation
+    skip: Unlisted APIs, training/fine-tuning, distributed deployment and backend installation
+      beyond the local lab.
+  skip_sections: Unlisted APIs, training/fine-tuning, distributed deployment and backend installation
+    beyond the local lab.
+  estimated_hours: 0.75
+  access: free
+  format: documentation
+  published_or_updated: Continuously maintained; page-specific date not stated; inspected
+    2026-09-30
+  license_or_terms: Link only; publisher/author terms apply; no redistribution assumed.
+  notebooklm_compatible: 'To be validated manually: import this exact text page or publisher
+    PDF; inspect equations/code extraction.'
+  reason_selected: Understand iteration-level admission without requiring this backend to
+    run locally. Maintainer documentation defines the contract.
+  expected_learning: Understand iteration-level admission without requiring this backend to
+    run locally.
+  last_verified: '2026-09-30'
+  verification_status: Inspected selected content
+  status: Verified
+- id: p2-m4-orca
+  module: 4
+  title: 'Orca: A Distributed Serving System for Transformer-Based Generative Models'
+  url: https://www.usenix.org/system/files/osdi22-yu.pdf
+  publisher: USENIX
+  authors:
+  - Gyeong-In Yu et al.
+  source_type: original_paper
+  authority_level: original_research
+  required_or_optional: required
+  role: supporting
+  exact_sections:
+  - title: 'Orca: A Distributed Serving System for Transformer-Based Generative Models'
+    url: https://www.usenix.org/system/files/osdi22-yu.pdf
+    study: 'Sections 2–4: generative workload, iteration scheduling and selective batching'
+    skip: Distributed deployment, custom kernels and full evaluation reproduction; follow
+      only the listed sections.
+  skip_sections: Distributed deployment, custom kernels and full evaluation reproduction;
+    follow only the listed sections.
+  estimated_hours: 0.5
+  access: free
+  format: paper
+  published_or_updated: 2022-07 (OSDI 2022)
+  license_or_terms: Link only; publisher/author terms apply; no redistribution assumed.
+  notebooklm_compatible: 'To be validated manually: import this exact text page or publisher
+    PDF; inspect equations/code extraction.'
+  reason_selected: Connect variable request lengths to scheduler design; read as historical
+    research. Original peer-reviewed systems research, with historical results kept separate
+    from current behavior.
+  expected_learning: Connect variable request lengths to scheduler design; read as historical
+    research.
+  last_verified: '2026-09-30'
+  verification_status: Inspected selected content
+  status: Verified
+- id: p2-m4-arch
+  module: 4
+  title: vLLM Architecture Overview
+  url: https://docs.vllm.ai/en/latest/design/arch_overview/
+  publisher: vLLM project
+  authors:
+  - vLLM project contributors
+  source_type: documentation
+  authority_level: official_documentation
+  required_or_optional: required
+  role: supporting
+  exact_sections:
+  - title: vLLM Architecture Overview
+    url: https://docs.vllm.ai/en/latest/design/arch_overview/
+    study: Process architecture; API server; engine core; workers and model execution
+    skip: Unlisted APIs, training/fine-tuning, distributed deployment and backend installation
+      beyond the local lab.
+  skip_sections: Unlisted APIs, training/fine-tuning, distributed deployment and backend installation
+    beyond the local lab.
+  estimated_hours: 0.5
+  access: free
+  format: documentation
+  published_or_updated: Continuously maintained; page-specific date not stated; inspected
+    2026-09-30
+  license_or_terms: Link only; publisher/author terms apply; no redistribution assumed.
+  notebooklm_compatible: 'To be validated manually: import this exact text page or publisher
+    PDF; inspect equations/code extraction.'
+  reason_selected: Map request handling to scheduler and worker responsibilities. Maintainer
+    documentation defines the contract.
+  expected_learning: Map request handling to scheduler and worker responsibilities.
+  last_verified: '2026-09-30'
+  verification_status: Inspected selected content
+  status: Verified
+- id: p2-m4-padding
+  module: 4
+  title: Padding and truncation
+  url: https://huggingface.co/docs/transformers/main/en/pad_truncation
+  publisher: Hugging Face
+  authors:
+  - Hugging Face contributors
+  source_type: documentation
+  authority_level: official_documentation
+  required_or_optional: required
+  role: supporting
+  exact_sections:
+  - title: Padding and truncation
+    url: https://huggingface.co/docs/transformers/main/en/pad_truncation
+    study: Padding; truncation; max_length combinations
+    skip: Unlisted APIs, training/fine-tuning, distributed deployment and backend installation
+      beyond the local lab.
+  skip_sections: Unlisted APIs, training/fine-tuning, distributed deployment and backend installation
+    beyond the local lab.
+  estimated_hours: 0.5
+  access: free
+  format: documentation
+  published_or_updated: Continuously maintained; page-specific date not stated; inspected
+    2026-09-30
+  license_or_terms: Link only; publisher/author terms apply; no redistribution assumed.
+  notebooklm_compatible: 'To be validated manually: import this exact text page or publisher
+    PDF; inspect equations/code extraction.'
+  reason_selected: Predict mask and token-count effects in variable-length batches. Maintainer
+    documentation defines the contract.
+  expected_learning: Predict mask and token-count effects in variable-length batches.
+  last_verified: '2026-10-01'
+  verification_status: Inspected selected content
+  status: Verified
+- id: p2-m5-bench
+  module: 5
+  title: vLLM bench serve reference
+  url: https://docs.vllm.ai/en/latest/cli/bench/serve/
+  publisher: vLLM project
+  authors:
+  - vLLM project contributors
+  source_type: documentation
+  authority_level: official_documentation
+  required_or_optional: required
+  role: primary
+  exact_sections:
+  - title: vLLM bench serve reference
+    url: https://docs.vllm.ai/en/latest/cli/bench/serve/
+    study: Dataset, request-rate, max-concurrency, warm-up, metric and result-saving arguments
+    skip: Unlisted APIs, training/fine-tuning, distributed deployment and backend installation
+      beyond the local lab.
+  skip_sections: Unlisted APIs, training/fine-tuning, distributed deployment and backend installation
+    beyond the local lab.
+  estimated_hours: 0.75
+  access: free
+  format: documentation
+  published_or_updated: Continuously maintained; page-specific date not stated; inspected
+    2026-09-30
+  license_or_terms: Link only; publisher/author terms apply; no redistribution assumed.
+  notebooklm_compatible: 'To be validated manually: import this exact text page or publisher
+    PDF; inspect equations/code extraction.'
+  reason_selected: Specify load-generation and measurement boundaries; no vLLM installation
+    required. Maintainer documentation defines the contract.
+  expected_learning: Specify load-generation and measurement boundaries; no vLLM installation
+    required.
+  last_verified: '2026-09-30'
+  verification_status: Inspected selected content
+  status: Verified
+- id: p2-m5-metrics
+  module: 5
+  title: vLLM Production Metrics
+  url: https://docs.vllm.ai/en/latest/usage/metrics/
+  publisher: vLLM project
+  authors:
+  - vLLM project contributors
+  source_type: documentation
+  authority_level: official_documentation
+  required_or_optional: required
+  role: supporting
+  exact_sections:
+  - title: vLLM Production Metrics
+    url: https://docs.vllm.ai/en/latest/usage/metrics/
+    study: Metrics endpoint; request latency, queue, token and cache metric examples
+    skip: Unlisted APIs, training/fine-tuning, distributed deployment and backend installation
+      beyond the local lab.
+  skip_sections: Unlisted APIs, training/fine-tuning, distributed deployment and backend installation
+    beyond the local lab.
+  estimated_hours: 0.5
+  access: free
+  format: documentation
+  published_or_updated: Continuously maintained; page-specific date not stated; inspected
+    2026-09-30
+  license_or_terms: Link only; publisher/author terms apply; no redistribution assumed.
+  notebooklm_compatible: 'To be validated manually: import this exact text page or publisher
+    PDF; inspect equations/code extraction.'
+  reason_selected: Relate aggregate operational counters to individual request observations.
+    Maintainer documentation defines the contract.
+  expected_learning: Relate aggregate operational counters to individual request observations.
+  last_verified: '2026-09-30'
+  verification_status: Inspected selected content
+  status: Verified
+- id: p2-m5-gpu
+  module: 5
+  title: GPU Performance Background
+  url: https://docs.nvidia.com/deeplearning/performance/dl-performance-gpu-background/index.html
+  publisher: NVIDIA
+  authors:
+  - NVIDIA contributors
+  source_type: documentation
+  authority_level: official_documentation
+  required_or_optional: required
+  role: supporting
+  exact_sections:
+  - title: GPU Performance Background
+    url: https://docs.nvidia.com/deeplearning/performance/dl-performance-gpu-background/index.html
+    study: 'Sections 2–5: architecture, execution, arithmetic intensity and operation categories'
+    skip: Unlisted APIs, training/fine-tuning, distributed deployment and backend installation
+      beyond the local lab.
+  skip_sections: Unlisted APIs, training/fine-tuning, distributed deployment and backend installation
+    beyond the local lab.
+  estimated_hours: 0.5
+  access: free
+  format: documentation
+  published_or_updated: 2023-02 (guide)
+  license_or_terms: Link only; publisher/author terms apply; no redistribution assumed.
+  notebooklm_compatible: 'To be validated manually: import this exact text page or publisher
+    PDF; inspect equations/code extraction.'
+  reason_selected: Form bandwidth/compute hypotheses without interpreting utilization as FLOPs.
+    Maintainer documentation defines the contract.
+  expected_learning: Form bandwidth/compute hypotheses without interpreting utilization as
+    FLOPs.
+  last_verified: '2026-09-30'
+  verification_status: Inspected selected content
+  status: Verified
+- id: p2-m5-cuda
+  module: 5
+  title: CUDA semantics
+  url: https://docs.pytorch.org/docs/2.14/notes/cuda.html
+  publisher: PyTorch project
+  authors:
+  - PyTorch project contributors
+  source_type: documentation
+  authority_level: official_documentation
+  required_or_optional: required
+  role: supporting
+  exact_sections:
+  - title: CUDA semantics
+    url: https://docs.pytorch.org/docs/2.14/notes/cuda.html
+    study: Asynchronous execution; memory management; memory statistics
+    skip: Unlisted APIs, training/fine-tuning, distributed deployment and backend installation
+      beyond the local lab.
+  skip_sections: Unlisted APIs, training/fine-tuning, distributed deployment and backend installation
+    beyond the local lab.
+  estimated_hours: 0.5
+  access: free
+  format: documentation
+  published_or_updated: Continuously maintained; page-specific date not stated; inspected
+    2026-09-30
+  license_or_terms: Link only; publisher/author terms apply; no redistribution assumed.
+  notebooklm_compatible: 'To be validated manually: import this exact text page or publisher
+    PDF; inspect equations/code extraction.'
+  reason_selected: Measure completed work and separate live tensor memory from allocator reservation.
+    Maintainer documentation defines the contract.
+  expected_learning: Measure completed work and separate live tensor memory from allocator
+    reservation.
+  last_verified: '2026-09-30'
+  verification_status: Inspected selected content
+  status: Verified
+- id: p2-m6-profiler
+  module: 6
+  title: PyTorch Profiler recipe
+  url: https://docs.pytorch.org/tutorials/recipes/recipes/profiler_recipe.html
+  publisher: PyTorch project
+  authors:
+  - PyTorch project contributors
+  source_type: documentation
+  authority_level: official_documentation
+  required_or_optional: required
+  role: primary
+  exact_sections:
+  - title: PyTorch Profiler recipe
+    url: https://docs.pytorch.org/tutorials/recipes/recipes/profiler_recipe.html
+    study: Execution time; memory consumption; tracing; profiler schedules
+    skip: Unlisted APIs, training/fine-tuning, distributed deployment and backend installation
+      beyond the local lab.
+  skip_sections: Unlisted APIs, training/fine-tuning, distributed deployment and backend installation
+    beyond the local lab.
+  estimated_hours: 0.75
+  access: free
+  format: documentation
+  published_or_updated: Created 2021-01-29; last updated 2026-07-19 (page metadata)
+  license_or_terms: Link only; publisher/author terms apply; no redistribution assumed.
+  notebooklm_compatible: 'To be validated manually: import this exact text page or publisher
+    PDF; inspect equations/code extraction.'
+  reason_selected: Inspect operator/timeline evidence and account for profiling overhead.
+    Maintainer documentation defines the contract.
+  expected_learning: Inspect operator/timeline evidence and account for profiling overhead.
+  last_verified: '2026-09-30'
+  verification_status: Inspected selected content
+  status: Verified
+- id: p2-m6-cuda
+  module: 6
+  title: CUDA semantics
+  url: https://docs.pytorch.org/docs/2.14/notes/cuda.html
+  publisher: PyTorch project
+  authors:
+  - PyTorch project contributors
+  source_type: documentation
+  authority_level: official_documentation
+  required_or_optional: required
+  role: supporting
+  exact_sections:
+  - title: CUDA semantics
+    url: https://docs.pytorch.org/docs/2.14/notes/cuda.html
+    study: Asynchronous execution; memory management; memory statistics
+    skip: Unlisted APIs, training/fine-tuning, distributed deployment and backend installation
+      beyond the local lab.
+  skip_sections: Unlisted APIs, training/fine-tuning, distributed deployment and backend installation
+    beyond the local lab.
+  estimated_hours: 0.5
+  access: free
+  format: documentation
+  published_or_updated: Continuously maintained; page-specific date not stated; inspected
+    2026-09-30
+  license_or_terms: Link only; publisher/author terms apply; no redistribution assumed.
+  notebooklm_compatible: 'To be validated manually: import this exact text page or publisher
+    PDF; inspect equations/code extraction.'
+  reason_selected: Measure completed work and separate live tensor memory from allocator reservation.
+    Maintainer documentation defines the contract.
+  expected_learning: Measure completed work and separate live tensor memory from allocator
+    reservation.
+  last_verified: '2026-09-30'
+  verification_status: Inspected selected content
+  status: Verified
+- id: p2-m6-smi
+  module: 6
+  title: NVIDIA System Management Interface
+  url: https://docs.nvidia.com/deploy/nvidia-smi/index.html
+  publisher: NVIDIA
+  authors:
+  - NVIDIA contributors
+  source_type: documentation
+  authority_level: official_documentation
+  required_or_optional: required
+  role: supporting
+  exact_sections:
+  - title: NVIDIA System Management Interface
+    url: https://docs.nvidia.com/deploy/nvidia-smi/index.html
+    study: Query options; utilization; memory; sampling limitations
+    skip: Unlisted APIs, training/fine-tuning, distributed deployment and backend installation
+      beyond the local lab.
+  skip_sections: Unlisted APIs, training/fine-tuning, distributed deployment and backend installation
+    beyond the local lab.
+  estimated_hours: 0.5
+  access: free
+  format: documentation
+  published_or_updated: Continuously maintained; page-specific date not stated; inspected
+    2026-09-30
+  license_or_terms: Link only; publisher/author terms apply; no redistribution assumed.
+  notebooklm_compatible: 'To be validated manually: import this exact text page or publisher
+    PDF; inspect equations/code extraction.'
+  reason_selected: Collect bounded device observations and avoid changing device settings.
+    Maintainer documentation defines the contract.
+  expected_learning: Collect bounded device observations and avoid changing device settings.
+  last_verified: '2026-09-30'
+  verification_status: Inspected selected content
+  status: Verified
+- id: p2-m6-python
+  module: 6
+  title: The Python Profilers
+  url: https://docs.python.org/3/library/profile.html
+  publisher: Python Software Foundation
+  authors:
+  - Python Software Foundation contributors
+  source_type: documentation
+  authority_level: official_documentation
+  required_or_optional: required
+  role: supporting
+  exact_sections:
+  - title: The Python Profilers
+    url: https://docs.python.org/3/library/profile.html
+    study: Introduction; cProfile; pstats cumulative and internal time
+    skip: Unlisted APIs, training/fine-tuning, distributed deployment and backend installation
+      beyond the local lab.
+  skip_sections: Unlisted APIs, training/fine-tuning, distributed deployment and backend installation
+    beyond the local lab.
+  estimated_hours: 0.5
+  access: free
+  format: documentation
+  published_or_updated: Last updated 2026-09-30 (Python documentation footer)
+  license_or_terms: Link only; publisher/author terms apply; no redistribution assumed.
+  notebooklm_compatible: 'To be validated manually: import this exact text page or publisher
+    PDF; inspect equations/code extraction.'
+  reason_selected: Separate CPU preprocessing costs from device execution. Maintainer documentation
+    defines the contract.
+  expected_learning: Separate CPU preprocessing costs from device execution.
+  last_verified: '2026-09-30'
+  verification_status: Inspected selected content
+  status: Verified
+- id: p2-m7-arch
+  module: 7
+  title: vLLM Architecture Overview
+  url: https://docs.vllm.ai/en/latest/design/arch_overview/
+  publisher: vLLM project
+  authors:
+  - vLLM project contributors
+  source_type: documentation
+  authority_level: official_documentation
+  required_or_optional: required
+  role: primary
+  exact_sections:
+  - title: vLLM Architecture Overview
+    url: https://docs.vllm.ai/en/latest/design/arch_overview/
+    study: Process architecture; API server; engine core; workers and model execution
+    skip: Unlisted APIs, training/fine-tuning, distributed deployment and backend installation
+      beyond the local lab.
+  skip_sections: Unlisted APIs, training/fine-tuning, distributed deployment and backend installation
+    beyond the local lab.
+  estimated_hours: 0.75
+  access: free
+  format: documentation
+  published_or_updated: Continuously maintained; page-specific date not stated; inspected
+    2026-09-30
+  license_or_terms: Link only; publisher/author terms apply; no redistribution assumed.
+  notebooklm_compatible: 'To be validated manually: import this exact text page or publisher
+    PDF; inspect equations/code extraction.'
+  reason_selected: Map request handling to scheduler and worker responsibilities. Maintainer
+    documentation defines the contract.
+  expected_learning: Map request handling to scheduler and worker responsibilities.
+  last_verified: '2026-09-30'
+  verification_status: Inspected selected content
+  status: Verified
+- id: p2-m7-online
+  module: 7
+  title: vLLM Online Serving
+  url: https://docs.vllm.ai/en/latest/serving/online_serving/
+  publisher: vLLM project
+  authors:
+  - vLLM project contributors
+  source_type: documentation
+  authority_level: official_documentation
+  required_or_optional: required
+  role: supporting
+  exact_sections:
+  - title: vLLM Online Serving
+    url: https://docs.vllm.ai/en/latest/serving/online_serving/
+    study: OpenAI-compatible server; supported APIs; basic and metrics APIs
+    skip: Unlisted APIs, training/fine-tuning, distributed deployment and backend installation
+      beyond the local lab.
+  skip_sections: Unlisted APIs, training/fine-tuning, distributed deployment and backend installation
+    beyond the local lab.
+  estimated_hours: 0.5
+  access: free
+  format: documentation
+  published_or_updated: Continuously maintained; page-specific date not stated; inspected
+    2026-09-30
+  license_or_terms: Link only; publisher/author terms apply; no redistribution assumed.
+  notebooklm_compatible: 'To be validated manually: import this exact text page or publisher
+    PDF; inspect equations/code extraction.'
+  reason_selected: Distinguish API compatibility from identical model behavior and operational
+    readiness. Maintainer documentation defines the contract.
+  expected_learning: Distinguish API compatibility from identical model behavior and operational
+    readiness.
+  last_verified: '2026-09-30'
+  verification_status: Inspected selected content
+  status: Verified
+- id: p2-m7-metrics
+  module: 7
+  title: vLLM Production Metrics
+  url: https://docs.vllm.ai/en/latest/usage/metrics/
+  publisher: vLLM project
+  authors:
+  - vLLM project contributors
+  source_type: documentation
+  authority_level: official_documentation
+  required_or_optional: required
+  role: supporting
+  exact_sections:
+  - title: vLLM Production Metrics
+    url: https://docs.vllm.ai/en/latest/usage/metrics/
+    study: Metrics endpoint; request latency, queue, token and cache metric examples
+    skip: Unlisted APIs, training/fine-tuning, distributed deployment and backend installation
+      beyond the local lab.
+  skip_sections: Unlisted APIs, training/fine-tuning, distributed deployment and backend installation
+    beyond the local lab.
+  estimated_hours: 0.5
+  access: free
+  format: documentation
+  published_or_updated: Continuously maintained; page-specific date not stated; inspected
+    2026-09-30
+  license_or_terms: Link only; publisher/author terms apply; no redistribution assumed.
+  notebooklm_compatible: 'To be validated manually: import this exact text page or publisher
+    PDF; inspect equations/code extraction.'
+  reason_selected: Relate aggregate operational counters to individual request observations.
+    Maintainer documentation defines the contract.
+  expected_learning: Relate aggregate operational counters to individual request observations.
+  last_verified: '2026-09-30'
+  verification_status: Inspected selected content
+  status: Verified
+- id: p2-m7-paged
+  module: 7
+  title: Efficient Memory Management for Large Language Model Serving with PagedAttention
+  url: https://arxiv.org/html/2309.06180v1
+  publisher: ACM SOSP / arXiv
+  authors:
+  - Woosuk Kwon et al.
+  source_type: original_paper
+  authority_level: original_research
+  required_or_optional: optional
+  role: supporting
+  exact_sections:
+  - title: Efficient Memory Management for Large Language Model Serving with PagedAttention
+    url: https://arxiv.org/html/2309.06180v1
+    study: Sections 2–4; 6.1 experiment setup; Figures 2–4
+    skip: Distributed deployment, custom kernels and full evaluation reproduction; follow
+      only the listed sections.
+  skip_sections: Distributed deployment, custom kernels and full evaluation reproduction;
+    follow only the listed sections.
+  estimated_hours: 0.5
+  access: free
+  format: paper
+  published_or_updated: 2023-09-12 (v1)
+  license_or_terms: Link only; publisher/author terms apply; no redistribution assumed.
+  notebooklm_compatible: 'To be validated manually: import this exact text page or publisher
+    PDF; inspect equations/code extraction.'
+  reason_selected: Understand block-based KV allocation and inspect historical workload assumptions.
+    Original peer-reviewed systems research, with historical results kept separate from current
+    behavior.
+  expected_learning: Understand block-based KV allocation and inspect historical workload
+    assumptions.
+  last_verified: '2026-09-30'
+  verification_status: Inspected selected content
+  status: Verified

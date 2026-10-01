@@ -10,7 +10,8 @@ evidence checks; it does not claim prior AI expertise or completed learning.
 ## Start here
 
 1. Read the [curriculum](CURRICULUM.md) and its depth boundaries.
-2. Reserve the [six-week schedule](SCHEDULE.md), starting 20 September 2026.
+2. Reserve the [six-week schedule](SCHEDULE.md), using the proposed date
+   options.
 3. Open the first module and its [NotebookLM source pack](notebooklm/README.md).
 4. Complete the small [exercise specifications](exercises/README.md), using the
    [evidence template](exercises/EVIDENCE_TEMPLATE.md).
@@ -61,3 +62,8 @@ mark full practical completion until the missing evidence exists.
 
 This remains personal public learning under the repository’s
 [independence and privacy rules](../CONTRIBUTING.md).
+
+## Progression
+
+Use the [evidence gate](EVIDENCE.md) before [Phase 2](../phase-2/README.md). The
+revised [schedule](SCHEDULE.md) preserves 90 hours without assuming past study.
