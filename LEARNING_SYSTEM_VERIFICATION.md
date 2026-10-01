@@ -71,7 +71,8 @@ records.
   separate from content inspection. Additional repository/community links were
   checked; the GitHub new-issue form requires login, as expected. No selected
   reading remained inaccessible or unverifiable during this run.
-- Markdown lint passes across 136 Markdown files with the existing configuration. `git diff --check`
+- Markdown lint passes across 136 Markdown files with the existing
+  configuration. `git diff --check`
   passes. No TODO/FIXME/TBD or unfinished implementation placeholders remain;
   blank learner report fields are intentional templates.
 - Credential/private-address pattern checks across 156 repository files found no
