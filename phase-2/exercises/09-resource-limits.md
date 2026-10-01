@@ -24,8 +24,10 @@ Complete the corresponding module and the [lab setup](../scripts/README.md).
 - Dependent measurements: Requested bytes, configured limit, accepted/refused
   decision, stop reason and recovery explanation.
 - Hardware/software metadata: complete the
-  [profile](../templates/hardware-software-profile.md), including model
-  revision, backend, RAM/VRAM, versions and competing workloads.
+  [profile](../templates/hardware-software-profile.md), including Python
+  version and the lab commit. Mark model, model revision and accelerator fields
+  not applicable for the arithmetic simulation; record them for any hardware
+  extension.
 
 ## Commands and code
 
@@ -38,15 +40,17 @@ From the repository root after setup, use a new output name for each condition:
 ```
 
 The complete runnable code is [inference_lab.py](../scripts/inference_lab.py).
-Inspect its budget_study functions before running. For comparisons copy the
-immutable model revision from the first result into `--revision`, change only
-the intended argument, and select a new output file. Use only synthetic/public
-prompts. Never publish an unreviewed profiler trace.
+Inspect `budget_study` before running. This path loads no model and its JSON
+contains no model revision. Record the repository commit, byte budget and
+requested shapes instead; `--revision` is not applicable. Use a new output file
+for each run. The default byte budget is fixed in the function; any changed
+budget must be recorded as a code/configuration change.
 
 ## Procedure
 
 1. Record your prediction and the variables above in the experiment plan.
-2. Run a bounded smoke test and check counts, shapes and finite values.
+2. Run the arithmetic simulation and verify each requested byte count by hand.
+   Confirm it stops after the first budget refusal without allocating tensors.
 3. Explain allocation versus reservation and why release of live references
    matters. For optional hardware observation, cap new tensor payload at the
    lesser of 256 MiB and 10% currently free memory, stop on pressure or the
@@ -67,15 +71,15 @@ numbers into measured-result columns.
 
 ## Common mistakes and limitations
 
-Do not compare different model revisions, include download time in only one arm,
-average incompatible token rates, hide failed requests or infer large-model
-behavior from a tiny model. Per-token synchronization and text decoding in this
-lab affect timing. It does not measure production HTTP service latency,
-implement continuous batching or provide a benchmark of model quality.
+A software-budget refusal is not a caught allocator exception. The simulation
+reports tensor payload only; it does not measure process RSS, allocator
+reservation, fragmentation or device pressure. Do not treat its acceptance
+decisions as proof that a real allocation will succeed. Keep optional hardware
+observations separate from the arithmetic rows.
 
 ## Required evidence and interpretation questions
 
-- Prediction, exact commands and immutable model revision.
+- Prediction, exact commands, repository commit and configured byte budget.
 - Raw results, metadata and correctness checks, or a precise execution blocker.
 - Analysis: what changed, what stayed fixed and what could confound the result?
 - What measurement would distinguish your explanation from its alternative?
@@ -84,10 +88,9 @@ implement continuous batching or provide a benchmark of model quality.
 
 ## Cleanup and hardware fallback
 
-Exit only the process you started; release model/tensor references. Keep raw
-results and discard temporary traces only after preserving reviewed evidence. Do
-not delete global caches or change GPU driver settings. Default to CPU. Add
-`--toy` for a tiny random model without downloads (except E09, which needs no
-model packages). Label this a mechanics smoke test, with no language-quality
-claim. Where accelerator evidence is absent, record Not started rather than
-claiming CPU measurements establish CUDA behavior.
+The default path allocates no trial tensors, needs only standard-library Python
+and requires no device cleanup. Preserve the JSON and your calculations. For an
+optional hardware extension, exit only your own process and release its tensor
+references; do not change drivers or delete global caches. Label the default
+result an arithmetic simulation. Physical OOM recovery remains Not started
+unless it was safely observed and documented.
