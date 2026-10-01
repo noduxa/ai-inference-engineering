@@ -1,7 +1,7 @@
 # Module 3: Essential mathematics
 
 Status: Not started. Estimated time: **15 hours**, including practice, review
-and catch-up. Last verified: 2026-09-16.
+and catch-up. Last verified: 2026-09-30.
 
 [Curriculum](../CURRICULUM.md) · [Schedule](../SCHEDULE.md) ·
 [Source pack](../notebooklm/source-packs/03-essential-mathematics.md)
@@ -61,6 +61,65 @@ revisit any unresolved prerequisite before continuing.
 Exact page links, selected sections, exclusions, access terms and import order
 are in the source pack. Reading times are selective budgets, not estimates for
 completing entire documentation collections.
+
+## Detailed explanation and worked examples
+
+### Shapes constrain meaningful operations
+
+A scalar has no axes; a vector has one; a matrix has two. In this curriculum,
+"tensor" means a multidimensional array. A matrix represents a linear map once
+bases are chosen. For row-vector batches, `X @ W` maps `(batch, input)` to
+`(batch, output)`. Transposition swaps axes; it is not an inverse.
+
+For `A=[[1,2],[3,4]]` and `b=[5,6]`, `Ab=[17,39]`: each output is a row's dot
+product with `b`. The Euclidean norm of `[3,4]` is 5. A basis is an independent
+spanning set; rank counts independent directions. Orthogonal vectors have zero
+dot product. An eigenvector keeps its direction under a square linear map; an
+SVD expresses a map using orthogonal directions and nonnegative scale factors.
+These interpretations guide shape reasoning; deriving decomposition algorithms
+is outside this phase. See
+[D2L linear algebra](https://d2l.ai/chapter_preliminaries/linear-algebra.html).
+
+### Gradients describe local sensitivity
+
+For `z=wx+b` and `L=(z-y)^2`, the chain rule gives `dL/dw = 2(z-y)x` and
+`dL/db = 2(z-y)`. At `x=2,w=3,b=1,y=5`, `z=7`, `L=4`, and the derivatives are 8
+and 4. A small gradient-descent step subtracts learning rate times these
+derivatives. A gradient contains one partial derivative per input coordinate; it
+is not necessarily a scalar. A finite change need not equal the local linear
+approximation. See
+[D2L calculus](https://d2l.ai/chapter_preliminaries/calculus.html).
+
+### Probabilities and stable normalization
+
+Softmax maps finite logits to probabilities:
+`p_i = exp(z_i - m) / sum_j exp(z_j - m)`, with `m=max(z)`. Subtracting the same
+constant preserves ratios. For `[0, log(2)]`, the exact probabilities are
+`[1/3,2/3]`; adding 1000 to both logits should not change them mathematically,
+but naive exponentiation may overflow. Stability concerns the algorithm, while
+precision concerns the representation.
+
+For a random variable taking 0 with probability 1/4 and 2 with probability 3/4,
+`E[X]=1.5` and `Var(X)=E[X²]-E[X]²=3-2.25=0.75`. An observed finite-sample
+average need not equal the expectation. This distinction will matter when
+comparing noisy latency distributions in Phase 2.
+
+## Required depth by topic
+
+| Depth                  | Topics                                                                                                                                                                             | Demonstration                                                            |
+| ---------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------ |
+| Conceptual recognition | Basis, rank, orthogonality, eigenvalues, eigenvectors, SVD                                                                                                                         | Explain a small geometric example; no proofs required                    |
+| Calculation ability    | Scalars, vectors, matrices, tensors, dimensions, shapes, dot products, matrix multiplication, transposes, vector norms, exponentials, logarithms, expected value, variance         | Calculate a fresh small example with units/shapes                        |
+| Working understanding  | Linear transformations, functions, derivatives, partial derivatives, gradients, chain rule, softmax, probability, random variables, probability distributions, numerical stability | Explain assumptions, calculate, translate to code and diagnose a failure |
+
+## Code-reading task and implementation mistakes
+
+Read
+`p = exp(z-z.max(axis=-1, keepdims=True)); p /= p.sum(axis=-1, keepdims=True)`
+as pseudocode. Annotate every shape, explain the normalization axis, and
+identify what happens for an all-masked row. Watch for mixing row and column
+conventions, treating logits as probabilities, and interpreting a gradient as a
+globally valid change. Carry these calculations into PyTorch autograd.
 
 ## Study order
 
@@ -129,3 +188,8 @@ assistance, corrections and evidence using the
 - [ ] Exit test and teach-back reviewed; critical misconceptions corrected.
 - [ ] Hardware-dependent work still pending is explicitly identified.
 - [ ] Weekly review links the evidence; status changes have supporting records.
+
+## Connection to the next module
+
+Continue to [pytorch fundamentals](04-pytorch-fundamentals.md) after the exit
+test.

@@ -139,6 +139,12 @@ class HTTPTests(unittest.TestCase):
         for body, status in [(b"<title>Just a moment</title>", "blocked"), (b"<title>Redirecting</title>", "inaccessible")]:
             self.assertEqual(self.check(Mock(open=Mock(return_value=self.response(body))))["status"], status)
 
+    def test_documentation_version_notice(self):
+        body = b"The documentation page doesn't exist in this version. Click to redirect."
+        result = self.check(Mock(open=Mock(return_value=self.response(body))))
+        self.assertEqual(result["status"], "inaccessible")
+        self.assertIn("version", result["detail"])
+
     def test_https_downgrade(self):
         first = self.response(b'<meta http-equiv="refresh" content="0; url=http://example.com/new">')
         self.assertIn("downgrade", self.check(Mock(open=Mock(return_value=first)))["detail"])

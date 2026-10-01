@@ -26,6 +26,29 @@ a fixed maximum of 100,000 values; record time as well as memory.
 Evidence: prediction, exact method, actual output or limitation, interpretation
 and a link to the relevant selected source section.
 
+### PY-01 evidence and execution fields
+
+- **Purpose:** test the specific mechanism in the procedure above; connect it to
+  a request-processing, tensor or memory failure in the linked module.
+- **Prerequisites:** finish the module's preceding study steps; use synthetic
+  inputs and record installed versions before running.
+- **Prediction:** write a direction/shape/value prediction and one condition
+  under which it could fail, before seeing output.
+- **Required measurements:** peak traced bytes and total consumption time, equal
+  sums.
+- **Expected conceptual pattern:** use the module's worked example as a
+  hypothesis, not a supplied observation. Explain departures from it.
+- **Interpretation questions:** did correctness hold? What changed besides the
+  intended variable? What does this measurement fail to measure?
+- **Common mistakes:** timing setup in only one arm, omitting units or shapes,
+  selecting only a favorable run, or interpreting a simulation as hardware data.
+- **Required evidence:** original code/calculation, raw output, prediction,
+  environment, interpretation and a source section; use EVIDENCE_TEMPLATE.md.
+- **Cleanup:** close executors/files, release temporary arrays/models, terminate
+  only processes started by this exercise, and retain reviewed raw measurements.
+- **Hardware-independent fallback:** do calculations and use bounded CPU arrays
+  or simulated waits; explicitly mark accelerator-only observations Not started.
+
 ## PY-02: AsyncIO versus threads for I/O
 
 Status: Not started.
@@ -37,6 +60,29 @@ timeout/cancellation and exception handling; do not contact external services.
 
 Evidence: prediction, exact method, actual output or limitation, interpretation
 and a link to the relevant selected source section.
+
+### PY-02 evidence and execution fields
+
+- **Purpose:** test the specific mechanism in the procedure above; connect it to
+  a request-processing, tensor or memory failure in the linked module.
+- **Prerequisites:** finish the module's preceding study steps; use synthetic
+  inputs and record installed versions before running.
+- **Prediction:** write a direction/shape/value prediction and one condition
+  under which it could fail, before seeing output.
+- **Required measurements:** wall time, task latency, worker count and
+  successful task count.
+- **Expected conceptual pattern:** use the module's worked example as a
+  hypothesis, not a supplied observation. Explain departures from it.
+- **Interpretation questions:** did correctness hold? What changed besides the
+  intended variable? What does this measurement fail to measure?
+- **Common mistakes:** timing setup in only one arm, omitting units or shapes,
+  selecting only a favorable run, or interpreting a simulation as hardware data.
+- **Required evidence:** original code/calculation, raw output, prediction,
+  environment, interpretation and a source section; use EVIDENCE_TEMPLATE.md.
+- **Cleanup:** close executors/files, release temporary arrays/models, terminate
+  only processes started by this exercise, and retain reviewed raw measurements.
+- **Hardware-independent fallback:** do calculations and use bounded CPU arrays
+  or simulated waits; explicitly mark accelerator-only observations Not started.
 
 ## PY-03: Multiprocessing for CPU-bound work
 
@@ -51,6 +97,29 @@ version and GIL/build assumptions.
 Evidence: prediction, exact method, actual output or limitation, interpretation
 and a link to the relevant selected source section.
 
+### PY-03 evidence and execution fields
+
+- **Purpose:** test the specific mechanism in the procedure above; connect it to
+  a request-processing, tensor or memory failure in the linked module.
+- **Prerequisites:** finish the module's preceding study steps; use synthetic
+  inputs and record installed versions before running.
+- **Prediction:** write a direction/shape/value prediction and one condition
+  under which it could fail, before seeing output.
+- **Required measurements:** startup-inclusive wall time, result equality, task
+  size and process count.
+- **Expected conceptual pattern:** use the module's worked example as a
+  hypothesis, not a supplied observation. Explain departures from it.
+- **Interpretation questions:** did correctness hold? What changed besides the
+  intended variable? What does this measurement fail to measure?
+- **Common mistakes:** timing setup in only one arm, omitting units or shapes,
+  selecting only a favorable run, or interpreting a simulation as hardware data.
+- **Required evidence:** original code/calculation, raw output, prediction,
+  environment, interpretation and a source section; use EVIDENCE_TEMPLATE.md.
+- **Cleanup:** close executors/files, release temporary arrays/models, terminate
+  only processes started by this exercise, and retain reviewed raw measurements.
+- **Hardware-independent fallback:** do calculations and use bounded CPU arrays
+  or simulated waits; explicitly mark accelerator-only observations Not started.
+
 ## PY-04: Profile a slow function
 
 Status: Not started.
@@ -63,6 +132,29 @@ inconclusive result if noise dominates.
 Evidence: prediction, exact method, actual output or limitation, interpretation
 and a link to the relevant selected source section.
 
+### PY-04 evidence and execution fields
+
+- **Purpose:** test the specific mechanism in the procedure above; connect it to
+  a request-processing, tensor or memory failure in the linked module.
+- **Prerequisites:** finish the module's preceding study steps; use synthetic
+  inputs and record installed versions before running.
+- **Prediction:** write a direction/shape/value prediction and one condition
+  under which it could fail, before seeing output.
+- **Required measurements:** cumulative/self time and call count before and
+  after one change.
+- **Expected conceptual pattern:** use the module's worked example as a
+  hypothesis, not a supplied observation. Explain departures from it.
+- **Interpretation questions:** did correctness hold? What changed besides the
+  intended variable? What does this measurement fail to measure?
+- **Common mistakes:** timing setup in only one arm, omitting units or shapes,
+  selecting only a favorable run, or interpreting a simulation as hardware data.
+- **Required evidence:** original code/calculation, raw output, prediction,
+  environment, interpretation and a source section; use EVIDENCE_TEMPLATE.md.
+- **Cleanup:** close executors/files, release temporary arrays/models, terminate
+  only processes started by this exercise, and retain reviewed raw measurements.
+- **Hardware-independent fallback:** do calculations and use bounded CPU arrays
+  or simulated waits; explicitly mark accelerator-only observations Not started.
+
 ## PY-05: Trace memory allocations
 
 Status: Not started.
@@ -74,6 +166,29 @@ measurements.
 
 Evidence: prediction, exact method, actual output or limitation, interpretation
 and a link to the relevant selected source section.
+
+### PY-05 evidence and execution fields
+
+- **Purpose:** test the specific mechanism in the procedure above; connect it to
+  a request-processing, tensor or memory failure in the linked module.
+- **Prerequisites:** finish the module's preceding study steps; use synthetic
+  inputs and record installed versions before running.
+- **Prediction:** write a direction/shape/value prediction and one condition
+  under which it could fail, before seeing output.
+- **Required measurements:** snapshot byte/count deltas and allocation
+  tracebacks.
+- **Expected conceptual pattern:** use the module's worked example as a
+  hypothesis, not a supplied observation. Explain departures from it.
+- **Interpretation questions:** did correctness hold? What changed besides the
+  intended variable? What does this measurement fail to measure?
+- **Common mistakes:** timing setup in only one arm, omitting units or shapes,
+  selecting only a favorable run, or interpreting a simulation as hardware data.
+- **Required evidence:** original code/calculation, raw output, prediction,
+  environment, interpretation and a source section; use EVIDENCE_TEMPLATE.md.
+- **Cleanup:** close executors/files, release temporary arrays/models, terminate
+  only processes started by this exercise, and retain reviewed raw measurements.
+- **Hardware-independent fallback:** do calculations and use bounded CPU arrays
+  or simulated waits; explicitly mark accelerator-only observations Not started.
 
 ## PY-06: Package and read code
 
@@ -89,3 +204,26 @@ private code.
 
 Evidence: prediction, exact method, actual output or limitation, interpretation
 and a link to the relevant selected source section.
+
+### PY-06 evidence and execution fields
+
+- **Purpose:** test the specific mechanism in the procedure above; connect it to
+  a request-processing, tensor or memory failure in the linked module.
+- **Prerequisites:** finish the module's preceding study steps; use synthetic
+  inputs and record installed versions before running.
+- **Prediction:** write a direction/shape/value prediction and one condition
+  under which it could fail, before seeing output.
+- **Required measurements:** package version, file/symbol call trace, passing
+  and failing test cases.
+- **Expected conceptual pattern:** use the module's worked example as a
+  hypothesis, not a supplied observation. Explain departures from it.
+- **Interpretation questions:** did correctness hold? What changed besides the
+  intended variable? What does this measurement fail to measure?
+- **Common mistakes:** timing setup in only one arm, omitting units or shapes,
+  selecting only a favorable run, or interpreting a simulation as hardware data.
+- **Required evidence:** original code/calculation, raw output, prediction,
+  environment, interpretation and a source section; use EVIDENCE_TEMPLATE.md.
+- **Cleanup:** close executors/files, release temporary arrays/models, terminate
+  only processes started by this exercise, and retain reviewed raw measurements.
+- **Hardware-independent fallback:** do calculations and use bounded CPU arrays
+  or simulated waits; explicitly mark accelerator-only observations Not started.

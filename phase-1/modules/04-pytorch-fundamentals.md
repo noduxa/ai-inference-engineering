@@ -1,7 +1,7 @@
 # Module 4: PyTorch fundamentals
 
 Status: Not started. Estimated time: **15 hours**, including practice, review
-and catch-up. Last verified: 2026-09-16.
+and catch-up. Last verified: 2026-09-30.
 
 [Curriculum](../CURRICULUM.md) · [Schedule](../SCHEDULE.md) ·
 [Source pack](../notebooklm/source-packs/04-pytorch-fundamentals.md)
@@ -65,6 +65,71 @@ revisit any unresolved prerequisite before continuing.
 Exact page links, selected sections, exclusions, access terms and import order
 are in the source pack. Reading times are selective budgets, not estimates for
 completing entire documentation collections.
+
+## Detailed explanation and worked example
+
+A tensor's values, layout, dtype and device are separate properties. Moving a
+module does not automatically move unrelated inputs. Verify installation with
+CPU first, then query CUDA or `torch.backends.mps.is_available()` before
+selecting an accelerator. Apple MPS uses a different backend and memory model;
+CUDA memory APIs do not measure MPS. See the
+[MPS backend](https://docs.pytorch.org/docs/2.14/notes/mps.html).
+
+An `nn.Module` registers parameter tensors and child modules. Its `forward`
+describes computation; it does not perform an optimizer update. For a linear
+layer with 3 inputs and 2 outputs, weight shape is `(2,3)`, bias shape `(2,)`,
+and an input `(4,3)` yields `(4,2)`. There are `3*2+2=8` parameters.
+
+```python
+import torch
+layer = torch.nn.Linear(3, 2)
+x = torch.ones(4, 3)
+optimizer = torch.optim.SGD(layer.parameters(), lr=0.01)
+optimizer.zero_grad()
+loss = layer(x).square().mean()
+loss.backward()
+optimizer.step()
+layer.eval()
+with torch.inference_mode():
+    prediction = layer(x)
+```
+
+Identify which lines build a graph, compute gradients and change weights.
+Autograd constructs a graph of recorded operations; gradients normally
+accumulate until cleared. `Dataset` supplies examples and `DataLoader`
+groups/loads them; worker processes can cost more than they save for tiny
+synthetic inputs.
+
+`eval()` changes behavior of mode-sensitive layers such as dropout; it does not
+disable autograd. `no_grad()` disables gradient recording in its scope.
+`inference_mode()` removes additional tracking but restricts later autograd use
+of tensors created there. See
+[autograd modes](https://docs.pytorch.org/docs/2.14/notes/autograd.html). Save a
+state dictionary, reconstruct the same architecture, reload it, set eval mode
+and compare outputs with a stated tolerance. State dictionaries do not encode
+the entire preprocessing contract.
+
+Mixed precision chooses operation-specific representations; it is not equivalent
+to blindly converting every operation to FP16. `torch.compile` can introduce a
+large first-call cost and specialization/recompilation. Report compilation and
+steady-state timings separately. A profiler adds overhead, so use it to localize
+work and then confirm timings without profiling.
+
+CUDA dispatch is asynchronous. A wall-clock interval must synchronize before and
+after the measured region, or use CUDA events on the relevant stream and wait
+for completion. MPS timing needs `torch.mps.synchronize()`; CPU timing does not.
+Allocated CUDA memory describes live tensor allocation; reserved memory includes
+the caching allocator's pool. These differ from all-process device usage. See
+[CUDA semantics](https://docs.pytorch.org/docs/2.14/notes/cuda.html).
+
+## Code-reading task and implementation mistakes
+
+Annotate the example line by line, then inspect the installed
+`nn.Linear.forward` implementation and the official optimization tutorial's
+training loop. Explain how broadcasting could let a wrong target shape silently
+change a loss. Common failures include uncleared gradients, train mode during
+evaluation, retained graph-bearing losses in a list, device mismatch and timing
+only enqueue work. Carry the forward/backward distinction into Module 5.
 
 ## Study order
 
@@ -133,3 +198,7 @@ assistance, corrections and evidence using the
 - [ ] Exit test and teach-back reviewed; critical misconceptions corrected.
 - [ ] Hardware-dependent work still pending is explicitly identified.
 - [ ] Weekly review links the evidence; status changes have supporting records.
+
+## Connection to the next module
+
+Continue to [neural networks](05-neural-networks.md) after the exit test.

@@ -1,0 +1,753 @@
+schema_version: 1
+status: Not started
+target_date: '2026-11-30'
+total_hours: 60
+module_hours: 57
+final_assessment_hours: 3
+modules:
+- id: P2-M01
+  number: 1
+  title: Inference request lifecycle
+  status: Not started
+  guide: modules/01-inference-request-lifecycle.md
+  source_pack: notebooklm/source-packs/01-inference-request-lifecycle.md
+  objectives:
+  - Trace text through configuration, weights, tokenization, placement, forward pass and streamed output.
+  - Identify logits processing, token selection, stop conditions and decoding.
+  - Separate model loading, first request and warmed execution.
+  required_concepts:
+  - Configuration
+  - weight formats
+  - weights
+  - tokenizer
+  - input IDs
+  - attention masks
+  - device placement
+  - forward pass
+  - logits
+  - logit processing
+  - sampling
+  - token append
+  - EOS and length/stop conditions
+  - detokenization
+  - streaming
+  - cold execution
+  - warm-up
+  prerequisites:
+  - phase-1:exit-gate
+  source_ids:
+  - p2-m1-generate
+  - p2-m1-api
+  - p2-m1-format
+  - p2-m1-padding
+  - p2-m1-model
+  exercises:
+  - id: E01
+    path: exercises/01-request-lifecycle.md
+  - id: E07
+    path: exercises/07-warm-cold.md
+  assessment_ids:
+  - final-concept
+  - final-calculation
+  - final-code-reading
+  - final-benchmarking
+  - final-diagnostic
+  - final-teach-back
+  - phase-3-readiness
+  estimated_hours: 7
+  scheduled_week:
+  - 1
+  evidence_requirements:
+  - Original explanation and annotated code trace
+  - Reproducible experiment with raw measurements or explicit hardware limitation
+  - Reviewed exit assessment with corrections
+  exit_criteria:
+  - Trace text through configuration, weights, tokenization, placement, forward pass and streamed output.
+  - Identify logits processing, token selection, stop conditions and decoding.
+  - Separate model loading, first request and warmed execution.
+  - Resolve critical misconceptions and link evidence before marking complete.
+  next_module: P2-M02
+- id: P2-M02
+  number: 2
+  title: Prefill, decode and KV cache
+  status: Not started
+  guide: modules/02-prefill-decode-and-kv-cache.md
+  source_pack: notebooklm/source-packs/02-prefill-decode-and-kv-cache.md
+  objectives:
+  - Explain the different work done during prefill and decode.
+  - Estimate cache growth using layer, KV-head, sequence, batch and dtype assumptions.
+  - Distinguish logical context, allocated cache capacity, prefix reuse and eviction.
+  required_concepts:
+  - Autoregression
+  - prefill
+  - decode
+  - TTFT
+  - TPOT
+  - per-layer keys and values
+  - sequence and batch growth
+  - prompt and output length
+  - capacity
+  - context windows
+  - cache reuse
+  - paged allocation
+  - prefix caching
+  - eviction
+  prerequisites:
+  - P2-M01
+  source_ids:
+  - p2-m2-cache
+  - p2-m2-strategies
+  - p2-m2-paged
+  - p2-m2-prefix
+  exercises:
+  - id: E02
+    path: exercises/02-prefill-decode.md
+  - id: E03
+    path: exercises/03-output-length.md
+  - id: E04
+    path: exercises/04-kv-cache.md
+  assessment_ids:
+  - final-concept
+  - final-calculation
+  - final-code-reading
+  - final-benchmarking
+  - final-diagnostic
+  - final-teach-back
+  - phase-3-readiness
+  estimated_hours: 10
+  scheduled_week:
+  - 1
+  - 2
+  evidence_requirements:
+  - Original explanation and annotated code trace
+  - Reproducible experiment with raw measurements or explicit hardware limitation
+  - Reviewed exit assessment with corrections
+  exit_criteria:
+  - Explain the different work done during prefill and decode.
+  - Estimate cache growth using layer, KV-head, sequence, batch and dtype assumptions.
+  - Distinguish logical context, allocated cache capacity, prefix reuse and eviction.
+  - Resolve critical misconceptions and link evidence before marking complete.
+  next_module: P2-M03
+- id: P2-M03
+  number: 3
+  title: Model memory and quantization
+  status: Not started
+  guide: modules/03-model-memory-and-quantization.md
+  source_pack: notebooklm/source-packs/03-model-memory-and-quantization.md
+  objectives:
+  - Build a memory budget including weights, activations, KV state, workspace and overhead.
+  - Compare two supported precisions and interpret memory, timing and output differences.
+  - Diagnose an OOM without treating reserved memory as a leak.
+  required_concepts:
+  - Parameter count
+  - weights
+  - activations
+  - KV cache
+  - temporary workspace
+  - runtime and allocator overhead
+  - FP32
+  - FP16
+  - BF16
+  - INT8
+  - INT4
+  - weight-only and activation quantization
+  - calibration
+  - accuracy
+  - dequantization
+  - hardware support
+  - fragmentation
+  - allocated and reserved memory
+  - OOM
+  prerequisites:
+  - P2-M02
+  source_ids:
+  - p2-m3-optimization
+  - p2-m3-quant
+  - p2-m3-bnb
+  - p2-m3-cuda
+  exercises:
+  - id: E05
+    path: exercises/05-precision.md
+  - id: E09
+    path: exercises/09-resource-limits.md
+  assessment_ids:
+  - final-concept
+  - final-calculation
+  - final-code-reading
+  - final-benchmarking
+  - final-diagnostic
+  - final-teach-back
+  - phase-3-readiness
+  estimated_hours: 13
+  scheduled_week:
+  - 2
+  evidence_requirements:
+  - Original explanation and annotated code trace
+  - Reproducible experiment with raw measurements or explicit hardware limitation
+  - Reviewed exit assessment with corrections
+  exit_criteria:
+  - Build a memory budget including weights, activations, KV state, workspace and overhead.
+  - Compare two supported precisions and interpret memory, timing and output differences.
+  - Diagnose an OOM without treating reserved memory as a leak.
+  - Resolve critical misconceptions and link evidence before marking complete.
+  next_module: P2-M04
+- id: P2-M04
+  number: 4
+  title: Batching, scheduling and serving
+  status: Not started
+  guide: modules/04-batching-scheduling-and-serving.md
+  source_pack: notebooklm/source-packs/04-batching-scheduling-and-serving.md
+  objectives:
+  - Explain static, dynamic and continuous batching with a request timeline.
+  - Measure concurrency and batch-size effects on throughput and individual latency.
+  - Specify bounded admission, cancellation and backpressure behavior.
+  required_concepts:
+  - Static batching
+  - dynamic batching
+  - continuous batching
+  - queues
+  - schedulers
+  - prefill/decode scheduling
+  - head-of-line blocking
+  - padding
+  - sequence variation
+  - throughput/latency
+  - concurrency
+  - backpressure
+  - admission control
+  - cancellation
+  - streaming
+  - fairness
+  - capacity
+  - SLOs
+  prerequisites:
+  - P2-M03
+  source_ids:
+  - p2-m4-continuous
+  - p2-m4-orca
+  - p2-m4-arch
+  - p2-m4-padding
+  exercises:
+  - id: E06
+    path: exercises/06-batching-concurrency.md
+  assessment_ids:
+  - final-concept
+  - final-calculation
+  - final-code-reading
+  - final-benchmarking
+  - final-diagnostic
+  - final-teach-back
+  - phase-3-readiness
+  estimated_hours: 7
+  scheduled_week:
+  - 3
+  evidence_requirements:
+  - Original explanation and annotated code trace
+  - Reproducible experiment with raw measurements or explicit hardware limitation
+  - Reviewed exit assessment with corrections
+  exit_criteria:
+  - Explain static, dynamic and continuous batching with a request timeline.
+  - Measure concurrency and batch-size effects on throughput and individual latency.
+  - Specify bounded admission, cancellation and backpressure behavior.
+  - Resolve critical misconceptions and link evidence before marking complete.
+  next_module: P2-M05
+- id: P2-M05
+  number: 5
+  title: Performance metrics and benchmarking
+  status: Not started
+  guide: modules/05-performance-metrics-and-benchmarking.md
+  source_pack: notebooklm/source-packs/05-performance-metrics-and-benchmarking.md
+  objectives:
+  - Define TTFT, TPOT, ITL and throughput with explicit clocks and token counts.
+  - Design a repeated, controlled comparison with raw per-request records.
+  - Explain when tail percentiles and cross-hardware comparisons are misleading.
+  required_concepts:
+  - End-to-end latency
+  - TTFT
+  - TPOT
+  - ITL
+  - tokens/s
+  - requests/s
+  - throughput
+  - concurrency
+  - prompt/completion tokens
+  - P50/P95/P99
+  - GPU activity and memory
+  - bandwidth and compute
+  - warm-up
+  - repetition
+  - synchronization
+  - fixed and variable workloads
+  - measurement error
+  - versions
+  - fair comparison
+  prerequisites:
+  - P2-M04
+  source_ids:
+  - p2-m5-bench
+  - p2-m5-metrics
+  - p2-m5-gpu
+  - p2-m5-cuda
+  exercises:
+  - id: E06
+    path: exercises/06-batching-concurrency.md
+  - id: E07
+    path: exercises/07-warm-cold.md
+  assessment_ids:
+  - final-concept
+  - final-calculation
+  - final-code-reading
+  - final-benchmarking
+  - final-diagnostic
+  - final-teach-back
+  - phase-3-readiness
+  estimated_hours: 8
+  scheduled_week:
+  - 3
+  evidence_requirements:
+  - Original explanation and annotated code trace
+  - Reproducible experiment with raw measurements or explicit hardware limitation
+  - Reviewed exit assessment with corrections
+  exit_criteria:
+  - Define TTFT, TPOT, ITL and throughput with explicit clocks and token counts.
+  - Design a repeated, controlled comparison with raw per-request records.
+  - Explain when tail percentiles and cross-hardware comparisons are misleading.
+  - Resolve critical misconceptions and link evidence before marking complete.
+  next_module: P2-M06
+- id: P2-M06
+  number: 6
+  title: Profiling and bottleneck diagnosis
+  status: Not started
+  guide: modules/06-profiling-and-bottleneck-diagnosis.md
+  source_pack: notebooklm/source-packs/06-profiling-and-bottleneck-diagnosis.md
+  objectives:
+  - Use CPU and device observations to form a falsifiable performance hypothesis.
+  - Read a profiler timeline and distinguish activity from causal evidence.
+  - Change one variable and report uncertainty and failed hypotheses.
+  required_concepts:
+  - CPU
+  - tokenization
+  - GPU
+  - transfers
+  - synchronization
+  - kernel launch overhead
+  - memory-bound and compute-bound execution
+  - underutilization
+  - small batches
+  - long prompts
+  - long outputs
+  - allocation pressure
+  - OOM
+  - PyTorch Profiler
+  - NVIDIA monitoring
+  - CPU/RAM monitoring
+  - timelines
+  - controlled hypotheses
+  - correlation and causation
+  prerequisites:
+  - P2-M05
+  source_ids:
+  - p2-m6-profiler
+  - p2-m6-cuda
+  - p2-m6-smi
+  - p2-m6-python
+  exercises:
+  - id: E08
+    path: exercises/08-bottleneck.md
+  - id: E09
+    path: exercises/09-resource-limits.md
+  assessment_ids:
+  - final-concept
+  - final-calculation
+  - final-code-reading
+  - final-benchmarking
+  - final-diagnostic
+  - final-teach-back
+  - phase-3-readiness
+  estimated_hours: 6
+  scheduled_week:
+  - 4
+  evidence_requirements:
+  - Original explanation and annotated code trace
+  - Reproducible experiment with raw measurements or explicit hardware limitation
+  - Reviewed exit assessment with corrections
+  exit_criteria:
+  - Use CPU and device observations to form a falsifiable performance hypothesis.
+  - Read a profiler timeline and distinguish activity from causal evidence.
+  - Change one variable and report uncertainty and failed hypotheses.
+  - Resolve critical misconceptions and link evidence before marking complete.
+  next_module: P2-M07
+- id: P2-M07
+  number: 7
+  title: Serving systems and the vLLM bridge
+  status: Not started
+  guide: modules/07-serving-systems-and-vllm-bridge.md
+  source_pack: notebooklm/source-packs/07-serving-systems-and-vllm-bridge.md
+  objectives:
+  - Map API, scheduling, execution, cache and streaming responsibilities.
+  - Explain PagedAttention conceptually without claiming kernel expertise.
+  - Prepare a code-reading and development plan for Phase 3 with evidence gaps.
+  required_concepts:
+  - API compatibility
+  - request handling
+  - tokenization
+  - queuing
+  - scheduling
+  - execution
+  - KV management
+  - streaming
+  - metrics
+  - health checks
+  - failures
+  - model lifecycle
+  - specialized engines
+  - vLLM architecture
+  - PagedAttention
+  - continuous batching
+  - scheduler and worker roles
+  - code navigation
+  prerequisites:
+  - P2-M06
+  source_ids:
+  - p2-m7-arch
+  - p2-m7-online
+  - p2-m7-metrics
+  - p2-m7-paged
+  exercises:
+  - id: E08
+    path: exercises/08-bottleneck.md
+  assessment_ids:
+  - final-concept
+  - final-calculation
+  - final-code-reading
+  - final-benchmarking
+  - final-diagnostic
+  - final-teach-back
+  - phase-3-readiness
+  estimated_hours: 6
+  scheduled_week:
+  - 4
+  evidence_requirements:
+  - Original explanation and annotated code trace
+  - Reproducible experiment with raw measurements or explicit hardware limitation
+  - Reviewed exit assessment with corrections
+  exit_criteria:
+  - Map API, scheduling, execution, cache and streaming responsibilities.
+  - Explain PagedAttention conceptually without claiming kernel expertise.
+  - Prepare a code-reading and development plan for Phase 3 with evidence gaps.
+  - Resolve critical misconceptions and link evidence before marking complete.
+  next_module: phase-3:community-entry
+assessments:
+- id: weekly-review
+  path: assessments/weekly-review-template.md
+- id: final-concept
+  path: assessments/final-concept-assessment.md
+- id: final-calculation
+  path: assessments/final-calculation-assessment.md
+- id: final-code-reading
+  path: assessments/final-code-reading-assessment.md
+- id: final-benchmarking
+  path: assessments/final-benchmarking-assessment.md
+- id: final-diagnostic
+  path: assessments/final-diagnostic-assessment.md
+- id: final-teach-back
+  path: assessments/final-teach-back-assessment.md
+- id: phase-3-readiness
+  path: assessments/phase-3-readiness-review.md
+weeks:
+- week: 1
+  hours: 15
+  calendar_status: Proposed; requires Phase 1 gate
+  target_dates: 2026-11-01 to 2026-11-07
+  fallback_dates: 2026-11-15 to 2026-11-21
+  sessions:
+  - hours: 3
+    objective: Loading and lifecycle
+    source_ids:
+    - p2-m1-generate
+    - p2-m1-api
+    - p2-m1-format
+    - p2-m1-padding
+    - p2-m1-model
+    - p2-m2-cache
+    practice: E01 trace and public model metadata
+    evidence: Original calculation/trace or raw observations plus corrected interpretation
+    review_questions:
+    - What assumption controls this result?
+    - What evidence would change your explanation?
+    consolidation: Catch-up/review included where named; unresolved gaps move dates, not completion claims.
+  - hours: 3
+    objective: Generation and streaming boundaries
+    source_ids:
+    - p2-m1-generate
+    - p2-m1-api
+    - p2-m1-format
+    - p2-m1-padding
+    - p2-m1-model
+    - p2-m2-cache
+    practice: E01 code trace and E07 cold boundary
+    evidence: Original calculation/trace or raw observations plus corrected interpretation
+    review_questions:
+    - What assumption controls this result?
+    - What evidence would change your explanation?
+    consolidation: Catch-up/review included where named; unresolved gaps move dates, not completion claims.
+  - hours: 3
+    objective: Lifecycle exit; prefill introduction
+    source_ids:
+    - p2-m1-generate
+    - p2-m1-api
+    - p2-m1-format
+    - p2-m1-padding
+    - p2-m1-model
+    - p2-m2-cache
+    practice: 1 h M1 exit; 2 h M2 prefill prediction
+    evidence: Original calculation/trace or raw observations plus corrected interpretation
+    review_questions:
+    - What assumption controls this result?
+    - What evidence would change your explanation?
+    consolidation: Catch-up/review included where named; unresolved gaps move dates, not completion claims.
+  - hours: 3
+    objective: Prefill versus decode
+    source_ids:
+    - p2-m2-cache
+    - p2-m2-strategies
+    - p2-m2-paged
+    - p2-m2-prefix
+    - p2-m3-optimization
+    practice: E02 length sweep
+    evidence: Original calculation/trace or raw observations plus corrected interpretation
+    review_questions:
+    - What assumption controls this result?
+    - What evidence would change your explanation?
+    consolidation: Catch-up/review included where named; unresolved gaps move dates, not completion claims.
+  - hours: 3
+    objective: Output scaling and review
+    source_ids:
+    - p2-m2-cache
+    - p2-m2-strategies
+    - p2-m2-paged
+    - p2-m2-prefix
+    - p2-m3-optimization
+    practice: E03, 0.5 h catch-up and 0.5 h weekly review
+    evidence: Original calculation/trace or raw observations plus corrected interpretation
+    review_questions:
+    - What assumption controls this result?
+    - What evidence would change your explanation?
+    consolidation: Catch-up/review included where named; unresolved gaps move dates, not completion claims.
+- week: 2
+  hours: 15
+  calendar_status: Proposed; requires Phase 1 gate
+  target_dates: 2026-11-08 to 2026-11-14
+  fallback_dates: 2026-11-22 to 2026-11-28
+  sessions:
+  - hours: 3
+    objective: KV estimate; memory budget
+    source_ids:
+    - p2-m2-cache
+    - p2-m2-strategies
+    - p2-m2-paged
+    - p2-m2-prefix
+    - p2-m3-optimization
+    practice: 2 h M2 E04; 1 h M3 weights/workspace
+    evidence: Original calculation/trace or raw observations plus corrected interpretation
+    review_questions:
+    - What assumption controls this result?
+    - What evidence would change your explanation?
+    consolidation: Catch-up/review included where named; unresolved gaps move dates, not completion claims.
+  - hours: 3
+    objective: Representations and support
+    source_ids:
+    - p2-m3-optimization
+    - p2-m3-quant
+    - p2-m3-bnb
+    - p2-m3-cuda
+    practice: E05 backend and dtype plan
+    evidence: Original calculation/trace or raw observations plus corrected interpretation
+    review_questions:
+    - What assumption controls this result?
+    - What evidence would change your explanation?
+    consolidation: Catch-up/review included where named; unresolved gaps move dates, not completion claims.
+  - hours: 3
+    objective: Precision comparison
+    source_ids:
+    - p2-m3-optimization
+    - p2-m3-quant
+    - p2-m3-bnb
+    - p2-m3-cuda
+    practice: E05 repeated comparison
+    evidence: Original calculation/trace or raw observations plus corrected interpretation
+    review_questions:
+    - What assumption controls this result?
+    - What evidence would change your explanation?
+    consolidation: Catch-up/review included where named; unresolved gaps move dates, not completion claims.
+  - hours: 3
+    objective: OOM and accounting
+    source_ids:
+    - p2-m3-optimization
+    - p2-m3-quant
+    - p2-m3-bnb
+    - p2-m3-cuda
+    practice: E09 simulation and allocator explanation
+    evidence: Original calculation/trace or raw observations plus corrected interpretation
+    review_questions:
+    - What assumption controls this result?
+    - What evidence would change your explanation?
+    consolidation: Catch-up/review included where named; unresolved gaps move dates, not completion claims.
+  - hours: 3
+    objective: Memory consolidation
+    source_ids:
+    - p2-m3-optimization
+    - p2-m3-quant
+    - p2-m3-bnb
+    - p2-m3-cuda
+    practice: E04/E05 analysis, 0.5 h catch-up and 0.5 h review
+    evidence: Original calculation/trace or raw observations plus corrected interpretation
+    review_questions:
+    - What assumption controls this result?
+    - What evidence would change your explanation?
+    consolidation: Catch-up/review included where named; unresolved gaps move dates, not completion claims.
+- week: 3
+  hours: 15
+  calendar_status: Proposed; requires Phase 1 gate
+  target_dates: 2026-11-15 to 2026-11-21
+  fallback_dates: 2026-11-29 to 2026-12-05
+  sessions:
+  - hours: 3
+    objective: Batch policies and queue timeline
+    source_ids:
+    - p2-m4-continuous
+    - p2-m4-orca
+    - p2-m4-arch
+    - p2-m4-padding
+    - p2-m5-bench
+    practice: E06 analytic scheduler timeline
+    evidence: Original calculation/trace or raw observations plus corrected interpretation
+    review_questions:
+    - What assumption controls this result?
+    - What evidence would change your explanation?
+    consolidation: Catch-up/review included where named; unresolved gaps move dates, not completion claims.
+  - hours: 3
+    objective: Batch and concurrency sweeps
+    source_ids:
+    - p2-m4-continuous
+    - p2-m4-orca
+    - p2-m4-arch
+    - p2-m4-padding
+    - p2-m5-bench
+    practice: E06 measurements
+    evidence: Original calculation/trace or raw observations plus corrected interpretation
+    review_questions:
+    - What assumption controls this result?
+    - What evidence would change your explanation?
+    consolidation: Catch-up/review included where named; unresolved gaps move dates, not completion claims.
+  - hours: 3
+    objective: Scheduling exit; metrics
+    source_ids:
+    - p2-m4-continuous
+    - p2-m4-orca
+    - p2-m4-arch
+    - p2-m4-padding
+    - p2-m5-bench
+    practice: 1 h M4 exit; 2 h M5 timestamp definitions
+    evidence: Original calculation/trace or raw observations plus corrected interpretation
+    review_questions:
+    - What assumption controls this result?
+    - What evidence would change your explanation?
+    consolidation: Catch-up/review included where named; unresolved gaps move dates, not completion claims.
+  - hours: 3
+    objective: Fair benchmark design
+    source_ids:
+    - p2-m5-bench
+    - p2-m5-metrics
+    - p2-m5-gpu
+    - p2-m5-cuda
+    practice: E06/E07 controlled comparison analysis
+    evidence: Original calculation/trace or raw observations plus corrected interpretation
+    review_questions:
+    - What assumption controls this result?
+    - What evidence would change your explanation?
+    consolidation: Catch-up/review included where named; unresolved gaps move dates, not completion claims.
+  - hours: 3
+    objective: Metric consolidation
+    source_ids:
+    - p2-m5-bench
+    - p2-m5-metrics
+    - p2-m5-gpu
+    - p2-m5-cuda
+    practice: Raw record review, 0.5 h catch-up and 0.5 h review
+    evidence: Original calculation/trace or raw observations plus corrected interpretation
+    review_questions:
+    - What assumption controls this result?
+    - What evidence would change your explanation?
+    consolidation: Catch-up/review included where named; unresolved gaps move dates, not completion claims.
+- week: 4
+  hours: 15
+  calendar_status: Proposed; requires Phase 1 gate
+  target_dates: 2026-11-22 to 2026-11-28
+  fallback_dates: 2026-12-06 to 2026-12-12
+  sessions:
+  - hours: 3
+    objective: Profiler and baseline
+    source_ids:
+    - p2-m6-profiler
+    - p2-m6-cuda
+    - p2-m6-smi
+    - p2-m6-python
+    practice: E08 trace and competing hypotheses
+    evidence: Original calculation/trace or raw observations plus corrected interpretation
+    review_questions:
+    - What assumption controls this result?
+    - What evidence would change your explanation?
+    consolidation: Catch-up/review included where named; unresolved gaps move dates, not completion claims.
+  - hours: 3
+    objective: One-variable diagnosis
+    source_ids:
+    - p2-m6-profiler
+    - p2-m6-cuda
+    - p2-m6-smi
+    - p2-m6-python
+    practice: E08/E09 analysis; 0.5 h catch-up
+    evidence: Original calculation/trace or raw observations plus corrected interpretation
+    review_questions:
+    - What assumption controls this result?
+    - What evidence would change your explanation?
+    consolidation: Catch-up/review included where named; unresolved gaps move dates, not completion claims.
+  - hours: 3
+    objective: Serving responsibilities
+    source_ids:
+    - p2-m7-arch
+    - p2-m7-online
+    - p2-m7-metrics
+    - p2-m7-paged
+    practice: API/scheduler/worker annotated request map
+    evidence: Original calculation/trace or raw observations plus corrected interpretation
+    review_questions:
+    - What assumption controls this result?
+    - What evidence would change your explanation?
+    consolidation: Catch-up/review included where named; unresolved gaps move dates, not completion claims.
+  - hours: 3
+    objective: vLLM code bridge
+    source_ids:
+    - p2-m7-arch
+    - p2-m7-online
+    - p2-m7-metrics
+    - p2-m7-paged
+    practice: Readiness map, 0.5 h catch-up and 0.5 h review
+    evidence: Original calculation/trace or raw observations plus corrected interpretation
+    review_questions:
+    - What assumption controls this result?
+    - What evidence would change your explanation?
+    consolidation: Catch-up/review included where named; unresolved gaps move dates, not completion claims.
+  - hours: 3
+    objective: Final assessment
+    source_ids:
+    - p2-m7-arch
+    - p2-m7-online
+    - p2-m7-metrics
+    - p2-m7-paged
+    practice: 3 h final gate, not charged to M7
+    evidence: Original calculation/trace or raw observations plus corrected interpretation
+    review_questions:
+    - What assumption controls this result?
+    - What evidence would change your explanation?
+    consolidation: Catch-up/review included where named; unresolved gaps move dates, not completion claims.

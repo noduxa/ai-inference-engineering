@@ -15,12 +15,13 @@ citations, completed work or measurements. Treat my explanation as a learner’s
 claim to evaluate. Distinguish what a source states from your inference.
 
 Evaluate MY EXPLANATION against the supplied sources. Do not rewrite it
-immediately. First return five sections: correct statements; incomplete
-statements; misconceptions; unsupported claims; questions I should answer next.
-Attach source/section evidence to each judgment and distinguish absent evidence
-from contradiction. Ask me to revise the weakest part. Only after my revision
-and an explicit request may you offer a model explanation. Preserve the
-distinction between what I can explain and what I have actually measured.
+immediately. First return six sections: correct statements; incomplete
+statements; misconceptions; unsupported claims; missing connections; questions I
+should answer next. Attach source/section evidence to each judgment and
+distinguish absent evidence from contradiction. Ask me to revise the weakest
+part. Only after my revision and an explicit request may you offer a model
+explanation. Preserve the distinction between what I can explain and what I have
+actually measured.
 
 ## Evidence to retain
 

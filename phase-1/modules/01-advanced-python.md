@@ -1,7 +1,7 @@
 # Module 1: Advanced Python for AI systems
 
 Status: Not started. Estimated time: **20 hours**, including practice, review
-and catch-up. Last verified: 2026-09-16.
+and catch-up. Last verified: 2026-09-30.
 
 [Curriculum](../CURRICULUM.md) · [Schedule](../SCHEDULE.md) ·
 [Source pack](../notebooklm/source-packs/01-advanced-python.md)
@@ -69,6 +69,83 @@ specialization is assumed.
 Exact page links, selected sections, exclusions, access terms and import order
 are in the source pack. Reading times are selective budgets, not estimates for
 completing entire documentation collections.
+
+## Detailed explanation and worked example
+
+### Ownership is a graph, not a variable-sized box
+
+A Python name refers to an object. Assignment adds a reference; it does not copy
+that object. A shallow copy creates an outer container but retains references to
+nested objects. A deep copy recursively copies supported objects and keeps a
+memo to handle cycles. This matters when requests share mutable configuration.
+See the [data model](https://docs.python.org/3/reference/datamodel.html) and
+[copy semantics](https://docs.python.org/3/library/copy.html).
+
+```python
+import copy
+original = [[1], [2]]
+alias = original
+shallow = original.copy()
+deep = copy.deepcopy(original)
+shallow[0].append(9)
+assert alias is original
+assert original[0] == [1, 9]
+assert deep[0] == [1]
+```
+
+The assertions illustrate semantics, not recorded learner evidence. Draw objects
+and arrows before executing. Deleting `original` removes that name, not every
+reference. CPython reference counting and cyclic garbage collection are
+implementation details; finalization timing is not a portable resource-lifetime
+contract. Use context managers for files, locks and cleanup, including
+exceptions. A generator retains its suspended frame and referenced inputs. Its
+small object size does not prove the entire computation uses little memory.
+
+### Concurrency follows the waiting and execution boundaries
+
+AsyncIO overlaps cooperative waits in one event-loop thread. A blocking function
+inside a coroutine prevents other tasks on that loop from progressing. Threads
+can overlap blocking I/O, but a GIL-enabled CPython process normally runs only
+one thread's Python bytecode at a time. Native numerical code can release the
+GIL; free-threaded builds differ. Record the interpreter/build and native thread
+count before interpreting an experiment. Neither the GIL nor AsyncIO makes
+compound shared-state updates automatically safe. See
+[threading](https://docs.python.org/3/library/threading.html).
+
+Processes can execute pure-Python CPU work in parallel, but startup,
+serialization and duplicated memory can outweigh useful work.
+`concurrent.futures` provides a shared interface, not equivalent execution
+costs. Four independent simulated 100 ms waits have an ideal overlap floor near
+100 ms, not a promised measurement; four CPU tasks each taking 100 ms cannot get
+that benefit from cooperative waits. Measure total wall time, per-task latency
+and overhead at several bounded sizes.
+
+### Boundaries that make infrastructure understandable
+
+Closures capture bindings; decorators wrap callables and can obscure signatures.
+Context managers express paired acquisition/release. Iterators implement a pull
+interface, while generators make incremental production convenient. A Protocol
+specifies a structural interface for type checking; annotations do not validate
+incoming requests at runtime. A dataclass organizes fields; use a factory for
+per-instance mutable defaults. Catch errors where you can add context or
+recover, and preserve the original exception when re-raising.
+
+A package should declare build requirements and project dependencies in
+`pyproject.toml`; a virtual environment isolates installation, while a recorded
+resolved dependency set makes reruns reproducible. Use pytest fixtures for setup
+and teardown. Log durations and safe request IDs, never private prompts or
+tokens. Profile before optimizing: `cProfile` attributes execution time, whereas
+`tracemalloc` tracks Python allocations and does not account for all native/GPU
+memory. A hot function is a hypothesis target, not proof of root cause.
+
+## Code-reading task and implementation mistakes
+
+For PY-06, choose the installed public pytest package. Record its version,
+locate one public fixture-related entry point, follow two calls, and identify an
+error path and its test. Explain how you found them using symbol search. Do not
+claim a complete repository understanding from one trace. Watch for late-bound
+closures, mutable defaults, swallowed cancellation, nested executor deadlocks
+and logging inside a timed loop.
 
 ## Study order
 
@@ -139,3 +216,7 @@ assistance, corrections and evidence using the
 - [ ] Exit test and teach-back reviewed; critical misconceptions corrected.
 - [ ] Hardware-dependent work still pending is explicitly identified.
 - [ ] Weekly review links the evidence; status changes have supporting records.
+
+## Connection to the next module
+
+Continue to [numpy and tensors](02-numpy-and-tensors.md) after the exit test.

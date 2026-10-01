@@ -206,6 +206,8 @@ def check_url(url, timeout=15, opener=None, guard=public_endpoint):
             lower = data.lower()
             if any(marker in lower for marker in ("<title>just a moment", "<title>access denied", "<title>sign in")):
                 return {"url": url, "status": "blocked", "detail": "access/login challenge", "final_url": final}
+            if "doesn't exist in" in lower and "documentation" in lower and "redirect" in lower:
+                return {"url": url, "status": "inaccessible", "detail": "documentation-version redirect notice; inspect canonical page", "final_url": final}
             if "<title>redirecting" in lower:
                 return {"url": url, "status": "inaccessible", "detail": "unresolved redirect stub", "final_url": final}
             return {"url": url, "status": "reachable" if final == url and current == url else "redirected", "http": code, "final_url": final}

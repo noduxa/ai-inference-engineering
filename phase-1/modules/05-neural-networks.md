@@ -1,7 +1,7 @@
 # Module 5: Neural-network fundamentals
 
 Status: Not started. Estimated time: **15 hours**, including practice, review
-and catch-up. Last verified: 2026-09-16.
+and catch-up. Last verified: 2026-09-30.
 
 [Curriculum](../CURRICULUM.md) · [Schedule](../SCHEDULE.md) ·
 [Source pack](../notebooklm/source-packs/05-neural-networks.md)
@@ -59,6 +59,52 @@ revisit any unresolved prerequisite before continuing.
 Exact page links, selected sections, exclusions, access terms and import order
 are in the source pack. Reading times are selective budgets, not estimates for
 completing entire documentation collections.
+
+## Detailed explanation and worked example
+
+Linear regression predicts a numeric target using a weighted sum and bias.
+Classification predicts class scores; a perceptron applies a threshold to a
+linear score, while an MLP composes affine layers with nonlinear activations.
+Without nonlinearities, composing affine layers remains affine. The distinction
+matters when reading a transformer's feed-forward block. See
+[D2L MLPs](https://d2l.ai/chapter_multilayer-perceptrons/mlp.html).
+
+Consider `h=ReLU(W1 x+b1)` and `z=W2 h+b2`. With input width 3, hidden width 4,
+and output width 2, parameter count is `(3*4+4)+(4*2+2)=26`. A batch of 5
+produces hidden shape `(5,4)` and logits `(5,2)`. Parameter count does not grow
+with batch size, but intermediate activation storage does.
+
+The forward pass computes predictions; loss measures mismatch to targets.
+Backpropagation applies the chain rule through recorded operations. Gradient
+descent changes parameters using those derivatives. Learning rate sets update
+scale. Batch size determines examples per update, whereas an epoch is a pass
+through the training set. Equal epoch counts with different batch sizes need not
+mean equal numbers of updates.
+
+Train and validation sets serve different purposes. Falling training loss alone
+does not establish generalization. In NN-02, keep a fixed split and seed and
+change one factor: learning rate or weight decay. Record both losses, update
+count and configuration. Weight decay discourages large weights but does not
+repair data leakage. Parameter initialization breaks symmetry and controls
+signal scale; unstable activations/gradients can make learning fail before a
+model becomes useful. See the selected D2L generalization and initialization
+readings in the source pack.
+
+A deployed model normally holds learned parameters fixed. Prediction requires a
+forward pass, but not target labels, backpropagation or an optimizer step.
+Dropping saved training activations and gradient/optimizer state can reduce
+memory; it does not remove model weights or every temporary buffer. Explain this
+using NN-03 rather than assuming a universal training-to-inference memory ratio.
+
+## Code-reading task and implementation mistakes
+
+Read the official optimization loop and label parameters, activations, loss,
+gradients and optimizer state. Replace its data mentally with a synthetic
+numeric classification task. Explain why applying softmax before a loss that
+expects logits can be wrong. Diagnose identical hidden-unit behavior after
+all-zero initialization, exploding loss after an excessive learning rate, and
+validation leakage. The next module reuses affine maps, nonlinearities and
+normalization inside a transformer; no computer-vision survey is required.
 
 ## Study order
 
@@ -126,3 +172,7 @@ assistance, corrections and evidence using the
 - [ ] Exit test and teach-back reviewed; critical misconceptions corrected.
 - [ ] Hardware-dependent work still pending is explicitly identified.
 - [ ] Weekly review links the evidence; status changes have supporting records.
+
+## Connection to the next module
+
+Continue to [transformers](06-transformers.md) after the exit test.

@@ -1,7 +1,7 @@
 # Module 6: Transformer architecture
 
 Status: Not started. Estimated time: **8 hours**, including practice, review and
-catch-up. Last verified: 2026-09-16.
+catch-up. Last verified: 2026-09-30.
 
 [Curriculum](../CURRICULUM.md) · [Schedule](../SCHEDULE.md) ·
 [Source pack](../notebooklm/source-packs/06-transformers.md)
@@ -62,6 +62,57 @@ revisit any unresolved prerequisite before continuing.
 Exact page links, selected sections, exclusions, access terms and import order
 are in the source pack. Reading times are selective budgets, not estimates for
 completing entire documentation collections.
+
+## Detailed explanation and worked example
+
+Tokenization converts text into vocabulary IDs; an embedding lookup maps each ID
+to a learned vector. Token count is not character count. The tokenizer and model
+revision form one contract. Padding aligns batches; truncation discards context.
+Padding masks identify non-content positions, while causal masks prevent a
+position from reading future positions. Mask conventions differ by API: verify
+whether True means allowed or blocked.
+
+For one attention head, `Q=XWq`, `K=XWk`, `V=XWv`, and
+`A=softmax(QKᵀ/sqrt(dk)+M)` ; output is `AV` . An additive mask uses zero for
+allowed scores and negative infinity for blocked scores before softmax.
+Multiplying a blocked score by zero is not equivalent. The
+[original paper](https://arxiv.org/html/1706.03762v7) defines scaled attention;
+[D2L](https://d2l.ai/chapter_attention-mechanisms-and-transformers/transformer.html)
+provides the accessible architecture walkthrough.
+
+Worked example: let `Q=K=[[1,0],[0,1]]`, `V=[[2,0],[0,4]]`, `dk=2`. For the
+first causally masked row, attention weights are `[1,0]` and output `[2,0]`. For
+the second row, scores are `[0,1/sqrt(2)]`; calculate its softmax and weighted
+value sum. This is an analytic example, not experimental evidence. An
+all-blocked row needs explicit handling; naive softmax can produce NaNs.
+
+Multi-head attention learns different projections, concatenates their results
+and projects again. Positional information distinguishes order; a feed-forward
+layer transforms each position. Residual connections add a sublayer's input to
+its output, and normalization controls scale. Exact norm placement and
+positional schemes depend on architecture; do not assume every modern model
+reproduces the 2017 design.
+
+Encoders build contextual representations, usually with bidirectional attention.
+Decoders use causal self-attention; an encoder-decoder adds cross-attention to
+encoder outputs. A decoder-only language model projects its final hidden state
+to vocabulary logits. The last prompt position predicts the first continuation
+token. Append the selected token and repeat until EOS or a length/stop
+condition. Sampling uses a distribution rather than always choosing argmax.
+Temperature rescales logits, top-k keeps a fixed count, and top-p keeps a
+probability mass; none establishes factual correctness. See the selected HF
+generation reference.
+
+## Code-reading task and implementation mistakes
+
+Trace shapes
+`[B,T] → [B,T,D] → [B,H,T,D/H] → [B,H,T,T] → [B,T,D] → [B,T,Vocab]`. Inspect
+D2L's decoder block and identify its causal behavior. Explain which positions a
+second generated token can attend to. Common mistakes include treating an
+attention matrix as embeddings, using the wrong softmax axis, dropping padding
+masks, confusing model parameters with request tokens and reporting sampling
+differences as quality improvements without evaluation. Module 7 accounts for
+the memory required by these tensors.
 
 ## Study order
 
@@ -128,3 +179,8 @@ assistance, corrections and evidence using the
 - [ ] Exit test and teach-back reviewed; critical misconceptions corrected.
 - [ ] Hardware-dependent work still pending is explicitly identified.
 - [ ] Weekly review links the evidence; status changes have supporting records.
+
+## Connection to the next module
+
+Continue to [gpu architecture and memory](07-gpu-architecture-and-memory.md)
+after the exit test.

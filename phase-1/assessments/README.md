@@ -13,3 +13,6 @@ Status: Not started. Follow the [assessment plan](../ASSESSMENT.md).
 Store dated attempts separately from these reusable questions. Label help
 received and preserve the initial attempt. No assessment result is claimed in
 this scaffold.
+
+- [Facilitator guidance](facilitator-guidance.md): consult after attempting.
+- [Evidence gate](../EVIDENCE.md): readiness requires reviewed evidence.

@@ -20,7 +20,8 @@ modules:
         path.
     required_concepts:
       - Python’s object and memory model
-      - References, identity, mutability and copying
+      - References, identity, mutability and shallow/deep copying
+      - Object lifetime and garbage collection
       - Functions and closures
       - Decorators
       - Context managers
@@ -31,6 +32,7 @@ modules:
       - Modules and packages
       - Virtual environments
       - Modern project packaging with pyproject.toml
+      - Dependency management
       - Testing with pytest
       - Logging
       - AsyncIO
@@ -86,6 +88,11 @@ modules:
       - Resolve critical misconceptions in teach-back before claiming
         completion.
     status: Not started
+    evidence_requirements:
+    - Original concept explanation and code trace
+    - Reproducible exercise evidence with measurements or stated limits
+    - Assessed exit test and corrected teach-back
+    next_module: M02
   - id: M02
     number: 2
     title: NumPy, tensors and numerical computing
@@ -113,7 +120,7 @@ modules:
       - Strides
       - Contiguous and non-contiguous data
       - CPU memory consumption
-      - Numerical precision and floating-point limitations
+      - Numerical precision, numerical stability and floating-point limitations
       - Comparing Python loops with vectorized operations
     prerequisites:
       - M01
@@ -156,6 +163,11 @@ modules:
       - Resolve critical misconceptions in teach-back before claiming
         completion.
     status: Not started
+    evidence_requirements:
+    - Original concept explanation and code trace
+    - Reproducible exercise evidence with measurements or stated limits
+    - Assessed exit test and corrected teach-back
+    next_module: M03
   - id: M03
     number: 3
     title: Essential mathematics
@@ -226,6 +238,11 @@ modules:
       - Resolve critical misconceptions in teach-back before claiming
         completion.
     status: Not started
+    evidence_requirements:
+    - Original concept explanation and code trace
+    - Reproducible exercise evidence with measurements or stated limits
+    - Assessed exit test and corrected teach-back
+    next_module: M04
   - id: M04
     number: 4
     title: PyTorch fundamentals
@@ -242,7 +259,7 @@ modules:
       - Installing and verifying PyTorch
       - Tensors, shapes and strides
       - Data types
-      - CPU and CUDA devices
+      - CPU, CUDA and Metal/MPS devices
       - Moving tensors between devices
       - nn.Module and parameters
       - Forward passes
@@ -299,6 +316,11 @@ modules:
       - Resolve critical misconceptions in teach-back before claiming
         completion.
     status: Not started
+    evidence_requirements:
+    - Original concept explanation and code trace
+    - Reproducible exercise evidence with measurements or stated limits
+    - Assessed exit test and corrected teach-back
+    next_module: M05
   - id: M05
     number: 5
     title: Neural-network fundamentals
@@ -360,6 +382,11 @@ modules:
       - Resolve critical misconceptions in teach-back before claiming
         completion.
     status: Not started
+    evidence_requirements:
+    - Original concept explanation and code trace
+    - Reproducible exercise evidence with measurements or stated limits
+    - Assessed exit test and corrected teach-back
+    next_module: M06
   - id: M06
     number: 6
     title: Transformer architecture
@@ -377,7 +404,7 @@ modules:
       - Embeddings and sequence representation
       - Queries, keys and values
       - Scaled dot-product attention
-      - Attention masks and self-attention
+      - Attention masks, causal masks and self-attention
       - Multi-head attention
       - Positional information
       - Feed-forward layers
@@ -430,6 +457,11 @@ modules:
       - Resolve critical misconceptions in teach-back before claiming
         completion.
     status: Not started
+    evidence_requirements:
+    - Original concept explanation and code trace
+    - Reproducible exercise evidence with measurements or stated limits
+    - Assessed exit test and corrected teach-back
+    next_module: M07
   - id: M07
     number: 7
     title: GPU architecture, precision and memory
@@ -498,6 +530,11 @@ modules:
       - Resolve critical misconceptions in teach-back before claiming
         completion.
     status: Not started
+    evidence_requirements:
+    - Original concept explanation and code trace
+    - Reproducible exercise evidence with measurements or stated limits
+    - Assessed exit test and corrected teach-back
+    next_module: phase-2:P2-M01
 assessments:
   - id: weekly-review
     path: assessments/weekly-review-template.md
@@ -513,6 +550,8 @@ assessments:
     path: assessments/final-teach-back-assessment.md
 weeks:
   - week: 1
+    calendar_status: Original proposed target; no completion implied
+    forward_dates: 2026-10-04 to 2026-10-10
     start: "2026-09-20"
     end: "2026-09-26"
     hours: 15
@@ -523,31 +562,53 @@ weeks:
         sources: "py-runtime: data model/copy"
         practice: PY-01 prediction and ownership sketches
         evidence: Object graph and initial memory prediction
+        review_questions:
+          - Which assumption mattered?
+          - What differed from the prediction?
+          - What evidence remains missing?
       - session: 2
         hours: 3.0
         objective: Functions, closures, decorators, context managers
         sources: "py-tutorial; py-runtime: function definitions/contextlib"
         practice: PY-06 cleanup and decorator tests
         evidence: Small implementation with failed-path test
+        review_questions:
+          - Which assumption mattered?
+          - What differed from the prediction?
+          - What evidence remains missing?
       - session: 3
         hours: 3.0
         objective: Types, protocols, dataclasses, errors and logging
         sources: "py-runtime: typing/dataclasses/logging; py-tutorial: errors"
         practice: PY-06 typed boundary and fixture
         evidence: Typed package interface and exception record
+        review_questions:
+          - Which assumption mattered?
+          - What differed from the prediction?
+          - What evidence remains missing?
       - session: 4
         hours: 3.0
         objective: Modules, virtual environments, packaging and pytest
         sources: "py-packaging; py-pytest; py-tutorial: modules/venv"
         practice: PY-06 package and repository trace
         evidence: Reproduction instructions and source call path
+        review_questions:
+          - Which assumption mattered?
+          - What differed from the prediction?
+          - What evidence remains missing?
       - session: 5
         hours: 3.0
         objective: Iterators, generators; catch-up and review
         sources: "py-tutorial: classes; py-runtime: data model"
         practice: Finish PY-01; 1 h catch-up + 1 h weekly review
         evidence: Observed memory record and corrected teach-back
+        review_questions:
+          - Which assumption mattered?
+          - What differed from the prediction?
+          - What evidence remains missing?
   - week: 2
+    calendar_status: Original proposed target; no completion implied
+    forward_dates: 2026-10-11 to 2026-10-17
     start: "2026-09-27"
     end: "2026-10-03"
     hours: 15
@@ -558,31 +619,53 @@ weeks:
         sources: "py-runtime: asyncio/threading/multiprocessing/futures"
         practice: PY-02 and PY-03 bounded comparisons
         evidence: Workload-choice table with real observations
+        review_questions:
+          - Which assumption mattered?
+          - What differed from the prediction?
+          - What evidence remains missing?
       - session: 2
         hours: 2.0
         objective: CPU and allocation profiling
         sources: "py-runtime: profile/tracemalloc"
         practice: PY-04 and PY-05
         evidence: Hotspot and allocation trace with limitations
+        review_questions:
+          - Which assumption mattered?
+          - What differed from the prediction?
+          - What evidence remains missing?
       - session: 3
         hours: 3.0
         objective: Arrays, shapes, dtype and storage
         sources: np-quickstart; np-types
         practice: NP-04 and NP-05
         evidence: Shape calculations and payload estimate
+        review_questions:
+          - Which assumption mattered?
+          - What differed from the prediction?
+          - What evidence remains missing?
       - session: 4
         hours: 4.0
         objective: Broadcasting, vectorization and aliasing
         sources: np-broadcast; np-views; np-quickstart
         practice: NP-01, NP-02 and NP-03
         evidence: Correctness checks and controlled timing
+        review_questions:
+          - Which assumption mattered?
+          - What differed from the prediction?
+          - What evidence remains missing?
       - session: 5
         hours: 3.0
         objective: Strides and precision; catch-up and review
         sources: "np-quickstart: ndarray layout; np-types"
         practice: Array exit check; 1 h catch-up + 1 h review
         evidence: Memory-layout explanation and weekly review
+        review_questions:
+          - Which assumption mattered?
+          - What differed from the prediction?
+          - What evidence remains missing?
   - week: 3
+    calendar_status: Original proposed target; no completion implied
+    forward_dates: 2026-10-18 to 2026-10-24
     start: "2026-10-04"
     end: "2026-10-10"
     hours: 15
@@ -593,31 +676,53 @@ weeks:
         sources: "math-prelim: linear algebra"
         practice: MA-01 and MA-02
         evidence: Hand calculations before NumPy checks
+        review_questions:
+          - Which assumption mattered?
+          - What differed from the prediction?
+          - What evidence remains missing?
       - session: 2
         hours: 3.0
         objective: Linear transformations, norms and geometric vocabulary
         sources: "math-mit: selected transcript segments"
         practice: Rank/basis/orthogonality sketches
         evidence: Eigenvector/SVD recognition note
+        review_questions:
+          - Which assumption mattered?
+          - What differed from the prediction?
+          - What evidence remains missing?
       - session: 3
         hours: 3.0
         objective: Functions, derivatives and chain rule
         sources: "math-prelim: calculus"
         practice: MA-04
         evidence: Local derivatives and finite-difference check
+        review_questions:
+          - Which assumption mattered?
+          - What differed from the prediction?
+          - What evidence remains missing?
       - session: 4
         hours: 3.0
         objective: Probability, logits, softmax and stability
         sources: "math-prelim: probability; math-softmax; math-float"
         practice: MA-03 and MA-05
         evidence: Stable calculation and discrete expectation/variance
+        review_questions:
+          - Which assumption mattered?
+          - What differed from the prediction?
+          - What evidence remains missing?
       - session: 5
         hours: 3.0
         objective: Calculation retry; catch-up and review
         sources: Revisit only sections supporting identified gaps
         practice: 1 h fresh calculation + 1 h catch-up + 1 h review
         evidence: Corrected reasoning and weekly review
+        review_questions:
+          - Which assumption mattered?
+          - What differed from the prediction?
+          - What evidence remains missing?
   - week: 4
+    calendar_status: Original proposed target; no completion implied
+    forward_dates: 2026-10-25 to 2026-10-31
     start: "2026-10-11"
     end: "2026-10-17"
     hours: 15
@@ -628,31 +733,53 @@ weeks:
         sources: "pt-basics: installation/tensors"
         practice: PT-01
         evidence: Environment manifest and device limitations
+        review_questions:
+          - Which assumption mattered?
+          - What differed from the prediction?
+          - What evidence remains missing?
       - session: 2
         hours: 3.0
         objective: Module, parameters, datasets and autograd
         sources: "pt-basics: build/data/autograd"
         practice: PT-02
         evidence: One training-step trace
+        review_questions:
+          - Which assumption mattered?
+          - What differed from the prediction?
+          - What evidence remains missing?
       - session: 3
         hours: 3.0
         objective: Evaluation, gradient modes and state dictionaries
         sources: "pt-autograd; pt-basics: save/load"
         practice: PT-03
         evidence: Output equivalence and graph inspection
+        review_questions:
+          - Which assumption mattered?
+          - What differed from the prediction?
+          - What evidence remains missing?
       - session: 4
         hours: 3.0
         objective: Profiler, timing, memory, compile and autocast
         sources: pt-performance; pt-cuda
         practice: "PT-04 and PT-05: smallest supported cases"
         evidence: Profiler record; CUDA work or explicit limitation
+        review_questions:
+          - Which assumption mattered?
+          - What differed from the prediction?
+          - What evidence remains missing?
       - session: 5
         hours: 3.0
         objective: Fresh forward-pass check; catch-up and review
         sources: Targeted pt-basics/pt-autograd sections
         practice: 1 h exit check + 1 h catch-up + 1 h review
         evidence: Mode comparison and weekly review
+        review_questions:
+          - Which assumption mattered?
+          - What differed from the prediction?
+          - What evidence remains missing?
   - week: 5
+    calendar_status: Original proposed target; no completion implied
+    forward_dates: 2026-11-01 to 2026-11-07
     start: "2026-10-18"
     end: "2026-10-24"
     hours: 15
@@ -663,31 +790,53 @@ weeks:
         sources: nn-linear; nn-classification
         practice: NN-01 small regression
         evidence: Annotated model and loss
+        review_questions:
+          - Which assumption mattered?
+          - What differed from the prediction?
+          - What evidence remains missing?
       - session: 2
         hours: 3.0
         objective: MLP, activation, graph and backward pass
         sources: "nn-mlp: MLP/backprop; nn-loop"
         practice: NN-01 small classifier
         evidence: Shape and parameter-update trace
+        review_questions:
+          - Which assumption mattered?
+          - What differed from the prediction?
+          - What evidence remains missing?
       - session: 3
         hours: 3.0
         objective: Learning rate, batch size, epochs and generalization
         sources: "nn-mlp: generalization; nn-loop"
         practice: NN-02 controlled change
         evidence: Train/validation record, no assumed outcome
+        review_questions:
+          - Which assumption mattered?
+          - What differed from the prediction?
+          - What evidence remains missing?
       - session: 4
         hours: 3.0
         objective: Initialization, regularization and inference
         sources: "nn-mlp: weight decay/stability"
         practice: NN-03
         evidence: Forward-only explanation and finite outputs
+        review_questions:
+          - Which assumption mattered?
+          - What differed from the prediction?
+          - What evidence remains missing?
       - session: 5
         hours: 3.0
         objective: Network exit check; catch-up and review
         sources: Revisit the specific misconception sources
         practice: 1 h exit check + 1 h catch-up + 1 h review
         evidence: Generalization teach-back and weekly review
+        review_questions:
+          - Which assumption mattered?
+          - What differed from the prediction?
+          - What evidence remains missing?
   - week: 6
+    calendar_status: Original proposed target; no completion implied
+    forward_dates: 2026-11-08 to 2026-11-14
     start: "2026-10-25"
     end: "2026-10-31"
     hours: 15
@@ -698,27 +847,47 @@ weeks:
         sources: "tr-hf; tr-d2l: attention"
         practice: TR-01 and TR-02
         evidence: Tiny attention calculation and mask inspection
+        review_questions:
+          - Which assumption mattered?
+          - What differed from the prediction?
+          - What evidence remains missing?
       - session: 2
         hours: 3.0
         objective: Blocks, model families and generation
         sources: "tr-d2l: transformer; tr-paper: §3; tr-generation"
         practice: TR-03 and TR-04
         evidence: Two-step generation trace and synthetic sampling
+        review_questions:
+          - Which assumption mattered?
+          - What differed from the prediction?
+          - What evidence remains missing?
       - session: 3
         hours: 2.0
         objective: Transformer consolidation and catch-up
         sources: Targeted tr-hf/tr-d2l pages
         practice: 1 h exit test + 1 h catch-up
         evidence: Corrected architecture map
+        review_questions:
+          - Which assumption mattered?
+          - What differed from the prediction?
+          - What evidence remains missing?
       - session: 4
         hours: 3.0
         objective: GPU execution, precision and memory
         sources: gpu-architecture; gpu-performance; gpu-precision; gpu-memory
         practice: GPU-01 and GPU-02
         evidence: Device map, monitoring plan and byte estimates
+        review_questions:
+          - Which assumption mattered?
+          - What differed from the prediction?
+          - What evidence remains missing?
       - session: 5
         hours: 4.0
         objective: Bounded resource study and synthesis
         sources: gpu-memory; assessment files
         practice: GPU-03/GPU-04 and GPU review (2 h); final assessment (2 h)
         evidence: Safe limit/OOM analysis and final assessment record
+        review_questions:
+          - Which assumption mattered?
+          - What differed from the prediction?
+          - What evidence remains missing?

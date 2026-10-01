@@ -14,3 +14,6 @@ Status: Planned. Use these manually after checking source imports.
 
 Replace capitalized placeholders. Keep learner answers and generated feedback
 separate. [Return to the NotebookLM workflow](../README.md).
+
+- [Measurement review](measurement-review.md): test units, boundaries and causal
+  claims.

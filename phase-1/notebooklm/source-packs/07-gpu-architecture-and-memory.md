@@ -1,7 +1,7 @@
 # Module 7 NotebookLM source pack
 
 Status: Planned. Source inspection: Verified. NotebookLM import: To be
-validated. Last verified: 2026-09-16.
+validated. Last verified: 2026-09-30.
 
 [NotebookLM workflow](../README.md) ·
 [Module](../../modules/07-gpu-architecture-and-memory.md) ·
@@ -237,10 +237,10 @@ These are deliberately questionable claims to correct, not facts to memorize.
 ## Practical exercise
 
 Start with `GPU-01` in the
-[module exercise specifications](../../exercises/07-gpu-architecture-and-memory.md),
-then complete the remaining exercises. Ask for a plan critique before executing;
-never ask the model to fabricate an observation or to silently fill in missing
-measurements.
+[module exercise specifications](../../exercises/07-gpu-architecture-and-memory.md)
+, then complete the remaining exercises. Ask for a plan critique before
+executing; never ask the model to fabricate an observation or to silently fill
+in missing measurements.
 
 ## Required learning evidence
 
@@ -265,3 +265,30 @@ sources nor generated study artifacts establish mastery.
 Complete the [final assessments](../../ASSESSMENT.md), then consult
 [Phase 2 of the roadmap](../../../ROADMAP.md). No Phase 2 work is required to
 pass this phase.
+
+## Comparison prompt
+
+Using only the imported sources, compare their scope, definitions and
+assumptions. Cite the section behind each important claim, distinguish inference
+from source statements, identify real disagreements and say when coverage is
+insufficient. Do not invent a conflict between complementary sources.
+
+## Teach-back prompt
+
+Evaluate my explanation before rewriting it: correct statements, incomplete
+statements, misconceptions, unsupported claims, missing connections and
+questions I should answer next. Cite source sections and ask me to revise first.
+An Audio Overview is preparation, not evidence of understanding.
+
+## Experiment-preparation prompt
+
+Check my linked exercise plan against the supplied sources. Identify controls,
+changed variable, observations, resource bounds and missing prerequisites.
+Require my prediction before execution; never invent an observed result.
+
+## Measurement-interpretation prompt
+
+Use the [shared measurement-review prompt](../prompts/measurement-review.md).
+Check the exercise's actual shapes, units, timing/memory boundaries and
+correctness. State what the supplied observations cannot establish and ask for
+one next test.
