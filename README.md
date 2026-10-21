@@ -76,6 +76,11 @@ employment.
 
 ## Two-phase learning system
 
+Start with the [single Phase 1 and Phase 2 learning guide](README_PHASES_1_AND_2.md)
+for concept-by-concept video segments, required reading, practice and assessment
+checks. It records partial inspected video support for 225 of 248 study entries
+and reading fallbacks for 23; resource review does not certify learner mastery.
+
 Both phases are **Not started** as learner work. Documentation and tool
 verification do not certify completed study. The schedules preserve the original
 targets and provide proposed forward dates when prerequisite evidence is absent.
